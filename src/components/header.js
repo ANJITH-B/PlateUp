@@ -25,7 +25,7 @@ export default function Header() {
           />
           <NavbarBrand>
             <Image alt="plateUp" src="/image/logo.png" href="/" height={50} width={70} />
-            <div className="w-full h-1 ml-3 bg-orange-300 text-black">-</div>
+            <div className="w-full h-1 ml-3 md:bg-orange-300 text-black">-</div>
           </NavbarBrand>
         </NavbarContent>
 
@@ -42,7 +42,7 @@ export default function Header() {
         </NavbarContent>
 
         <NavbarContent>
-        <div className="w-full h-1 ml-3 bg-orange-300 text-black">-</div>
+        <div className="w-full h-1 ml-3 md:bg-orange-300 text-black">-</div>
           <button className="bg-orange-600 rounded-xl w-full  py-2 px-4">Get Start</button>
         </NavbarContent>
         <NavbarMenu>

@@ -72,8 +72,8 @@ body {
 }
 
 .border-button {
-  width: 20vmin;
-  height: 6vmin;
+  /* width: 20vmin;
+  height: 6vmin; */
   display: grid;
   place-content: center;
   color: white;
