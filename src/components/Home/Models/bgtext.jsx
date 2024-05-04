@@ -8,7 +8,7 @@ export const BgText = () => {
     const meshRef = useRef();
 
     // Load the texture
-    const texture = useLoader(TextureLoader, '/image/BgText1.png');
+    const texture = useLoader(TextureLoader, '/image/BGText1.png');
 
     // Set up the scene
     // Set up the scene
