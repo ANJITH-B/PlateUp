@@ -26,6 +26,7 @@ export const Experience = (props) => {
                     rotateY: section === 0 ? (-0.2) : section === 7 ? (0.5) : section === 8 ? (0.5) : (-0.2),
                     rotateZ: section === 0 ? (0.1) : section === 7 ? (0.1) : section === 8 ? (0.1) : (0.1),
                 }}>
+                    
                 <Card />
             </motion.group>
 
@@ -79,8 +80,8 @@ export const Experience = (props) => {
             <motion.group
                 animate={{
                     x: section === 5 ? (sm ? 1 : -0.7) : section === 6 ? 1 : section === 7 ? (sm ? 0 : 1) : section === 8 ? 1 : 1,
-                    y: section === 5 ? (sm ? 3.2 : 3.5) : section === 6 ? ( sm  ? 0 : 4.2) : section === 7 ? ( sm  ? 0 : 4.2) : section === 8 ? ( sm  ? 0 : 4.2) : -2.5,
-                    z: section === 5 ? (sm ? 0 : 2) : section === 6 ? 6.3 : section === 7 ? 6.3 : section === 8 ? 6.3 : 2,
+                    y: section === 5 ? (sm ? 3.2 : 3.5) : section === 6 ? ( sm  ? 4 : 4.2) : section === 7 ? ( sm  ? 4 : 4.2) : section === 8 ? ( sm  ? 4 : 4.2) : -2.5,
+                    z: section === 5 ? (sm ? 0 : 2) : section === 6 ? (sm ? 7 : 6.3) : section === 7 ? (sm ? 7 : 6.3) : section === 8 ? (sm ? 7 : 6.3) : 2,
                     rotateX: section === 5 ? 1.6 : 1.6,
                     rotateY: section === 5 ? 1.6 : 1.6,
                     rotateZ: section === 5 ? 0 : 0, 

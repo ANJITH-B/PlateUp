@@ -56,7 +56,8 @@ export function Iphone(props) {
     video.crossOrigin = 'Anonymous';
     video.loop = false;
     video.muted = true;
-
+    video.playsInline = true;
+    video.preload = 'metadata';
     const texture = new THREE.VideoTexture(video);
     texture.minFilter = THREE.LinearFilter;
     texture.magFilter = THREE.LinearFilter;
@@ -69,10 +70,10 @@ export function Iphone(props) {
     };
 
     if (section === 1) {
-      video.src = 'videos/FP.mp4'; // Change the src of the video
+      video.src = 'videos/algined (2).mp4'; // Change the src of the video
       playVideo();
     } else if (section === 2) {
-      video.src = "videos/3.mp4";
+      video.src = "videos/algined.mp4";
       playVideo();
     }
     else if (section === 3) {
