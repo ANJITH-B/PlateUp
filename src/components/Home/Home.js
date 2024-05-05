@@ -8,7 +8,7 @@ import { Experience } from "./Interface/Experience"
 import { MotionConfig } from "framer-motion";
 import { motion } from 'framer-motion'
 import { Leva } from "leva";
-import { ScrollManager } from './scrollManager/scrollManager'
+import { ScrollManager } from './scrollManager/ScrollManager'
 import { SectionNav } from './SectionNav/SectionNav'
 // import ParallaxText from '../Home/parallax/ParallaxText'
 import Header from "../header";
