@@ -13,8 +13,8 @@ const FoodSteam = (section) => {
    return (
       <motion.div
          className={styles.vapourBlock}>
-         <div className='w-full h-full pb-20' >
-            <div className='pb-10'>
+         <div className='w-full h-full md:pb-20' >
+            <div className='pb-10 md:pb-10'>
                <div className={styles.vapour}>
                   <span style={{ '--v': 1 }}></span>
                   <span style={{ '--v': 2 }}></span>

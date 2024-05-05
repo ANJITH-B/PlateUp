@@ -15,7 +15,7 @@ export const Experience = (props) => {
     return (
         <>
             <directionalLight intensity={0.001} position={[6, 5, 5]} />
-            <ambientLight intensity={0.01} />
+            <ambientLight intensity={0.4} />
             <motion.group
                 className="hidden sm:block"
                 animate={{
