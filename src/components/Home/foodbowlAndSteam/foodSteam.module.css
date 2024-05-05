@@ -1,65 +1,9 @@
-.img {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
-.coffeeBlock {
+.vapourBlock {
     position: relative;
     top: 90%;
     left: 60%;
     transform: translate(-50%, -50%);
     width: 250px;
-}
-
-.coffee {
-    /* background-color: #501E03; */
-    height: 20px;
-    border-radius: 50%;
-    z-index: 99;
-    position: relative;
-    margin: 0 auto -28px;
-    width: 233px;
-}
-
-.lid {
-    background-color: #fff;
-    height: 20px;
-    border-radius: 50%;
-    border: 8px solid #ddd;
-    z-index: 9;
-    position: relative;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 51%);
-}
-
-.cup {
-    margin: -18px auto 0;
-    background-color: #fff;
-    height: 300px;
-    width: 100%;
-    max-width: 240px;
-    /* border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%; */
-    clip-path: polygon(50% 250%, 0 0, 100% 0);
-}
-
-.logo {
-    max-width: 100px;
-    position: absolute;
-    top: 35%;
-    left: 28%;
-}
-
-.bottom {
-    background-color: #fff;
-    height: 20px;
-    border-radius: 50%;
-    z-index: 9;
-    position: relative;
-    width: 144px;
-    margin: -10px auto 0;
 }
 
 .vapour {
@@ -84,6 +28,12 @@
     opacity: 0;
     filter: blur(10px);
     animation-delay: calc(var(--v) * -0.5s);
+}
+
+@media screen and (max-width: 639px) {
+    .vapourBlock {
+        left: 50%;
+    }
 }
 
 @keyframes animate {

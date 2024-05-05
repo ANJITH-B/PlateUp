@@ -1,0 +1,77 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+*{
+    scroll-behavior: smooth;
+}
+/* Gilroy */
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-Black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/gilroy/Gilroy-Regular.ttf);
+    font-weight: 400;
+}
+/* Cabinet */
+@font-face {
+    font-family: Cabinet;
+    src: url(../fonts/cabinet/CabinetGrotesk-Black.otf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: Cabinet;
+    src: url(../fonts/cabinet/CabinetGrotesk-Extrabold.otf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: Cabinet;
+    src: url(../fonts/cabinet/CabinetGrotesk-Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Cabinet;
+    src: url(../fonts/cabinet/CabinetGrotesk-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Cabinet;
+    src: url(../fonts/cabinet/CabinetGrotesk-Regular.otf);
+    font-weight: 400;
+}
+/* Bold Strom */
+@font-face {
+    font-family: boldstrom;
+    src: url(../fonts/boldstrom/Boldstrom\ D.otf);
+}
+
+.font-primary{
+    font-family: Gilroy;
+}
+.font-secondary{
+    font-family: boldstrom;
+}
+.font-tertiary{
+    font-family: cabinet;
+}

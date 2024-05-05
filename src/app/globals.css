@@ -16,6 +16,16 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e201e39;
+  width: 0.1rem;
+  border-radius: 1rem;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,7 +34,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    overflow-y: hidden;
 }
 
 @layer utilities {

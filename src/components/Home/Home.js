@@ -2,18 +2,18 @@ import React, { useRef, useState } from "react";
 import FoodSteam from "./foodbowlAndSteam/steam";
 import { Environment, OrbitControls, PerspectiveCamera, Scroll, ScrollControls, Text, } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Interface } from "./Interface/Interface";
+import { Interface } from "./Interface/Interface"; 
 import { Spotlight } from "../ui/Spotlight";
 import { Experience } from "./Interface/Experience"
 import { MotionConfig } from "framer-motion";
 import { motion } from 'framer-motion'
 import { Leva } from "leva";
-import { ScrollManager } from './scrollManager/ScrollManager'
+import { ScrollManager } from './scrollManager/scrollManager'
 import { SectionNav } from './SectionNav/SectionNav'
 // import ParallaxText from '../Home/parallax/ParallaxText'
-import NavbarDemo from "../Navbar";
+import Header from "../header";
 // import Image from "next/image";
-// import clsx from "clsx";
+// import clsx from "clsx"; 
 // import FoodWorld from "./foodworld/Foodworld";
 
 const Home = (props) => {
@@ -47,7 +47,13 @@ const Home = (props) => {
             
           {/* <Image src='/image/bgtext.png' width={600} height={200}/> */}
           
-          {section === 0 && <NavbarDemo />}
+          {section === 0 && <div className="relative w-full flex items-center justify-center">
+          <div
+      className="fixed top-10 inset-x-0 w-[95%] mx-auto z-50 rounded-3xl top-2"
+    >
+      <Header/>
+    </div>
+    </div>}
           <Canvas page={5} className="w-[100vw] h-[100vh] -z-5 relative">
             {/* <color attach="background" args={[getBackgroundColor()]} /> */}
             <Environment preset="city" />
@@ -69,7 +75,7 @@ const Home = (props) => {
           {/* <FoodWorld /> */}
 
           <motion.div initial={{ opacity: 0, y: 0 }} animate={{ opacity: section === 0 ? 1 : 0, y: 0 }} transition={{ duration: 0.3 }}>
-            <FoodSteam section={section} />
+          {section === 0 &&  <FoodSteam section={section} />}
           </motion.div>
           <SectionNav onSectionChange={setSection} section={section} />
           <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />

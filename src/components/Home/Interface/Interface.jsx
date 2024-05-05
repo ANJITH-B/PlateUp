@@ -59,12 +59,12 @@ export const Interface = () => {
                 <path d="M2.38118 4.67663L529.718 262.123C719.648 354.847 862.535 522.291 924.232 724.441L956.688 830.784C998.869 968.989 1005.21 1115.65 975.106 1256.98L884.175 1683.91C849.188 1848.17 905.9 2018.5 1032.37 2129.01L1121.2 2206.63C1231.3 2302.83 1353 2384.88 1483.47 2450.87L1807 2614.5" stroke="#FFC224" strokeWidth="10" />
             </svg>
         </div> */}
-      <AboutSection />
+      <Home />
       <Food />
       <DineIn />
       <Grocery />
-      <Shop />
-      <IT />
+      <Travel />
+      <Redeem />
       <Section><h1></h1></Section>
       <Contact />
       <Footer />
@@ -73,13 +73,13 @@ export const Interface = () => {
 }
 
 
-const AboutSection = () => {
+const Home = () => {
   return (
     <Section className='z--10' style={{ zIndex: -200 }}>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
-        <motion.div className=" p-4 md:w-1/2 h-full  mt-20 md:pl-20 sm:m-10">
+        <motion.div className=" p-4 md:w-1/2 h-full flex items-center flex-col  md:pl-20 sm:m-10">
           <motion.h1
-            className='text-4xl md:text-7xl font-bold italic md:mt-20 pt-20 content-start'
+            className='text-4xl md:text-7xl font-bold italic md:mt-20 pt-[20vh] md:pt-[10vh]  content-start'
             initial={{ opacity: 0, y: -20, }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -112,17 +112,11 @@ const AboutSection = () => {
 
 
 const Food = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    console.log('haia', e);
-    setPosition({ y: e.clientX, x: e.clientY });
-  };
   return (
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
         <motion.div className="p-5 md:pl-20 md:pr-3 md:w-3/5 ">
-          <motion.h2 className=" md:text-2xl italic semifont-bold text-white-600 mt-20 md:mt-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
+          <motion.h2 className=" md:text-2xl font-primary semifont-bold text-white-600 mt-20 md:mt-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
             Experience the ease of dining with QUICKMEAL No more hassle with cash payments on delivery apps or being restricted to limited canteen options for your meal. Just utilize your Plateup card to enjoy your meal allowance at a standard rate. Elevate your office dining experience with an array of cuisines delivered directly to your table.
           </motion.h2>
           {/* <div className="sec">
@@ -194,7 +188,7 @@ const Grocery = () => {
 
 
 
-const Shop = () => {
+const Travel = () => {
   return (
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
@@ -216,7 +210,7 @@ const Shop = () => {
 };
 
 
-const IT = () => {
+const Redeem = () => {
   return (
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
@@ -234,6 +228,7 @@ const IT = () => {
     </Section>
   );
 };
+
 const Contact = () => {
   return (
     <Section>

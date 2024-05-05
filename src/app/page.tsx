@@ -6,7 +6,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import Image from 'next/image';
 import bg from '../../public/image/foodbowllast.png';
 import bgMb from '../../public/image/foodbowlmoblie.png';
-import ParallaxText from '@/components/Home/parallax/ParallaxText';
+
 
 export default function Home() {
   const [section, setSection] = React.useState(0)

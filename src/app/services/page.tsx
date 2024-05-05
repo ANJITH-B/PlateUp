@@ -1,101 +1,79 @@
 "use client";
-import React from "react";
-
-// const content = [
-//   {
-//     title: "Collaborative Editing",
-//     description:
-//       "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-//     content: (
-//       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-//         Collaborative Editing
-//       </div>
-//     ),
-//   },
-//   {
-//     title: "Real time changes",
-//     description:
-//       "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-//     content: (
-//       <div className="h-full w-full  flex items-center justify-center text-white">
-//         <Image
-//           src="/linear.webp"
-//           width={300}
-//           height={300}
-//           className="h-full w-full object-cover"
-//           alt="linear board demo"
-//         />
-//       </div>
-//     ),
-//   },
-//   {
-//     title: "Version control",
-//     description:
-//       "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-//     content: (
-//       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-//         Version control
-//       </div>
-//     ),
-//   },
-//   {
-//     title: "Running out of content",
-//     description:
-//       "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-//     content: (
-//       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-//         Running out of content
-//       </div>
-//     ),
-//   },
-// ];
+import React, {useState} from "react";
+import  '../fonts.css';
+import {AuroraBackground} from '@/components/ui/aurora-background';
 export default function Services() {
+  const [current,setcurrent] = useState(0);
   return (<>
-    <div className="relative flex gap-10 flex-col">
-      <section className="w-[95%] p-3 mx-auto min-h-[90vh] sticky flex flex-wrap z-10 top-[12vh] rounded-xl overflow-x-hidden backdrop-blur-sm">
-          <div className="w-2/5 min-w-[22rem] min-h-full mx-auto my-auto ">
-            <img src="https://th.bing.com/th/id/R.b745a932221d26a2ea27b0cb7ef1b737?rik=dhKFU9KbPlXhFw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2ff%2f8%2f942947-download-free-dinner-wallpapers-1920x1080.jpg&ehk=VQNTeUQGyTil3W8tg5J%2bzxzyluax2xbR3n4ANN99xsk%3d&risl=&pid=ImgRaw&r=0" alt="Plateup" className=" h-full w-full rounded-xl" />
-          </div>
-          <div className="w-3/5 min-w-[22rem] min-h-full mx-auto my-auto">
-            <h1 className="text-center font-black text-3xl py-2 text-white">
-              Dine In
-            </h1>
-            <p className="font-semibold p-4 text-white"> 
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quo laudantium repellat tempore ex! Quibusdam inventore ex error. Id asperiores dolorem consequatur architecto non officia voluptatum illo veritatis inventore unde.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur, aperiam rerum aliquam facilis et cumque odit cum repudiandae placeat iusto quos id a inventore laboriosam sint perspiciatis quisquam eaque?
-            </p>
-          </div>
-      </section>
-      <section className="w-[95%] p-3 mx-auto min-h-[90vh] sticky flex flex-wrap z-10 top-[12vh] rounded-xl overflow-x-hidden backdrop-blur-md">
-          <div className="w-2/5 min-w-[22rem] min-h-full mx-auto my-auto ">
-            <img src="https://wallpaperaccess.com/full/1624848.jpg" alt="Plateup" className=" h-full w-full rounded-xl" />
-          </div>
-          <div className="w-3/5 min-w-[22rem] min-h-full mx-auto my-auto ">
-          <h1 className="text-center font-black text-3xl py-2 text-white">
-              Grocery
-            </h1>
-            <p className="font-semibold p-4 text-white"> 
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quo laudantium repellat tempore ex! Quibusdam inventore ex error. Id asperiores dolorem consequatur architecto non officia voluptatum illo veritatis inventore unde.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur, aperiam rerum aliquam facilis et cumque odit cum repudiandae placeat iusto quos id a inventore laboriosam sint perspiciatis quisquam eaque?
-            </p>
-          </div>
-      </section>
-      <section className="w-[95%] p-3 mx-auto min-h-[90vh] sticky flex flex-wrap z-10 top-[12vh] rounded-xl overflow-x-hidden backdrop-blur-md">
-          <div className="w-2/5 min-w-[22rem] min-h-full mx-auto my-auto ">
-            <img src="https://th.bing.com/th/id/R.3a7acb86025af03e21aa5b6edf063598?rik=R3QVn%2b9ZK4BkXg&riu=http%3a%2f%2fwww.lynchburgparksandrec.com%2fwp-content%2fuploads%2f2016%2f01%2fcamaje-cooking-7.jpg&ehk=UG6FEWj5%2fmzTOaxUe2XLcoSnGHFaBokH%2fm9OzB6TG2s%3d&risl=&pid=ImgRaw&r=0" alt="Plateup" className=" h-full w-full rounded-xl" />
-          </div>
-          <div className="w-3/5 min-w-[22rem] min-h-full mx-auto my-auto">
-          <h1 className="text-center font-black text-3xl py-2 text-white">
-              Food
-            </h1>
-            <p className="font-semibold p-4 text-white"> 
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quo laudantium repellat tempore ex! Quibusdam inventore ex error. Id asperiores dolorem consequatur architecto non officia voluptatum illo veritatis inventore unde.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur, aperiam rerum aliquam facilis et cumque odit cum repudiandae placeat iusto quos id a inventore laboriosam sint perspiciatis quisquam eaque?
-            </p>
-          </div>
-      </section>
+  <AuroraBackground>
+    <div className="relative flex flex-row flex-wrap min-h-screen w-screen justify-around items-center pt-[10vh]">
+      <div className={`${(current == 1) ? "lg:w-[35vw] lg:h-[80vh] h-[35vh] w-[90vw]":`${(current == 0) ? "lg:w-[20vw] lg:h-[80vh] h-[20vh] w-[90vw]":"w-[90vw] lg:w-[20vw] h-[15vh] lg:h-[80vh] "}`} z-[1] transition-all max-h-[700px] border border-white rounded-3xl overflow-hidden
+      `}
+      onMouseEnter={()=>setcurrent(1)}
+      onMouseLeave={()=>setcurrent(0)}
+style={{background:`url("https://www.fusion6.com.au/wp-content/uploads/2022/09/popular-indian-dishes-cuisine.jpg")`,backgroundPosition:"center",backgroundSize:"cover"}}>
+        <div className="h-full w-full bg-black bg-opacity-50 flex justify-around items-end">
+        <div className="flex flex-col justify-around items-center">
+        <h1 className="text-center font-black text-3xl lg-text-5xl py-10 font-tertiary bg-clip-text text-transparent bg-white h-full uppercase">
+          Quick Meals
+        </h1>
+        {(current==1) && <a href="/food"><div className="text-center font-semibold transition-all text-xl lg-text-3xl py-10 font-primary bg-clip-text text-transparent bg-white h-full">Know more about Quick Meals &#8594;</div>
+        </a>
+        }
+        </div>
+        </div>
+      </div>
+      <div className={`${(current == 2) ? "lg:w-[35vw] lg:h-[80vh] h-[35vh] w-[90vw]":`${(current == 0) ? "lg:w-[20vw] lg:h-[80vh] h-[20vh] w-[90vw]":"w-[90vw] lg:w-[20vw] h-[15vh] lg:h-[80vh] "}`} z-[1] transition-all max-h-[700px] border border-white rounded-3xl overflow-hidden
+      `}
+      onMouseEnter={()=>setcurrent(2)}
+      onMouseLeave={()=>setcurrent(0)}  
+      style={{background:`url("https://c8.alamy.com/comp/W25FM5/asian-supermarket-go-asia-supermarket-shelves-fruit-drink-cans-dresden-germany-W25FM5.jpg")`,backgroundPosition:"center",backgroundSize:"cover"}}>
+        <div className="h-full w-full bg-black bg-opacity-50 flex justify-around items-end">
+        <div className="flex flex-col justify-around items-center">
+        <h1 className="text-center font-black text-3xl lg-text-5xl py-10 font-tertiary bg-clip-text text-transparent bg-white h-full uppercase">
+            Pantry Plus
+        </h1>
+        {(current==2) && <a href="/grocery"><div className="text-center font-semibold transition-all text-xl lg-text-3xl py-10 font-primary bg-clip-text text-transparent bg-white h-full">Know more about Pantry Plus &#8594;</div>
+        </a>
+        }
+        </div>
+        </div>
+      </div>
+      <div className={`${(current == 3) ? "lg:w-[35vw] lg:h-[80vh] h-[35vh] w-[90vw]":`${(current == 0) ? "lg:w-[20vw] lg:h-[80vh] h-[20vh] w-[90vw]":"w-[90vw] lg:w-[20vw] h-[15vh] lg:h-[80vh] "}`} z-[1] transition-all max-h-[700px] border border-white rounded-3xl overflow-hidden
+      `}
+      onMouseEnter={()=>setcurrent(3)}
+      onMouseLeave={()=>setcurrent(0)}
+      style={{background:`url("https://www.hotelierindia.com/public/styles/full_img_sml/public/images/2020/02/11/The-Bombay-Canteen.jpg?itok=GTWwmhrt")`,backgroundPosition:"bottom",backgroundSize:"cover"}}>
+        <div className="h-full w-full bg-black bg-opacity-50 flex justify-around items-end">
+        <div className="flex flex-col justify-around items-center">
+        <h1 className="text-center font-black text-3xl lg-text-5xl py-10 font-tertiary bg-clip-text text-transparent bg-white h-full uppercase">
+            Dine Vista 
+        </h1>
+        {(current==3) && <a href="/dinein"><div className="text-center font-semibold transition-all text-xl lg-text-3xl py-10 font-primary bg-clip-text text-transparent bg-white h-full">Know more about Dine Vista &#8594;</div>
+        </a>}
+        </div>
+        </div>
+      </div>
+      <div className={`${(current == 4) ? "lg:w-[35vw] lg:h-[80vh] h-[35vh] w-[90vw]":`${(current == 0) ? "lg:w-[20vw] lg:h-[80vh] h-[20vh] w-[90vw]":"w-[90vw] lg:w-[20vw] h-[15vh] lg:h-[80vh] "}`} z-[1] transition-all max-h-[700px] border border-white rounded-3xl overflow-hidden
+      `}
+      onMouseEnter={()=>setcurrent(4)}
+      onMouseLeave={()=>setcurrent(0)}
+       style={{background:`url("https://th.bing.com/th/id/R.874c5a4c2d253f7f5dd46fbfb61a1c65?rik=EG3RSqUAn%2bFG%2bA&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2f2560x1600%2f2012%2fWorld_Travel___Tourism_Traveling_around_the_World_034435_.jpg&ehk=CunZe4z7lv3ti4MbFFofhEyPfCvgZhhxVoC%2fpJeEBvA%3d&risl=&pid=ImgRaw&r=0")`,backgroundPosition:"center",backgroundSize:"cover"}}>
+        <div className="h-full w-full bg-black bg-opacity-50 flex justify-around items-end">
+        <div className="flex flex-col justify-around items-center">
+        <h1 className="text-center font-black text-3xl lg-text-5xl py-10 font-tertiary bg-clip-text text-transparent bg-white h-full uppercase">
+          Work Ride
+        </h1>
+        {(current==4) && <a href="/travel"><div className="text-center font-semibold transition-all text-xl lg-text-3xl py-10 font-primary bg-clip-text text-transparent bg-white h-full">Know more about Work Ride &#8594;</div>
+        </a>
+        }
+        </div>
+        </div>
+      </div>
     </div>
-    <img src="https://wallpapercave.com/wp/wp4906049.jpg" alt="plateup" className="h-screen w-screen overflow-hidden fixed top-0" />
+    <div className="h-screen w-screen overflow-hidden fixed top-0" style={{background:"linear-gradient(73.32deg, rgba(255, 199, 0, 0.08) 2.81%, rgba(252, 252, 253, 0.0632) 93.81%)",backgroundPosition:"center",backgroundSize:"cover"}}>
+    </div>
+    </AuroraBackground>
   </>
   );
 }

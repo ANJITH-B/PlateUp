@@ -1,17 +1,20 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, cubicBezier } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "@/components/ui/images-slider";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-
+import '../fonts.css';
+import { Button } from "@/components/ui/moving-border";
 export default function Careers() {
+  const easing = cubicBezier(.35,.17,.3,.86)
   const images = [
+    "./bg-career.webp",
     "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   return (<>
-    <ImagesSlider className="h-[40rem] flex flex-col" images={images}>
+    <ImagesSlider className="h-[90vh] flex flex-col" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -26,27 +29,31 @@ export default function Careers() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-black text-5xl md:text-8xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+        <motion.p className=" font-primary font-black text-6xl md:text-9xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4"
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{delay:0.5, type:easing}}
+        >
           JOIN <br /> THE TRIBE
         </motion.p>
-        <button className="hover:scale-110 transition-transform px-4 py-3 backdrop-blur-sm w-full bg-yellow-500 text-xl font-black text-white mx-auto text-center rounded-xl relative mt-4">
-          <span className="font-semibold">Discover Roles →</span>
-          {/* <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" /> */}
-        </button>
+        <a href="/contact">
+          <Button className="font-medium font-primary text-xl px-4 py-5">Discover Roles →</Button>
+        </a>
+        
       </motion.div>
     </ImagesSlider>
-      <div className="rounded-md flex flex-col antialiased max-w-screen items-center justify-center overflow-hidden">
+      <div className="rounded-md flex flex-col antialiased max-w-screen bg-black items-center justify-center overflow-hidden">
       <InfiniteMovingCards
-        items={testimonials}
+        items={openings}
         direction="right"
-        speed="slow"
+        speed="normal"
         pauseOnHover = {false}
       />
     </div>
     </>
   );
 }
-const testimonials = [
+const openings = [
   {
     name: "Frontend Developer",
     title: "Full-Time",
