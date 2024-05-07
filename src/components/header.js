@@ -28,7 +28,7 @@ export default function Header() {
    return (
       <div className="w-full flex justify-center items-center ">
          <Navbar onMenuOpenChange={setIsMenuOpen} isBordered className="max-w-screen-xl  bg-black border border-orange-200 rounded-full">
-            <NavbarContent>
+            <NavbarContent className="w-full">
                <NavbarMenuToggle
                   aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                   className="sm:hidden text-white "
@@ -42,7 +42,7 @@ export default function Header() {
 
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-3 text-md text-white " justify="end">
+            <NavbarContent className="hidden sm:flex gap-1 text-md text-white " justify="end">
                {menuItems.map((item, index) => {
                   const className = `w-6 h-1 text-black ${index <= path ? "bg-orange-300" : "bg-black"}`
                   if (index) return (
@@ -63,14 +63,14 @@ export default function Header() {
           <NavbarItem><TransitionLink href="/contact" label="CONTACT" /></NavbarItem> */}
             </NavbarContent>
 
-            <NavbarContent>
-               <div className="w-full h-1 ml-3 md:bg-orange-300 text-black">-</div>
-               <button className="bg-orange-600 rounded-xl w-60 hidden sm:block py-2 px-4">Get Started</button>
+            <NavbarContent className="w-full">
+               <div className=" h-1 ml-3 md:bg-orange-300 text-black w-full">-</div>
+               <button className="bg-orange-600 rounded-xl text-xs w-40 h-8 hidden sm:block py-2 px-4">Get<span className="text-orange-600">_</span>Started</button>
             </NavbarContent>
             <NavbarMenu>
                {menuItems.map((item, index) => (
                   <NavbarMenuItem key={`${item}-${index}`}>
-                     <TransitionLink className="w-full mx-auto text-center font-bold text-xl py-2  hover:text-orange-500" href={item.href} size="lg" label={item.name} />
+                     <TransitionLink className="w-full mx-auto text-center font-bold text-xl py-2   hover:text-orange-500" href={item.href} size="lg" label={item.name} />
                   </NavbarMenuItem>
                ))}
             </NavbarMenu>

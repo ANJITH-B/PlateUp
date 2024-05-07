@@ -83,14 +83,14 @@ const Home = () => {
             initial={{ opacity: 0, y: -20, }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-          >
+          >  
             <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
-              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }}>INCREDIBLE </motion.span>
+              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }}>Satisfy your </motion.span>
             <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }} style={{ WebkitTextStroke: '3px rgb(234 179 8)' }}
-              className='text-black stroke-gray-500  stroke-2'>FOOD </motion.span> <span style={{ WebkitTextStroke: '3px rgb(234 179 8)' }}
-                className='text-black stroke-gray-500  stroke-2'> CHOICES</span> WITH <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
-                  animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }}>AWESOME</motion.span> REWARD  <span className="text-yellow-500 italic">POINTS</span>
+              className='text-black stroke-gray-500  stroke-2'>craving </motion.span> <span style={{ WebkitTextStroke: '3px rgb(234 179 8)' }}
+                className='text-black stroke-gray-500  stroke-2'> without</span>  breaking <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
+                  animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }}>the</motion.span>   <span className="text-yellow-500 italic">bank </span>
           </motion.h1>
 
           <motion.h2
@@ -219,7 +219,7 @@ const Redeem = () => {
         </motion.div>
         <motion.div className="p-5 md:pr-20 md:pl-3 md:w-1/2 md:mt-0 h-full flex  md:items-center" >
 
-          <motion.h2 className=" md:text-xl italic font-semibold text-white-600 items-center md:pl-20" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
+          <motion.h2 className=" md:text-xl font-primary font-semibold text-white-600 items-center md:pl-20" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
             Experience effortless grocery shopping without the need to wait for your salary or stress about expenses. With PantryPlus, you can effortlessly select from a wide range of daily essentials and groceries, eliminating the need for daily payments. Simply redeem your convenient Plateup allowance card at any nearby PantryPlus store and enjoy seamless shopping anytime
           </motion.h2>
           {/* <motion.button className='bg-orange-600 text-white py-2 px-4 rounded-lg ml-20 font-bold text-sm mt-12' initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, delay: 1 }}>Redeem Now</motion.button> */}
@@ -243,11 +243,11 @@ const Contact = () => {
               <defs><clipPath id="clip0_13350_1024"><rect width="54.8369" height="51.3367" fill="white" transform="translate(0.530273 0.52832)" /></clipPath></defs>
             </svg>
 
-            <motion.h2 className=" text-xl italic font-semibold text-white-600 mt-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
-              Get offers in your Inbox, its free!
+            <motion.h2 className=" text-xl font-primary font-semibold text-white-600 mt-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
+            Subscribe to our newsletter for exclusive offers on groceries, dining, travel, and more
             </motion.h2>
             <div className='flex mt-5'>
-            <motion.Input className='rounded-md p-1 h-10 mr-2'></motion.Input>
+            <motion.Input className='rounded-md p-1 h-10 mr-2 w-full'></motion.Input>
             <motion.button className='bg-orange-600 text-white py-2 px-4 rounded-lg font-bold text-sm ' >Subscribe</motion.button>
           </div>
           </div>
@@ -303,22 +303,22 @@ const Footer = () => {
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>About Us</h1>
-                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/" height={20} width={30} />
+                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/about" height={20} width={30} />
               </div>
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>Careers</h1>
-                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/" height={20} width={30} />
+                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/careers" height={20} width={30} />
               </div>
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
-                <h1 className='text-2xl  font-bold'>Blogs & Art</h1>
-                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/" height={20} width={30} />
+                <h1 className='text-2xl  font-bold'>Impact</h1>
+                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/impact" height={20} width={30} />
               </div>
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>Services</h1>
-                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/" height={20} width={30} />
+                <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/services" height={20} width={30} />
               </div>
               {/* <div className='w-full h-1 rounded bg-gray-700'></div> */}
 

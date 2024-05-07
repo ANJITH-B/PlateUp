@@ -38,9 +38,9 @@ export const ScrollManager = (props) => {
                 onSectionChange(7);
             } else if (section === 5 && curSection === 6) {
                 onSectionChange(6);
-                setTimeout(function() {
-                    onSectionChange(7);
-                }, 2500);
+                // setTimeout(function() {
+                //     onSectionChange(7);
+                // }, 10000);
             } else if (section === 4 && curSection === 5) {
                 onSectionChange(5);
             } else if (section === 3 && curSection === 4) {
@@ -71,9 +71,9 @@ export const ScrollManager = (props) => {
                 onSectionChange(5);
             } else if (curSection === 6 && section === 7) {
                 onSectionChange(6);
-                setTimeout(function() {
-                    onSectionChange(5);
-                }, 2500);
+                // setTimeout(function() {
+                //     onSectionChange(5);
+                // }, 10000);
             } else if (curSection === 7 && section === 8) {
                 onSectionChange(7);
             }

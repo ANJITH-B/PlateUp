@@ -12,9 +12,9 @@ export function FoodSpace(props) {
   const groupRef = useRef()
   const { nodes, materials } = useGLTF('/foodSpace.glb')
 
-  const rotationSpeed = 1.5;
+  const rotationSpeed = 0.5;
   const baseScaleSpeed = 0; // Base scale speed when section is not 7
-  const specialScaleSpeed = 2; // Scale speed when section is 7
+  const specialScaleSpeed = 0; // Scale speed when section is 7
   // Use the useFrame hook to update the rotation of each group
   useFrame((_, delta) => {
    
