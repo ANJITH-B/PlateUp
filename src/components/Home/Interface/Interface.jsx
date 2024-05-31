@@ -78,7 +78,7 @@ const Home = () => {
     <Section className='z--10' style={{ zIndex: -200 }}>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
         <motion.div className=" p-4 md:w-1/2 h-full flex items-center flex-col  md:pl-20 sm:m-10">
-          <motion.h1
+          {/* <motion.h1
             className='text-4xl md:text-7xl font-bold italic md:mt-20 pt-[20vh] md:pt-[10vh]  content-start'
             initial={{ opacity: 0, y: -20, }}
             animate={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ const Home = () => {
               className='text-black stroke-gray-500  stroke-2'>craving </motion.span> <span style={{ WebkitTextStroke: '3px rgb(234 179 8)' }}
                 className='text-black stroke-gray-500  stroke-2'> without</span>  breaking <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
                   animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }}>the</motion.span>   <span className="text-yellow-500 italic">bank </span>
-          </motion.h1>
+          </motion.h1> */}
 
           <motion.h2
             className="text-md md:text-xl italic font-semibold text-white-600 mt-4 md:pl-20 hidden sm:block"
@@ -131,7 +131,7 @@ const Food = () => {
           <motion.div className="border-button  mt-12 w-40 h-10  font-bold text-xs md:text-sm"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}>
+            transition={{ duration: 0.3, delay: 0. }}>
             Explore more
           </motion.div>
         </motion.div>

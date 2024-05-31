@@ -1,12 +1,10 @@
 import { Iphone } from "../Models/phone"
 import { Card } from "../Models/Card";
 import { Model } from "../Models/PlateUpModel";
-// import { FoodSpace } from "../Models/foodWorld";
 import { motion } from 'framer-motion-3d'
-import { Ipad } from '../Models/Ipad';
+import { Restaurant } from '../Models/Restaurant';
 import { BgText } from '../Models/bgtext';
 import { useMediaQuery } from 'react-responsive';
-import { useTransform } from "framer-motion";
 import { useMotionValue, useSpring } from 'framer-motion';
 import { useEffect } from "react";
 
@@ -54,7 +52,7 @@ export const Experience = (props) => {
                     rotateZ: section === 0 ? (0.1) : section === 7 ? (0.1) : section === 8 ? (0.1) : (0.1),
                 }}>
 
-                <Card mouse={smootMouse} />
+                {/* <Card mouse={smootMouse} /> */}
             </motion.group>
 
             <motion.group
@@ -68,6 +66,8 @@ export const Experience = (props) => {
                 }}>
                 <Card scale={[1, 1, 1]} mouse={smootMouse} />
             </motion.group>
+
+
             <motion.group position={[0, 0, 0]} scale={[30, 30, 30]} rotation={[2.6, -0.4, 3]}
                 animate={{
                     x: section === 1 ? (sm ? 1 : 4) : section === 2 ? (sm ? 1 : -3) : section === 3 ? (sm ? 1 : 4) : section === 4 ? (sm ? 1 : -3) : section === 5 ? (sm ? 0 : -3) : section === 6 ? 15 : section === 7 ? 15 : section === 8 ? 3 : 3,
@@ -79,7 +79,9 @@ export const Experience = (props) => {
                 }}>
                 <Iphone section={section} />
             </motion.group >
-            <motion.group scale={[3, 3, 3]}
+
+
+            {/* <motion.group scale={[3, 3, 3]}
                 transition={{
                     duration: section === 6 ? 6 : section === 7 ? 1.5 : 1,
                 }}
@@ -102,9 +104,9 @@ export const Experience = (props) => {
 
                                             'Gravity'
                 } section={section} />
+            </motion.group> */}
 
-            </motion.group>
-            <motion.group
+            {/* <motion.group
                 animate={{
                     x: section === 5 ? (sm ? 1 : -0.7) : section === 6 ? 1 : section === 7 ? (sm ? 0 : 1) : section === 8 ? 1 : 1,
                     y: section === 5 ? (sm ? 3.2 : 3.5) : section === 6 ? (sm ? 4 : 4.2) : section === 7 ? (sm ? 4 : 4.2) : section === 8 ? (sm ? 4 : 4.2) : -2.5,
@@ -113,14 +115,13 @@ export const Experience = (props) => {
                     rotateY: section === 5 ? 1.6 : 1.6,
                     rotateZ: section === 5 ? 0 : 0,
                 }}>
-
                 <Ipad scale={[(sm ? 0.25 : 0.3), (sm ? 0.25 : 0.3), (sm ? 0.24 : 0.3)]} rotation={[0, -0.03, 0]} />
-            </motion.group >
+            </motion.group > */}
+
             <motion.group rotation={[0, -1, 3]} animate={{
                 x: section === 5 ? (sm ? 17 : 10) : section === 6 ? 0 : section === 7 ? 0 : 9,
                 y: section === 5 ? 0 : section === 6 ? 3 : section === 7 ? 3 : -105,
                 z: section === 5 ? -30 : section === 6 ? -3 : section === 7 ? 20 : 120,
-
             }}
                 transition={{
                     duration: section === 6 ? 10 : section === 7 ? 3 : 1,
@@ -133,16 +134,29 @@ export const Experience = (props) => {
                 {/* <FoodSpace scale={[1, 1, 1]} section={section} /> */}
                 {/* <FoodSpace scale={[1.5, 1.5, 1.5]} rotation={[3, 2, 1]} position={[10, 0, -10]} section={section} /> */}
                 {/* <FoodSpace scale={[1.5, 1.5, 1.5]} rotation={[3, 2, 1]} position={[20, 0, -20]} section={section} /> */}
+
             </motion.group>
             <motion.group scale={[25, 19, 20]}
                 animate={{
                     x: section === 1 ? 1 : section === 2 ? 1 : section === 3 ? 1 : section === 4 ? 1 : section === 5 ? 1 : section === 6 ? 1 : section === 7 ? 1 : section === 8 ? 1 : 1,
                     y: section === 1 ? 0 : section === 2 ? 1 : section === 3 ? 2 : section === 4 ? 5 : section === 5 ? 15 : section === 6 ? 24 : section === 7 ? 5 : section === 8 ? 15 : -15,
                     z: section === 1 ? -10 : section === 2 ? -10 : section === 3 ? -10 : section === 7 ? -10 : -10,
-
                 }}>
                 <BgText />
             </motion.group>
+
+            <motion.group 
+                animate={{ 
+                    x: section === 1 ? 11 : section === 2 ? 11 :section === 3 ? 11 :section === 4 ? 11 : section === 5 ? 11 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 10,
+                    y: section === 1 ? -1 : section === 2 ? -1 : section === 3 ? -1 : section === 4 ? -1 : section === 5 ? -1 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
+                    z: section === 1 ? 17 : section === 2 ? 17 : section === 3 ? 17 :section === 4 ? 17: section === 5 ? 17 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 7,
+                    rotateX: section === 1 ? 0 : section === 2 ? 0 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
+                    rotateY: section === 1 ? 2.2 : section === 2 ? 2.2  : section === 3 ? 2.2 : section === 4 ? 2.2 : section === 5 ? 2.2 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 1.8,
+                    rotateZ: section === 1 ? 0 : section === 2 ? 0 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
+                }}>
+                <Restaurant />
+            </motion.group>
+
         </>
     )
 }
