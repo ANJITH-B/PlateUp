@@ -214,14 +214,14 @@ const Redeem = () => {
   return (
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
-        <motion.div className=" p-4 md:w-1/2 md:h-full  md:mt-20 md:pl-20">
+        {/* <motion.div className=" p-4 md:w-1/2 md:h-full  md:mt-20 md:pl-20">
           <motion.h1 className='text-4xl md:text-7xl font-bold md:mt-20 pt-20 content-start italic'>JUST <span className="text-yellow-500 italic">REDEEM</span> IT</motion.h1>
-        </motion.div>
+        </motion.div> */}
         <motion.div className="p-5 md:pr-20 md:pl-3 md:w-1/2 md:mt-0 h-full flex  md:items-center" >
 
-          <motion.h2 className=" md:text-xl font-primary font-semibold text-white-600 items-center md:pl-20" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
+          {/* <motion.h2 className=" md:text-xl font-primary font-semibold text-white-600 items-center md:pl-20" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
             Experience effortless grocery shopping without the need to wait for your salary or stress about expenses. With PantryPlus, you can effortlessly select from a wide range of daily essentials and groceries, eliminating the need for daily payments. Simply redeem your convenient Plateup allowance card at any nearby PantryPlus store and enjoy seamless shopping anytime
-          </motion.h2>
+          </motion.h2> */}
           {/* <motion.button className='bg-orange-600 text-white py-2 px-4 rounded-lg ml-20 font-bold text-sm mt-12' initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5, delay: 1 }}>Redeem Now</motion.button> */}
         </motion.div>
       </motion.div>

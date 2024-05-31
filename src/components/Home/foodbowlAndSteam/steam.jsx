@@ -1,5 +1,4 @@
 import styles from './foodSteam.module.css';
-import foodbowl from '../../../../public/image/foodbowl.png'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react';
 

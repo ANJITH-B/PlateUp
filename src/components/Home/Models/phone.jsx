@@ -12,7 +12,7 @@ import * as THREE from 'three';
 
 export function Iphone(props) {
   const { section } = props;
-  const { nodes, materials } = useGLTF('/iphone_14_pro_max_gold.glb');
+  const { nodes, materials } = useGLTF('models/iphone_14_pro_max_gold.glb');
   const groupRef = useRef();
 
 
@@ -428,7 +428,7 @@ export function Iphone(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.OcdXOLSkbIPgJqo_0.geometry}
+          geometry={nodes.OcdXOLSkbIPgJqo_0.geometry} 
           material={materials.uApvtlLvHnjNKSG}
         />
       </group>
@@ -436,4 +436,4 @@ export function Iphone(props) {
   )
 }
 
-useGLTF.preload('/iphone_14_pro_max_gold.glb')
+useGLTF.preload('models/iphone_14_pro_max_gold.glb')
