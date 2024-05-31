@@ -95,9 +95,9 @@ const Home = () => {
 
           <motion.h2
             className="text-md md:text-xl italic font-semibold text-white-600 mt-4 md:pl-20 hidden sm:block"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }} // Delay added for a staggered effect
+            transition={{ duration: 0, delay: 0 }} // Delay added for a staggered effect
           >
             <span className='text-orange-500'>MEAL </span><span className='text-orange-300'> Express</span>
           </motion.h2>
@@ -129,7 +129,7 @@ const Food = () => {
       ></div> */}
           {/* <MovingBorder>hel</MovingBorder> */}
           <motion.div className="border-button  mt-12 w-40 h-10  font-bold text-xs md:text-sm"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0. }}>
             Explore more
@@ -173,9 +173,9 @@ const Grocery = () => {
             Travel stress-free, whether you're commuting to the office or navigating halfway across the city. Eliminate the hassle of costly cabs, tiring walks in the heat, or endless waits. WorkRide makes commuting effortless. Simply use your allowance with WorkRide cabs and enjoy seamless journeys to wherever you need to go.
           </motion.h2>
           <motion.div className="border-button mt-12 w-40 h-10  font-bold text-xs md:text-sm"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}>
+            transition={{ duration: 0.01, delay: 0 }}>
             Explore more
           </motion.div>
         </motion.div>

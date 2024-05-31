@@ -1,28 +1,32 @@
+import { motion } from 'framer-motion-3d'
+import { useMediaQuery } from 'react-responsive';
 import { Iphone } from "../Models/phone"
 import { Card } from "../Models/Card";
+import { CardHolder } from "../Models/CardHolder";
 import { Model } from "../Models/Customer";
 import { Staff } from "../Models/Staff";
-import { motion } from 'framer-motion-3d'
 import { Restaurant } from '../Models/Restaurant';
 import { BgText } from '../Models/bgtext';
-import { useMediaQuery } from 'react-responsive';
-import { useMotionValue, useSpring } from 'framer-motion';
 
 
 export const Experience = (props) => {
     const sm = useMediaQuery({ maxWidth: 768 });
-    const { section } = props;
+    const { section, onSectionChange } = props;
 
 
     return (
         <>
             <directionalLight intensity={0.001} position={[6, 5, 5]} />
-            <ambientLight intensity={0.4} />
+            <ambientLight intensity={0.001} />
             <motion.group scale={[2, 2, 2]}
+                transition={{ duration: section === 5 ? 10 : section === 7 ? 3 : 1, }}
                 animate={{
-                    y: -7,
-                    x: 0.1,
-                    z: 45,
+                    x: section === 1 ? 11 : section === 2 ? 11 : section === 3 ? 11 : section === 4 ? 11 : section === 5 ? 3 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 20,
+                    y: section === 1 ? -10 : section === 2 ? -10 : section === 3 ? -10 : section === 4 ? -10 : section === 5 ? -10 : section === 6 ? -10 : section === 7 ? -10 : section === 8 ? -10 : -10,
+                    z: section === 1 ? 77.1 : section === 2 ? 77.1 : section === 3 ? 77.1 : section === 4 ? 77.1 : section === 5 ? 60.5 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 50,
+                    rotateX: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0.6 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
+                    rotateY: section === 1 ? 2 : section === 2 ? 2 : section === 3 ? 2 : section === 4 ? 2 : section === 5 ? 5.25 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 1.9,
+                    rotateZ: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0. : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
                 }}>
 
                 <motion.group
@@ -64,26 +68,15 @@ export const Experience = (props) => {
                 </motion.group >
 
                 <motion.group scale={[3, 3, 3]}
-                    transition={{
-                        duration: section === 6 ? 6 : section === 7 ? 1.5 : 1,
-                    }}
-                    animate={{ x: 0, y: 2, rotateX: -1}}
-                   >
-                    <Model animation={
-                    section === 1 ? 'Standing' :
-                        section === 2 ? 'Standing' :
-                            section === 3 ? 'Standing' :
-                                section === 4 ? 'Standing' :
-                                    section === 5 ? 'Sitting ' :
-                                        section === 6 ? 'Sitting' :
-
-                                            'Sitting'
-                } section={section} />
-                    <Staff animation={section === 1 ? 'Standing' : 'Sitting'} />
+                    transition={{ duration: section === 6 ? 6 : section === 7 ? 1.5 : 1, }}
+                    animate={{ x: -6.1, y: -0.6, z: 0.5, rotateX: -1.5, rotateZ: 3.2 }}>
+                    <Staff animation={section === 1 ? 'Sitting' : 'Sitting'} />
                 </motion.group>
-
-
-
+                <motion.group scale={[3, 3, 3]}
+                    transition={{ duration: section === 6 ? 6 : section === 7 ? 1.5 : 1, }}
+                    animate={{ x: -3.39, y: -0.3, z: -1.8, rotateX: -1.5, rotateZ: -1.2 }}>
+                    <Model animation={section === 5 ? 'Standing' : section === 6 ? 'Billing' : 'Standing'} />
+                </motion.group>
                 <motion.group scale={[25, 19, 20]}
                     animate={{
                         x: section === 1 ? 1 : section === 2 ? 1 : section === 3 ? 1 : section === 4 ? 1 : section === 5 ? 1 : section === 6 ? 1 : section === 7 ? 1 : section === 8 ? 1 : 1,
@@ -92,18 +85,13 @@ export const Experience = (props) => {
                     }}>
                     <BgText />
                 </motion.group>
-                <motion.group
-                    animate={{
-                        x: section === 1 ? 11 : section === 2 ? 11 : section === 3 ? 11 : section === 4 ? 11 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 10,
-                        y: section === 1 ? -1 : section === 2 ? -1 : section === 3 ? -1 : section === 4 ? -1 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
-                        z: section === 1 ? 17 : section === 2 ? 17 : section === 3 ? 17 : section === 4 ? 17 : section === 5 ? 5 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 7,
-                        rotateX: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
-                        rotateY: section === 1 ? 2.2 : section === 2 ? 2.2 : section === 3 ? 2.2 : section === 4 ? 2.2 : section === 5 ? 5.2 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 1.8,
-                        rotateZ: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
-                    }} transition={{
-                        duration: section === 5 ? 3 : section === 7 ? 3 : 1,
-                    }}>
+                <motion.group>
                     <Restaurant />
+                </motion.group>
+                <motion.group scale={[0.15, 0.15, 0.15]}
+                    animate={{ x: -6, y: 1.69, z: -0.6, rotateX: -1.59, rotateY: -0, rotateZ: 0 }}
+                >
+                    <CardHolder section={section} setSetion={onSectionChange} />
                 </motion.group>
             </motion.group>
 
