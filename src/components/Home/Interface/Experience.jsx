@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion-3d'
 import { useMediaQuery } from 'react-responsive';
 import { Iphone } from "../Models/phone"
+import { IphoneForNotification } from "../Models/phoneForNotification"
 import { Card } from "../Models/Card";
 import { CardHolder } from "../Models/CardHolder";
 import { Model } from "../Models/Customer";
@@ -19,7 +20,7 @@ export const Experience = (props) => {
             <directionalLight intensity={0.001} position={[6, 5, 5]} />
             <ambientLight intensity={0.001} />
             <motion.group scale={[2, 2, 2]}
-                transition={{ duration: section === 5 ? 3 : section === 7 ? 3 : section === 8 ? 10: 1, }}
+                transition={{ duration: section === 5 ? 3 : section === 7 ? 3 : section === 8 ? 10 : 1, }}
                 animate={{
                     x: section === 1 ? 11 : section === 2 ? 11 : section === 3 ? 11 : section === 4 ? 11 : section === 5 ? 3 : section === 6 ? 9 : section === 7 ? 3 : section === 8 ? 3 : 20,
                     y: section === 1 ? -10 : section === 2 ? -10 : section === 3 ? -10 : section === 4 ? -10 : section === 5 ? -10 : section === 6 ? -9.4 : section === 7 ? -5 : section === 8 ? -5 : -10,
@@ -55,22 +56,24 @@ export const Experience = (props) => {
                         }}>
                         <Card scale={[1, 1, 1]} />
                     </motion.group>
-
-
                     <motion.group position={[0, 0, 0]} scale={[30, 30, 30]} rotation={[2.6, -0.4, 3]}
-                        animate={{x: -6, y:1 , z: 1}}
-                        // animate={{
-                        //     x: section === 1 ? (sm ? 1 : 4) : section === 2 ? (sm ? 1 : -3) : section === 3 ? (sm ? 1 : 4) : section === 4 ? (sm ? 1 : -3) : section === 5 ? (sm ? 0 : -3) : section === 6 ? 15 : section === 7 ? 15 : section === 8 ? 3 : 3,
-                        //     y: section === 1 ? (sm ? 0 : 1.5) : section === 2 ? (sm ? 0 : 1.5) : section === 3 ? (sm ? 0 : 1.5) : section === 4 ? (sm ? 0 : 1.5) : section === 5 ? 15 : section === 6 ? 15 : section === 7 ? -15 : section === 8 ? -15 : -15,
-                        //     z: section === 0 ? 0 : section === 5 ? (sm ? 3 : 3) : section === 6 ? 0 : section === 7 ? 3 : section === 8 ? 4 : -2,
-                        //     rotateY: section === 1 ? 0.4 : section === 2 ? -0.4 : section === 3 ? 0.4 : section === 4 ? -0.4 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
-                        //     rotateX: section === 1 ? 3 : section === 2 ? 3 : section === 3 ? 3 : section === 4 ? 3 : section === 5 ? 2.6 : section === 6 ? 2.6 : section === 7 ? 2.6 : section === 8 ? 2.6 : 0,
-                        //     rotateZ: section === 1 ? 3.2 : section === 2 ? 3 : section === 3 ? 3.2 : section === 4 ? 3 : section === 5 ? 1.5 : section === 6 ? 1.5 : section === 7 ? 1.5 : section === 8 ? 1.5 : 0,
-                        // }}
-                        >
+                        animate={{
+                            x: section === 1 ? (sm ? 1 : 4) : section === 2 ? (sm ? 1 : -3) : section === 3 ? (sm ? 1 : 4) : section === 4 ? (sm ? 1 : -3) : section === 5 ? (sm ? 0 : -3) : section === 6 ? 15 : section === 7 ? 15 : section === 8 ? 3 : 3,
+                            y: section === 1 ? (sm ? 0 : 1.5) : section === 2 ? (sm ? 0 : 1.5) : section === 3 ? (sm ? 0 : 1.5) : section === 4 ? (sm ? 0 : 1.5) : section === 5 ? 15 : section === 6 ? 15 : section === 7 ? -15 : section === 8 ? -15 : -15,
+                            z: section === 0 ? 0 : section === 5 ? (sm ? 3 : 3) : section === 6 ? 0 : section === 7 ? 3 : section === 8 ? 4 : -2,
+                            rotateY: section === 1 ? 0.4 : section === 2 ? -0.4 : section === 3 ? 0.4 : section === 4 ? -0.4 : section === 5 ? 0 : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
+                            rotateX: section === 1 ? 3 : section === 2 ? 3 : section === 3 ? 3 : section === 4 ? 3 : section === 5 ? 2.6 : section === 6 ? 2.6 : section === 7 ? 2.6 : section === 8 ? 2.6 : 0,
+                            rotateZ: section === 1 ? 3.2 : section === 2 ? 3 : section === 3 ? 3.2 : section === 4 ? 3 : section === 5 ? 1.5 : section === 6 ? 1.5 : section === 7 ? 1.5 : section === 8 ? 1.5 : 0,
+                        }}
+                    >
                         <Iphone section={section} />
                     </motion.group >
+                    <motion.group position={[0, 0, 0]} scale={[3.5, 3.5, 3.5]} animate={{ x: -6.55, y: 1.68, z: -0.9 }}>
+                        <motion.group animate={{ rotateX: 1.59, rotateZ: 3 }}>
+                            <IphoneForNotification section={section} />
 
+                        </motion.group >
+                    </motion.group >
                     <motion.group scale={[3, 3, 3]}
                         transition={{ duration: section === 6 ? 6 : section === 7 ? 1.5 : 1, }}
                         animate={{ x: -6.1, y: -0.6, z: 0.5, rotateX: -1.5, rotateZ: 3.2 }}>
