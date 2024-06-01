@@ -54,7 +54,7 @@ export const Experience = (props) => {
                             rotateY: section === 0 ? (sm ? -0.2 : -0.1) : section === 7 ? (sm ? 0.1 : 0.2) : section === 8 ? (sm ? 0.1 : 0.2) : (sm ? -0.2 : -0.1),
                             rotateZ: section === 0 ? (sm ? 0.1 : 0.2) : section === 7 ? (sm ? -0.2 : 0) : section === 8 ? (sm ? -0.2 : 0) : (sm ? 0.1 : 0.2),
                         }}>
-                        <Card scale={[1, 1, 1]} />
+                        {/* <Card scale={[1, 1, 1]} /> */}
                     </motion.group>
                     <motion.group position={[0, 0, 0]} scale={[30, 30, 30]} rotation={[2.6, -0.4, 3]}
                         animate={{

@@ -94,7 +94,6 @@ export function CardHolder(props) {
                     rotation={[-Math.PI / 2, 0, Math.PI]}
                     scale={0.736}
                 />
-            </motion.group>
             {section === 5 ? (
                 <motion.group animate={{ x: 1, y: 6, z: 1, rotateX: 0.2, rotateY: 1.3, rotateZ: 1.1 }} >
                 <Text fontWeight={500} fontSize={0.7} color="white">Tap to Pay</Text>
@@ -109,6 +108,7 @@ export function CardHolder(props) {
                 </motion.group>
             </motion.group>
             ):(<group/>)}
+            </motion.group>
             
         </group>
     )

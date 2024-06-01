@@ -69,11 +69,14 @@ export function IphoneForNotification(props) {
       });
     };
 
-     if (section === 6) {
-        video.src = '/videos/6.mp4';
-      playVideo();
-    }
-   
+    if (section === 6) {
+       video.src = '/videos/6.mp4';
+     playVideo();
+     } else if (section === 7) {
+       video.src = '/videos/6.mp4';
+     playVideo();
+   }
+    
 
     return texture;
   }, [section]);
