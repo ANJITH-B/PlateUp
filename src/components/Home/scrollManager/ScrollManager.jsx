@@ -68,9 +68,9 @@ export const ScrollManager = (props) => {
             } else if (curSection === 4 && section === 5) {
                 onSectionChange(4);
             } else if (curSection === 5 && section === 6) {
-                onSectionChange(5);
+                onSectionChange(4);
             } else if (curSection === 6 && section === 7) {
-                onSectionChange(6);
+                onSectionChange(4);
                 // setTimeout(function() {
                 //     onSectionChange(5);
                 // }, 10000);

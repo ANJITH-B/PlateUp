@@ -1,11 +1,9 @@
 'use client'
-
 import { motion } from 'framer-motion-3d'
 import React, { useRef } from 'react'
 import { useGLTF, Text } from '@react-three/drei'
 
 export function CardHolder(props) {
-
 
     const { section, setSetion } = props;
     const { nodes, materials } = useGLTF('/models/CardHolder.glb')
@@ -85,7 +83,7 @@ export function CardHolder(props) {
                     rotation={[1.278, -0.028, -1.022]}
                 />
             </group>
-            <motion.group transition={{ delay: 10, duration: 3 }} animate={{ y: section === 5 ? 0.3 : -0.6 }}>
+            <motion.group transition={{ delay: 6, duration: 3 }} animate={{ y: section === 5 ? 0.3 : -0.6 }}>
                 <mesh
                     onClick={() => setSetion(6)}
                     castShadow
