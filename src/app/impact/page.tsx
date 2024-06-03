@@ -2,12 +2,15 @@
 import Image from "next/image";
 import React from "react";
 import { BlogGrid, BlogGridItem } from "@/components/ui/blogs-grid";
+import blog1 from "./assets/Plateup.jpg";
+import blog1_1 from "./assets/plateup-mobile.jpg";
 import blog4 from "./assets/Employees.jpg";
 import blog5 from "./assets/Corporation.jpg";
 import {AuroraBackground} from "@/components/ui/aurora-background";
 export default function Page() {
   return (
-      <div className="w-full min-h-max h-full" style={{background:`url("./universal.png")`,backgroundRepeat:"repeat-y",backgroundSize:"100%"}}>
+    <AuroraBackground> 
+      <div className="w-full min-h-max h-full">
       <BlogGrid className="max-w-7xl py-[15vh] mx-auto z-40">
         {items.map((item, i) => (
           <BlogGridItem
@@ -15,18 +18,25 @@ export default function Page() {
           title={item.title}
           link={item.link}
           header={item.header}
-          className={i === 0 || i === 0 ? "md:col-span-2  backdrop-blur-2xl" : " backdrop-blur-2xl"}
+          className={`${(i === 0 ? "md:col-span-2  backdrop-blur-2xl md:block hidden" : (i === 1  ? "md:hidden backdrop-blur-2xl" : "block backdrop-blur-2xl"))} 
+          `}
           />
         ))}
       </BlogGrid>
       </div>
+    </AuroraBackground>
   );
 }
 const items = [
   {
-    title: "Plateup Raises Significant Pre-Seed Funding To Transform Corporate Dining",
-    header: <img className="flex w-full h-[15rem] rounded-xl" src="https://pbs.twimg.com/profile_banners/1650193823086292993/1687339113/1080x360" alt="plateup" />,
-    link: "https://www.outlookindia.com/business-spotlight/plateup-raises-significant-pre-seed-funding-to-transform-corporate-dining"
+    title: "In a groundbreaking move to revolutionize the corporate dining experience, Plateup, a B2B food stack technology platform, has announced an impressive pre-seed round at the recent TTC Conference in Dubai.",
+    header:  <Image className="flex w-full h-[15rem] rounded-xl" src={blog1} alt="plateup" />,
+    link: "https://www.outlookindia.com/hub4business/plateup-raises-significant-pre-seed-funding-to-transform-corporate-dining"
+  },
+  {
+    title: "In a groundbreaking move to revolutionize the corporate dining experience, Plateup, a B2B food stack technology platform, has announced an impressive pre-seed round at the recent TTC Conference in Dubai.",
+    header:  <Image className="flex w-full h-[15rem] rounded-xl" src={blog1_1} alt="plateup" />,
+    link: "https://www.outlookindia.com/hub4business/plateup-raises-significant-pre-seed-funding-to-transform-corporate-dining"
   },
   {
     title: "Plateup Unveils Revolutionary Food Allowance Cards to Transform Corporate Dining Landscape",

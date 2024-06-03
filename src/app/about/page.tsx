@@ -5,7 +5,8 @@ import {motion} from 'framer-motion';
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "@/components/ui/moving-border";
 import {Card} from "@/components/plateup-card";
-import Word from "./Word";
+import {TextGenerateEffect} from "@/components/ui/text-generate";
+
 export default function page() {
   const intro = `Welcome to Plateup, a pioneering platform committed to alleviating the everyday hurdles encountered by employees. Our mission is to provide seamless solutions for corporate meal plans, grocery purchases, dining out, and commuting challenges.
   At Plateup, we understand the difficulties faced by employees in managing their daily expenses. Our comprehensive service is designed to address these needs efficiently, empowering employees to redeem their allowances effortlessly. This grants them the flexibility to purchase meals, commute, or buy groceries without unnecessary complications.
@@ -19,14 +20,14 @@ export default function page() {
       <motion.div className="flex justify-center items-center mt-[35vh] max-w-5xl mb-[20vh] mx-auto text-center">
         <motion.h1 className="font-semibold text-white">
           <span className="text-6xl md:text-[8rem] text-wrap mt-1 leading-none font-secondary text-center font-light lg-text-5xl py-10 font-primary bg-clip-text text-transparent bg-gradient-to-b from-[#FFC700] to-[#FF5107] h-full align-middle">
-            <span className="text-white">About</span> Plateup
+            <span className="text-white font-secondary">About</span> Plateup
           </span>
         </motion.h1>
       </motion.div>
         <motion.div 
         className="flex justify-center items-center w-full min-h-[50vh]">
         <div className="text-justify text-sm lg:text-md font-primary font-medium container mx-auto px-2 w-[100%] text-white">
-          <Word paragraph={intro}/>
+          <TextGenerateEffect words={intro} />
         </div>
         </motion.div>
         <motion.div className="flex flex-row flex-wrap justify-evenly h-auto w-full">

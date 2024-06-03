@@ -23,7 +23,7 @@ useEffect(() => {
             },
             {
                 duration: 2,
-                delay: stagger(0.2),
+                delay: stagger(0.1),
             }
         );
     }
@@ -36,7 +36,7 @@ useEffect(() => {
           return (
             <motion.span
               key={word + idx}
-              className="text-white opacity-0"
+              className="text-white opacity-0 font-primary"
             >
               {word}{" "}
             </motion.span>
@@ -47,9 +47,9 @@ useEffect(() => {
   };
 
   return (
-    <div className={cn("font-light w-[75vw] h-[80vh] flex justify-center overflow-hidden items-center mx-auto font-primary my-4", className)}>
+    <div className={cn("text-start lg:text-xl px-5 font-primary font-medium container mx-auto py-5 text-white", className)}>
       <div className="mt-4">
-        <div className=" text-white text-xl leading-snug tracking-wide">
+        <div className=" text-white text-base lg:text-xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
