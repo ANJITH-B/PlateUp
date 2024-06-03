@@ -34,15 +34,15 @@ const Home = (props) => {
               <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />) : (<Header />)}
             </div>
           </div>
-          <Canvas page={5} className="w-[100vw] h-[100vh] -z-5 relative">
-            <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'city'} />
+          <Canvas shadows page={5} className="w-[100vw] h-[100vh] -z-5 relative">
+            <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'night'} />
             <PerspectiveCamera makeDefault position={[1, 4, 8]} />
             <ScrollControls pages={9} damping={0.4} className=''>
               <ScrollManager section={section} onSectionChange={setSection} />
               <Scroll html>
                 <Interface />
               </Scroll>
-              <Experience section={section} onSectionChange={setSection}/>
+              <Experience section={section} onSectionChange={setSection}  />
             </ScrollControls>
             <Rig />
             {/* <CameraShake maxYaw={0.01} maxPitch={0.01} maxRoll={0.01} yawFrequency={0.5} pitchFrequency={0.5} rollFrequency={0.4} /> */}
