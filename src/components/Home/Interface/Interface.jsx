@@ -264,7 +264,7 @@ const Footer = () => {
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-col w-full h-full items-center ">
         <motion.div className=" p-4 md:w-1/2 h-full"></motion.div>
-        <div className='max-w-screen-2xl flex flex-col  md:flex-row border m-0 border-gray-500 w-full p-10 rounded-t-3xl border-b-5 blur-md backdrop-opacity-20 backdrop-invert bg-black/1 '>
+        <div className='max-w-screen-2xl flex flex-col  md:flex-row border m-0 border-gray-500 w-full p-10 rounded-t-3xl border-b-5 backdrop-opacity-20 backdrop-invert bg-black/1 '>
           <motion.div className=" p-4 md:w-1/2 ">
 
             <Image alt="plateUp" src="/image/PLATEUP.png" href="/" height={500} width={400} />
