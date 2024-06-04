@@ -104,4 +104,4 @@ export function Staff(props) {
     )
 }
 
-useGLTF.preload('/models/staf.glb')
+useGLTF.preload('models/staf.glb')
