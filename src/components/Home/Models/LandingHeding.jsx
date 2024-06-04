@@ -4,11 +4,11 @@ import * as THREE from 'three';
 import { useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three';
 
-export const BgText = () => {
+export const Heading = () => {
     const meshRef = useRef();
 
     // Load the texture
-    const texture = useLoader(TextureLoader, '/image/BGText1.png');
+    const texture = useLoader(TextureLoader, '/image/headinglanding .png');
 
     // Set up the scene
     useEffect(() => {

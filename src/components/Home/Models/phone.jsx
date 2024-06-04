@@ -73,7 +73,7 @@ export function Iphone(props) {
       video.src = 'videos/algined (2).mp4'; // Change the src of the video
       playVideo();
     } else if (section === 2) {
-      video.src = "videos/algined.mp4";
+      video.src = "videos/3.mp4";
       playVideo();
     }
     else if (section === 3) {
@@ -84,7 +84,7 @@ export function Iphone(props) {
       playVideo();
     }
     else {
-      video.src = 'videos/2.mp4';
+      video.src = 'videos/5.mp4';
       playVideo();
     }
 

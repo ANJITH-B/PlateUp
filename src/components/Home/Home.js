@@ -35,7 +35,7 @@ const Home = (props) => {
             </div>
           </div>
           <Canvas shadows page={5} className="w-[100vw] h-[100vh] -z-5 relative">
-            <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'night'} />
+            <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'city'} />
             <PerspectiveCamera makeDefault position={[1, 4, 8]} />
             <ScrollControls pages={9} damping={0.4} className=''>
               <ScrollManager section={section} onSectionChange={setSection} />
@@ -47,7 +47,7 @@ const Home = (props) => {
             <Rig />
             {/* <CameraShake maxYaw={0.01} maxPitch={0.01} maxRoll={0.01} yawFrequency={0.5} pitchFrequency={0.5} rollFrequency={0.4} /> */}
           </Canvas>
-          <motion.div initial={{ opacity: 0, y: 0 }} animate={{ opacity: section === 0 ? 1 : 0, y: 0 }} transition={{ duration: 0.3 }}>
+          <motion.div initial={{ opacity: 0, y: 0 }} animate={{x: 1, opacity: section === 0 ? 1 : 0, y: 0 }} transition={{ duration: 3 ,delay:4}}>
             {section === 0 && <FoodSteam section={section} />}
           </motion.div>
           <SectionNav onSectionChange={setSection} section={section} />
