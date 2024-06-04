@@ -8,7 +8,7 @@ import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 
 export function Staff(props) {
     const { animation, section } = props;
-    const { nodes, materials } = useGLTF('/models/Staf.glb')
+    const { nodes, materials } = useGLTF('/models/staf.glb')
     const group = useRef();
 
     const { animations: sittingAnimation } = useFBX('animations/Sitting.fbx');
