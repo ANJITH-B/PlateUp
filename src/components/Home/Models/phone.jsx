@@ -12,7 +12,7 @@ import * as THREE from 'three';
 
 export function Iphone(props) {
   const { section } = props;
-  const { nodes, materials } = useGLTF('/iphone_14_pro_max_gold.glb');
+  const { nodes, materials } = useGLTF('models/iphone_14_pro_max_gold.glb');
   const groupRef = useRef();
 
 
@@ -73,7 +73,7 @@ export function Iphone(props) {
       video.src = 'videos/algined (2).mp4'; // Change the src of the video
       playVideo();
     } else if (section === 2) {
-      video.src = "videos/algined.mp4";
+      video.src = "videos/3.mp4";
       playVideo();
     }
     else if (section === 3) {
@@ -84,7 +84,7 @@ export function Iphone(props) {
       playVideo();
     }
     else {
-      video.src = 'videos/2.mp4';
+      video.src = 'videos/5.mp4';
       playVideo();
     }
 
@@ -428,7 +428,7 @@ export function Iphone(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.OcdXOLSkbIPgJqo_0.geometry}
+          geometry={nodes.OcdXOLSkbIPgJqo_0.geometry} 
           material={materials.uApvtlLvHnjNKSG}
         />
       </group>
@@ -436,4 +436,4 @@ export function Iphone(props) {
   )
 }
 
-useGLTF.preload('/iphone_14_pro_max_gold.glb')
+useGLTF.preload('models/iphone_14_pro_max_gold.glb')

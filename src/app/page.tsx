@@ -13,14 +13,13 @@ export default function Home() {
   return (
     <NextUIProvider>
       <main className="flex min-h-screen flex-col items-center justify-between relative w-full h-full">
-      {section === 0 && (
-          // <Image src={bg} alt="background-image" fill className="-z-5 h-100 object-bottom object-contain sm:object-none sm:h-46 sm:w-150"/>
+      {/* {section === 0 && (
           <>
           <Image src={bg} alt="background-image" fill className="-z-5 object-bottom object-contain hidden sm:block"/>
           <Image src={bgMb} alt="background-image" fill className="-z-5 object-bottom object-contain sm:hidden" />
           </>
 
-        )} 
+        )}  */}
         <div className="w-full h-full">
           <HomePage section={section} setSection={setSection} /> 
         </div>

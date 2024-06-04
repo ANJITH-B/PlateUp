@@ -31,8 +31,8 @@ function ContactUs() {
           <div className='lg:w-1/2 w-full min-h-96 my-auto'>
             <CorporateForm/>
           </div>
-          <div className='hidden lg:block w-1/2 min-h-96'>
-            <Image src={bg1} alt="Plateup" className="h-auto w-full p-5 rounded-2xl" />
+          <div className='hidden lg:block w-1/2 h-full min-h-96'>
+            <Image src={bg1} alt="Plateup" className="h-auto w-full p-4 rounded-2xl" />
           </div>
         </div>
       ),
@@ -45,8 +45,8 @@ function ContactUs() {
           <div className='lg:w-1/2 w-full min-h-96 my-auto'>
             <EmployeeForm/>
           </div>
-          <div className='hidden lg:block w-1/2 min-h-96'>
-            <Image src={bg1} alt="Plateup" className="h-auto w-full p-5 rounded-2xl" />
+          <div className='hidden lg:block w-1/2 h-full min-h-96'>
+            <Image src={bg1} alt="Plateup" className="h-auto w-full p-4 rounded-2xl" />
           </div>
         </div>
       ),
@@ -59,8 +59,8 @@ function ContactUs() {
           <div className='lg:w-1/2 w-full min-h-96 my-auto'>
             <MerchantForm/>
           </div>
-          <div className='hidden lg:block w-1/2 min-h-96'>
-            <Image src={bg1} alt="Plateup" className="h-auto w-full p-5 rounded-2xl" />
+          <div className='hidden lg:block w-1/2 h-full min-h-96'>
+            <Image src={bg1} alt="Plateup" className="h-auto w-full p-4 rounded-2xl" />
           </div>
         </div>
       ),
