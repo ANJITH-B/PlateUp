@@ -35,7 +35,7 @@ const Home = (props) => {
             </div>
           </div>
           <Canvas shadows page={5} className="w-[100vw] h-[100vh] -z-5 relative">
-            <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'city'} />
+        <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'night'} />
             <PerspectiveCamera makeDefault position={[1, 4, 8]} />
             <ScrollControls pages={9} damping={0.4} className=''>
               <ScrollManager section={section} onSectionChange={setSection} />

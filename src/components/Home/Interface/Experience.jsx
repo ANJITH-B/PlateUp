@@ -19,7 +19,8 @@ export const Experience = (props) => {
 
     return (
         <>
-            {/* <directionalLight intensity={0.001} position={[6, 5, 5]} /> */}
+            {/* <directionalLight intensity={0.5} position={[6, 5, 5]} />  */}
+            <ambientLight intensity={1.5}  /> 
 
             <motion.group scale={[2, 2, 2]}
                 transition={{ duration: section === 5 ? 3 : section === 7 ? 3 : section === 8 ? 10 : 1, }}
@@ -31,15 +32,22 @@ export const Experience = (props) => {
                     rotateY: section === 1 ? 2 : section === 2 ? 2 : section === 3 ? 2 : section === 4 ? 2 : section === 5 ? 5.25 : section === 6 ? 5.55 : section === 7 ? 5.25 : section === 8 ? 5.25 : 1.9,
                     rotateZ: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0. : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
                 }}>
+                    
                 <motion.group
                     animate={{ x: section === 5 ? 7 : 0, y: section === 5 ? 5 : 0, z: section === 5 ? 4 : 0 }} transition={{ delay: section === 5 ? 2 : 0, duration: section === 5 ? 7 : 1 }}>
-                    <ambientLight intensity={1.5} />
-                    <directionalLight position={[6, 5, 5]} intensity={0.001} castShadow
+                    {/* <ambientLight intensity={0.5} /> */}
+                    <pointLight position={[11, 1, 1]} intensity={5} castShadow
                         shadow-camera-far={50}
                         shadow-camera-left={-10}
                         shadow-camera-right={10}
                         shadow-camera-top={10}
-                        shadow-camera-bottom={-10} />
+                        shadow-camera-bottom={-10} 
+                        />
+                        <ambientLight intensity={0.3} /> 
+            <pointLight position={[1, 1, 1]} intensity={1.5} />
+        <spotLight  intensity={18} castShadow />
+            <spotLight position={[5, 15, 5]} angle={0.2} penumbra={1} intensity={0.6} castShadow />
+            {/* <OrbitControls/> */}
 
 
                     <motion.group
