@@ -2,6 +2,7 @@
 import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "@/utils/animations"
 import { cn } from "@/utils/cn"
+import Link from "next/link"
 
 interface Props {
   href: string
@@ -23,7 +24,9 @@ const TransitionLink = ({ href, label }: Props) => {
       className={cn("text-md font-bold hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:to-orange-500 hover:from-orange-600 transition-all", text)}
       onClick={handleClick}
     >
+      <Link href={href}>
       {label}
+      </Link>
     </button>
   )
 }

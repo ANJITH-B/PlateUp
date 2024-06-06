@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Button, MovingBorder } from '@/components/ui/moving-border';
 import { TracingBeam } from '@/components/ui/tracing-beam';
+import Link from 'next/link';
 // import './style.css';
 
 export const Section = (props) => {
@@ -264,7 +265,7 @@ const Footer = () => {
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-col w-full h-full items-center ">
         <motion.div className=" p-4 md:w-1/2 h-full"></motion.div>
-        <div className='max-w-screen-2xl flex flex-col  md:flex-row border m-0 border-gray-500 w-full p-10 rounded-t-3xl border-b-5 backdrop-opacity-20 backdrop-invert bg-black/1 '>
+        <div className='max-w-screen-2xl flex flex-col  md:flex-row border m-0 border-gray-500 w-full p-10 rounded-t-3xl border-b-5 backdrop-opacity-10 backdrop-invert'>
           <motion.div className=" p-4 md:w-1/2 ">
 
             <Image alt="plateUp" src="/image/PLATEUP.png" href="/" height={500} width={400} />
@@ -299,27 +300,37 @@ const Footer = () => {
             <div className='w-full'>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>Home</h1>
+                <Link href={'/'}>
                 <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/" height={20} width={30} />
+                </Link>
               </div>
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>About Us</h1>
+                <Link href={'/about'}>
                 <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/about" height={20} width={30} />
+                </Link>
               </div>
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>Careers</h1>
+                <Link href={'/careers'}>
                 <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/careers" height={20} width={30} />
+                </Link>
               </div>
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>Impact</h1>
+                <Link href={'/impact'}>
                 <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/impact" height={20} width={30} />
+                </Link>
               </div>
               <div className='w-full h-1 rounded bg-gray-700'></div>
               <div className='flex flex-row justify-between flex-end gap-5 py-4'>
                 <h1 className='text-2xl  font-bold'>Services</h1>
+                <Link href={'/services'}>
                 <Image className='h-6 row-end' alt="plateUp" src="/image/Arrow.png" href="/services" height={20} width={30} />
+                </Link>
               </div>
               {/* <div className='w-full h-1 rounded bg-gray-700'></div> */}
 
