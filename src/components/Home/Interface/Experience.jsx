@@ -26,16 +26,15 @@ export const Experience = (props) => {
                 transition={{ duration: section === 5 ? 3 : section === 7 ? 3 : section === 8 ? 10 : 1, }}
                 animate={{
                     x: section === 1 ? 11 : section === 2 ? 11 : section === 3 ? 11 : section === 4 ? 11 : section === 5 ? 3 : section === 6 ? 8 : section === 7 ? 3 : section === 8 ? 3 : 20,
-                    y: section === 1 ? -10 : section === 2 ? -10 : section === 3 ? -10 : section === 4 ? -10 : section === 5 ? -10 : section === 6 ? -9.6 : section === 7 ? -5 : section === 8 ? -5 : -10,
-                    z: section === 1 ? 77.1 : section === 2 ? 77.1 : section === 3 ? 77.1 : section === 4 ? 77.1 : section === 5 ? 40 : section === 6 ? 64 : section === 7 ? 40 : section === 8 ? 30 : 50,
-                    rotateX: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0.6 : section === 6 ? 0.65 : section === 7 ? 0.1 : section === 8 ? 0.1 : 0,
+                    y: section === 1 ? -10 : section === 2 ? -10 : section === 3 ? -10 : section === 4 ? -10 : section === 5 ? -10 : section === 6 ? -9.6 : section === 7 ? -7.5 : section === 8 ? -5 : -10,
+                    z: section === 1 ? 77.1 : section === 2 ? 77.1 : section === 3 ? 77.1 : section === 4 ? 77.1 : section === 5 ? 40 : section === 6 ? 64 : section === 7 ? 44 : section === 8 ? 30 : 50,
+                    rotateX: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0.6 : section === 6 ? 0.65 : section === 7 ? 0 : section === 8 ? 0.1 : 0,
                     rotateY: section === 1 ? 2 : section === 2 ? 2 : section === 3 ? 2 : section === 4 ? 2 : section === 5 ? 5.25 : section === 6 ? 5.55 : section === 7 ? 5.25 : section === 8 ? 5.25 : 1.9,
                     rotateZ: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0. : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
                 }}>
-                    
                 <motion.group
                     animate={{ x: section === 5 ? 7 : 0, y: section === 5 ? 5 : 0, z: section === 5 ? 4 : 0 }} transition={{ delay: section === 5 ? 2 : 0, duration: section === 5 ? 7 : 1 }}>
-                    {/* <ambientLight intensity={0.5} /> */}
+                    <ambientLight intensity={1} />
                     <pointLight position={[11, 1, 1]} intensity={5} castShadow
                         shadow-camera-far={50}
                         shadow-camera-left={-10}
