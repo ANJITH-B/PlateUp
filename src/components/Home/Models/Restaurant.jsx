@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Restaurant(props) {
-  const { nodes, materials } = useGLTF('models/restaurantModel.glb')
+  const { nodes, materials } = useGLTF('models/resturent1.glb')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -121,15 +121,6 @@ export function Restaurant(props) {
         geometry={nodes.Object718_Object718_mtl_0.geometry}
         material={materials.Object718_mtl}
         position={[16.219, -0.225, -0.241]}
-        rotation={[-Math.PI / 2, 0, Math.PI]}
-        scale={3.187}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Object719_Object719_mtl_0001.geometry}
-        material={materials['Object719_mtl.001']}
-        position={[16.219, -0.225, -0.256]}
         rotation={[-Math.PI / 2, 0, Math.PI]}
         scale={3.187}
       />
@@ -254,6 +245,42 @@ export function Restaurant(props) {
         position={[-27.235, -1.09, 5.938]}
         rotation={[-Math.PI / 2, 0, 0]}
         scale={3.791}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object719_Object719_mtl_0005.geometry}
+        material={materials['Object719_mtl.005']}
+        position={[-48.332, -0.607, 5.938]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[3.791, 3.791, 4.442]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object719_Object719_mtl_0006.geometry}
+        material={materials['Object719_mtl.006']}
+        position={[-48.332, -0.607, -2.745]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[3.791, 3.791, 4.442]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object719_Object719_mtl_0007.geometry}
+        material={materials['Object719_mtl.007']}
+        position={[-38.92, -0.607, -2.745]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[3.791, 3.791, 4.442]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object719_Object719_mtl_0009.geometry}
+        material={materials['Object719_mtl.011']}
+        position={[-38.92, -0.607, 5.882]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[3.791, 3.791, 4.442]}
       />
       <mesh
         castShadow
@@ -421,7 +448,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������_Material_#33_0001'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.003']}
         position={[0.483, 3.289, 6.697]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -430,7 +457,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������_Material_#33_0002'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.003']}
         position={[0.483, 3.289, 18.187]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -709,7 +736,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������001_Material_#33_0001'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 1.779, -9.553]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={[2.752, 2.502, 2.129]}
@@ -718,7 +745,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������001_Material_#33_0002'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 1.779, -10.538]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={[2.752, 2.502, 2.129]}
@@ -727,7 +754,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������001_Material_#33_0003'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 1.779, -11.523]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={[2.752, 2.502, 2.129]}
@@ -736,7 +763,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������001_Material_#33_0004'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-18.721, 1.779, -10.538]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={[2.752, 2.502, 2.129]}
@@ -745,7 +772,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������001_Material_#33_0005'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-18.721, 1.779, -9.553]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={[2.752, 2.502, 2.129]}
@@ -754,7 +781,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������004_Material_#33_0001'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[6.885, 4.274, -17.268]}
         rotation={[-Math.PI / 2, 0, -Math.PI]}
         scale={1.668}
@@ -763,7 +790,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������004_Material_#33_0002'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[10.824, 4.274, -17.268]}
         rotation={[-Math.PI / 2, 0, -Math.PI]}
         scale={1.668}
@@ -772,7 +799,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������004_Material_#33_0003'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[2.946, 4.274, -17.268]}
         rotation={[-Math.PI / 2, 0, -Math.PI]}
         scale={1.668}
@@ -799,7 +826,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������010__0'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 1.779, -14.806]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -808,7 +835,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������010__0001'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 1.779, -13.821]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -817,7 +844,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['������010__0002'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 1.779, -12.836]}
         rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -842,7 +869,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[1.961, 2.435, -16.447]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -851,7 +878,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0001'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[3.602, 2.435, -16.447]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -860,7 +887,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0002'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[5.243, 2.435, -16.447]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -869,7 +896,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0003'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[6.885, 2.435, -16.447]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -878,7 +905,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0004'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[8.526, 2.435, -16.447]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -887,7 +914,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0005'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[10.168, 2.435, -16.447]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -896,7 +923,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0006'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[11.809, 2.435, -16.447]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -905,7 +932,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0007'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 2.435, 11.785]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -914,7 +941,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes['���001_Material_#31_0008'].geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.994, 2.435, 13.755]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={1.668}
@@ -5413,7 +5440,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_0.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-18.903, 1.692, -10.427]}
         scale={[0.656, 0.025, 2.446]}
       />
@@ -5421,7 +5448,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_0001.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.927, 1.832, -6.474]}
         scale={[1.404, 0.027, 1.613]}
       />
@@ -5429,7 +5456,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_0002.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.927, 1.832, -9.67]}
         scale={[1.404, 0.027, 1.613]}
       />
@@ -5437,7 +5464,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_0003.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-0.927, 1.832, -12.867]}
         scale={[1.404, 0.027, 1.613]}
       />
@@ -5445,7 +5472,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_1.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.008']}
         position={[-18.903, 1.692, -10.427]}
         scale={[0.656, 0.025, 2.446]}
       />
@@ -5453,7 +5480,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_1001.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.008']}
         position={[-0.927, 1.832, -6.474]}
         scale={[1.404, 0.027, 1.613]}
       />
@@ -5461,7 +5488,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_1002.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.008']}
         position={[-0.927, 1.832, -9.67]}
         scale={[1.404, 0.027, 1.613]}
       />
@@ -5469,7 +5496,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_1003.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.008']}
         position={[-0.927, 1.832, -12.867]}
         scale={[1.404, 0.027, 1.613]}
       />
@@ -5477,7 +5504,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[-18.293, 0.579, -11.68]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.046, -0.615, -1.175]}
@@ -5486,7 +5513,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3001.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[-18.293, 1.433, -10.435]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.046, -0.232, -2.431]}
@@ -5495,7 +5522,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3002.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[-18.293, 0.579, -9.24]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.046, -0.615, -1.24]}
@@ -5504,7 +5531,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3003.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 0.583, -7.301]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.69, -0.775]}
@@ -5513,7 +5540,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3004.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 1.541, -6.48]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.261, -1.604]}
@@ -5522,7 +5549,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3005.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 0.583, -5.691]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.69, -0.818]}
@@ -5531,7 +5558,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3006.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 0.583, -10.497]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.69, -0.775]}
@@ -5540,7 +5567,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3007.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 1.541, -9.675]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.261, -1.604]}
@@ -5549,7 +5576,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3008.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 0.583, -8.887]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.69, -0.818]}
@@ -5558,7 +5585,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3009.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 0.583, -13.694]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.69, -0.775]}
@@ -5567,7 +5594,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3010.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 1.541, -12.873]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.261, -1.604]}
@@ -5576,7 +5603,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_3011.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.004']}
         position={[0.377, 0.583, -12.084]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.098, -0.69, -0.818]}
@@ -5585,7 +5612,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-18.209, 1.438, -10.488]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.016, -0.012, -0.625]}
@@ -5594,7 +5621,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5001.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-18.209, 0.764, -10.37]}
         rotation={[1.574, 0, 0]}
         scale={[-0.016, -0.031, -0.26]}
@@ -5603,7 +5630,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5002.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[-18.209, 0.764, -10.607]}
         rotation={[1.574, 0, 0]}
         scale={[-0.016, -0.031, -0.259]}
@@ -5612,7 +5639,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5003.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 1.547, -6.515]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.035, -0.014, -0.412]}
@@ -5621,7 +5648,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5004.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 0.789, -6.436]}
         rotation={[1.573, 0, 0]}
         scale={[-0.035, -0.02, -0.291]}
@@ -5630,7 +5657,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5005.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 0.789, -6.593]}
         rotation={[1.573, 0, 0]}
         scale={[-0.035, -0.02, -0.29]}
@@ -5639,7 +5666,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5006.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 1.547, -9.71]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.035, -0.014, -0.412]}
@@ -5648,7 +5675,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5007.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 0.789, -9.632]}
         rotation={[1.573, 0, 0]}
         scale={[-0.035, -0.02, -0.291]}
@@ -5657,7 +5684,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5008.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 0.789, -9.789]}
         rotation={[1.573, 0, 0]}
         scale={[-0.035, -0.02, -0.29]}
@@ -5666,7 +5693,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5009.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 1.547, -12.908]}
         rotation={[-Math.PI, 0, 0]}
         scale={[-0.035, -0.014, -0.412]}
@@ -5675,7 +5702,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5010.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 0.789, -12.829]}
         rotation={[1.573, 0, 0]}
         scale={[-0.035, -0.02, -0.291]}
@@ -5684,7 +5711,7 @@ export function Restaurant(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_5011.geometry}
-        material={materials.PaletteMaterial001}
+        material={materials['Material.007']}
         position={[0.558, 0.789, -12.986]}
         rotation={[1.573, 0, 0]}
         scale={[-0.035, -0.02, -0.29]}
@@ -5774,4 +5801,4 @@ export function Restaurant(props) {
   )
 }
 
-useGLTF.preload('models/restaurantModel.glb')
+useGLTF.preload('models/resturent1.glb')

@@ -34,8 +34,8 @@ export const Experience = (props) => {
                 }}>
                 <motion.group
                     animate={{ x: section === 5 ? 7 : 0, y: section === 5 ? 5 : 0, z: section === 5 ? 4 : 0 }} transition={{ delay: section === 5 ? 2 : 0, duration: section === 5 ? 7 : 1 }}>
-                    <ambientLight intensity={1} />
-                    <pointLight position={[11, 1, 1]} intensity={5} castShadow
+                    {/* <ambientLight intensity={1} /> */}
+                    {/* <pointLight position={[11, 1, 1]} intensity={5} castShadow
                         shadow-camera-far={50}
                         shadow-camera-left={-10}
                         shadow-camera-right={10}
@@ -45,7 +45,7 @@ export const Experience = (props) => {
                         <ambientLight intensity={0.3} /> 
             <pointLight position={[1, 1, 1]} intensity={1.5} />
         <spotLight  intensity={18} castShadow />
-            <spotLight position={[5, 15, 5]} angle={0.2} penumbra={1} intensity={0.6} castShadow />
+            <spotLight position={[5, 15, 5]} angle={0.2} penumbra={1} intensity={0.6} castShadow /> */}
             {/* <OrbitControls/> */}
 
 

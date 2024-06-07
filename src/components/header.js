@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import TransitionLink from "../components/TransitionLink";
@@ -24,6 +24,25 @@ export default function Header() {
          animatePageOut('/', router)
       }
    }
+   const audio = new Audio('./bg.mp3') 
+   const handlePlay = () =>{
+      console.log('handle playlll');
+      if(audio.paused){
+         audio.play()
+      }else{
+         audio.pause()
+      }   
+   }
+   useEffect(()=>handlePlay(),[])
+   addEventListener("canplay", (event) => {
+
+      audio.play()
+   });
+
+oncanplay = (event) => {
+   audio.play()
+};
+
    const path = menuItems.findIndex(item => item.href === pathname)
    return (
       <div className="w-full flex justify-center items-center ">
@@ -64,8 +83,12 @@ export default function Header() {
             </NavbarContent>
 
             <NavbarContent className="w-full">
+
                <div className=" h-1 ml-3 md:bg-orange-300 text-black w-full">-</div>
                <button className="bg-orange-600 rounded-xl text-xs w-40 h-8 hidden sm:block py-2 px-4">Get<span className="text-orange-600">_</span>Started</button>
+            {/* <div className="rounded-3xl overflow-hidden border "><div className="w-20"></div> </div> */}
+            {!audio?.paused ? <button onClick={handlePlay}>play</button> : <Image className="" src={'/gif/audio.gif'} width={40} height={40} onClick={handlePlay}/>
+            }
             </NavbarContent>
             <NavbarMenu>
                {menuItems.map((item, index) => (
@@ -73,6 +96,7 @@ export default function Header() {
                      <TransitionLink className="w-full mx-auto text-center font-bold text-xl py-2   hover:text-orange-500" href={item.href} size="lg" label={item.name} />
                   </NavbarMenuItem>
                ))}
+         
             </NavbarMenu>
          </Navbar>
       </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import FoodSteam from "./foodbowlAndSteam/steam";
 import { Environment, CameraShake, PerspectiveCamera, Scroll, ScrollControls, Text, } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
@@ -14,8 +14,10 @@ import Header from "../header";
 import * as THREE from 'three'
 
 const Home = (props) => {
+  const audio = new Audio('./bg.mp3')
 
   const { section, setSection } = props;
+  const ref = useRef()
 
   function Rig() {
     const [vec] = useState(() => new THREE.Vector3())
@@ -30,6 +32,7 @@ const Home = (props) => {
         <div className="h-screen">
           <div className="relative w-full flex items-center justify-center">
             <div className="fixed inset-x-0 w-[95%] mx-auto z-50 rounded-3xl top-2">
+              <button ref={ref} onClick={()=>audio.play()}>click</button>
               {section >= 1 && section <= 4 ? (
               <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />) : (<Header />)}
             </div>

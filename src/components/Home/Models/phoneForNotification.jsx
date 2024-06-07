@@ -73,7 +73,7 @@ export function IphoneForNotification(props) {
        video.src = '/videos/6.mp4';
      playVideo();
      } else if (section === 7) {
-       video.src = '/videos/6.mp4';
+        video.src = "videos/7.mp4";
      playVideo();
    }
     
