@@ -45,7 +45,7 @@ export default function Header() {
       setPlay(false)
     }
   };
-
+ 
   const path = menuItems.findIndex((item) => item.href === pathname);
   return (
     <div className="w-full flex justify-center items-center ">
@@ -112,8 +112,7 @@ export default function Header() {
           </button>
           {/* <div className="rounded-3xl overflow-hidden border "><div className="w-20"></div> </div> */}
           {!play ? (
-            // <div className="bg-white rounded-full w-24">
-               <Image
+            <Image
             className="bg-yellow-500 rounded-full"
             src={"/image/audio.png"}
             alt="audio"
@@ -121,7 +120,6 @@ export default function Header() {
             height={40}
             onClick={handlePlay}
           /> 
-            // </div>         
          ) : (
             <Image
               className=""
