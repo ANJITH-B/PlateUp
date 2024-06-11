@@ -13,11 +13,13 @@ import TransitionLink from "../components/TransitionLink";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { animatePageOut } from "@/utils/animations";
-const audio = new Audio("./bg.mp3");
-
+let audio;
+if (typeof window !== "undefined") {
+  audio = new Audio("./bg.mp3");
+}
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [play, setPlay] = React.useState(!audio.paused ?? false);
+  const [play, setPlay] = React.useState(!audio?.paused ?? false);
   const router = useRouter();
   const pathname = usePathname();
   const menuItems = [
@@ -35,11 +37,11 @@ export default function Header() {
     }
   };
   const handlePlay = () => {
-    if (audio.paused) {
-      audio.play();
+    if (audio?.paused) {
+      audio?.play();
       setPlay(true)
     } else {
-      audio.pause();
+      audio?.pause();
       setPlay(false)
     }
   };
