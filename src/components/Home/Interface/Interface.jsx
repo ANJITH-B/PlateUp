@@ -55,7 +55,7 @@ export const Interface = () => {
 
 
   return (
-    <div className=" flex flex-col w-screen   ">
+    <div className="flex flex-col w-screen">
       {/* <div className="absoul">
             <svg width="1810" height="2619" viewBox="0 0 1810 2619" fill="none" preserveAspectRatio='xMidYMax meet'>
                 <path d="M2.38118 4.67663L529.718 262.123C719.648 354.847 862.535 522.291 924.232 724.441L956.688 830.784C998.869 968.989 1005.21 1115.65 975.106 1256.98L884.175 1683.91C849.188 1848.17 905.9 2018.5 1032.37 2129.01L1121.2 2206.63C1231.3 2302.83 1353 2384.88 1483.47 2450.87L1807 2614.5" stroke="#FFC224" strokeWidth="10" />
@@ -66,7 +66,8 @@ export const Interface = () => {
       <DineIn />
       <Grocery />
       <Travel />
-      <Redeem />
+      <Section><h1></h1></Section>
+      <Section><h1></h1></Section>
       <Section><h1></h1></Section>
       <Contact />
       <Footer />
@@ -237,7 +238,7 @@ const Contact = () => {
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
         <motion.div className=" p-4 md:w-1/2 "></motion.div>
         <motion.div className="md:mt-0   " >
-          <div className='border border-gray-500 w-[50vh] px-8 py-6 rounded-3xl backdrop-opacity-20 backdrop-invert bg-white/10 '>
+          <div className='border border-gray-500 w-[50vh] px-8 py-6 rounded-3xl backdrop-opacity-20 backdrop-invert bg-black/10 '>
             <svg width="56" height="52" viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_13350_1024)">
                 <path d="M24.9453 1.56282C25.7684 1.01353 26.7263 0.700385 27.7149 0.657443C28.7035 0.614502 29.6849 0.843405 30.5525 1.31926L30.9503 1.56282L52.5999 15.995C53.2782 16.4469 53.8456 17.0463 54.2598 17.7482C54.6741 18.4502 54.9244 19.2366 54.9922 20.0488L55.0111 20.4981V46.1122C55.0116 47.4777 54.4958 48.7929 53.5674 49.7941C52.6389 50.7954 51.3663 51.4087 50.0047 51.5111L49.5987 51.5246H6.2996C4.93412 51.525 3.61893 51.0093 2.61769 50.0809C1.61645 49.1524 1.00315 47.8798 0.900738 46.5181L0.887207 46.1122L0.887207 20.4981C0.887221 19.6832 1.07121 18.8789 1.42546 18.1451C1.77971 17.4113 2.29506 16.767 2.93309 16.2602L3.29843 15.995L24.9453 1.56282ZM27.9492 6.06593L8.47267 19.0503L27.9492 32.0346L47.4257 19.0503L27.9492 6.06593Z" fill="white" />
@@ -249,7 +250,7 @@ const Contact = () => {
             Subscribe to our newsletter for exclusive offers on groceries, dining, travel, and more
             </motion.h2>
             <div className='flex mt-5'>
-            <motion.Input className='rounded-md p-1 h-10 mr-2 w-full'></motion.Input>
+            <motion.Input className='rounded-md p-1 h-10 mr-2 w-full bg-transparent border backdrop-blur-sm'></motion.Input>
             <motion.button className='bg-orange-600 text-white py-2 px-4 rounded-lg font-bold text-sm ' >Subscribe</motion.button>
           </div>
           </div>
@@ -265,10 +266,10 @@ const Footer = () => {
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-col w-full h-full items-center ">
         <motion.div className=" p-4 md:w-1/2 h-full"></motion.div>
-        <div className='max-w-screen-2xl flex flex-col  md:flex-row border m-0 border-gray-500 w-full p-10 rounded-t-3xl border-b-5 backdrop-opacity-10 backdrop-invert'>
+        <div className='max-w-screen-2xl z-10 flex flex-col  md:flex-row border m-0 border-gray-500 w-full p-10 rounded-t-3xl border-b-5 bg-opacity-20 bg-black backdrop-blur-[1.5px]'>
           <motion.div className=" p-4 md:w-1/2 ">
 
-            <Image alt="plateUp" src="/image/PLATEUP.png" href="/" height={500} width={400} />
+            <Image alt="plateUp" src="/image/logo.png" href="/" height={200} width={200} />
             <motion.h1 className='text-3xl  mt-4'>Keep up with us</motion.h1>
             <motion.h2 className=" text-lg  text-white-600 mt-1" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
               Get latest trends, updates and offers.

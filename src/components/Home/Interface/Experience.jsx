@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion-3d'
-import { useMediaQuery } from 'react-responsive';
+    import { useMediaQuery } from 'react-responsive';
 import { Iphone } from "../Models/phone"
 import { IphoneForNotification } from "../Models/phoneForNotification"
 import { Card } from "../Models/Card";
@@ -21,21 +21,20 @@ export const Experience = (props) => {
         <>
             {/* <directionalLight intensity={0.5} position={[6, 5, 5]} />  */}
             <ambientLight intensity={1.5}  /> 
-
             <motion.group scale={[2, 2, 2]}
-                transition={{ duration: section === 5 ? 3 : section === 7 ? 3 : section === 8 ? 10 : 1, }}
+                transition={{ duration: section === 5 ? 3 : section === 7 ? 3 : section === 8 ? 3 : section === 9 ? 10 : 1, }}
                 animate={{
-                    x: section === 1 ? 11 : section === 2 ? 11 : section === 3 ? 11 : section === 4 ? 11 : section === 5 ? 3 : section === 6 ? 8 : section === 7 ? 3 : section === 8 ? 3 : 20,
-                    y: section === 1 ? -10 : section === 2 ? -10 : section === 3 ? -10 : section === 4 ? -10 : section === 5 ? -10 : section === 6 ? -9.6 : section === 7 ? -7.5 : section === 8 ? -5 : -10,
-                    z: section === 1 ? 77.1 : section === 2 ? 77.1 : section === 3 ? 77.1 : section === 4 ? 77.1 : section === 5 ? 40 : section === 6 ? 64 : section === 7 ? 44 : section === 8 ? 30 : 50,
-                    rotateX: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0.6 : section === 6 ? 0.65 : section === 7 ? 0 : section === 8 ? 0.1 : 0,
-                    rotateY: section === 1 ? 2 : section === 2 ? 2 : section === 3 ? 2 : section === 4 ? 2 : section === 5 ? 5.25 : section === 6 ? 5.55 : section === 7 ? 5.25 : section === 8 ? 5.25 : 1.9,
-                    rotateZ: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0. : section === 6 ? 0 : section === 7 ? 0 : section === 8 ? 0 : 0,
+                    x: section === 1 ? 11 : section === 2 ? 11 : section === 3 ? 11 : section === 4 ? 11 : section === 5 ? 3 : section === 6 ? 8 :section === 7 ? 8 : section === 8 ? 3 : section === 9 ? 3 : 20,
+                    y: section === 1 ? -10 : section === 2 ? -10 : section === 3 ? -10 : section === 4 ? -10 : section === 5 ? -10 : section === 6 ? -9.6 :section === 7 ? -9.6 : section === 8 ? -5 : section === 9 ? -5 : -10,
+                    z: section === 1 ? 77.1 : section === 2 ? 77.1 : section === 3 ? 77.1 : section === 4 ? 77.1 : section === 5 ? 40 : section === 6 ? 64 :section === 7 ? 64 : section === 8 ? 30 : section === 9 ? 20  : section === 10 ? 10 : 50,
+                    rotateX: section === 1 ? 0 : section === 2 ? 0 : section === 3 ? 0 : section === 4 ? 0 : section === 5 ? 0.6 : section === 6 ? 0.65 : section === 7 ? 0.65 : section === 8 ? 0.1 : section === 9 ? 0.1 : 0,
+                    rotateY: section === 1 ? 2 : section === 2 ? 2 : section === 3 ? 2 : section === 4 ? 2 : section === 5 ? 5.25 : section === 6 ? 5.55 : section === 7 ? 5.55 : section === 8 ? 5.25 : section === 9 ? 5.25 : 1.9,
                 }}>
                 <motion.group
-                    animate={{ x: section === 5 ? 7 : 0, y: section === 5 ? 5 : 0, z: section === 5 ? 4 : 0 }} transition={{ delay: section === 5 ? 2 : 0, duration: section === 5 ? 7 : 1 }}>
-                    <ambientLight intensity={1} />
-                    <pointLight position={[11, 1, 1]} intensity={5} castShadow
+                    animate={{ x: section === 5 ? 7 : 0, y: section === 5 ? 5 : 0, z: section === 5 ? 4 : 0 }} 
+                    transition={{ delay: section === 5 ? 2 : 0, duration: section === 5 ? 7 : 1 }}>
+                    {/* <ambientLight intensity={1} /> */}
+                    {/* <pointLight position={[11, 1, 1]} intensity={5} castShadow
                         shadow-camera-far={50}
                         shadow-camera-left={-10}
                         shadow-camera-right={10}
@@ -45,10 +44,8 @@ export const Experience = (props) => {
                         <ambientLight intensity={0.3} /> 
             <pointLight position={[1, 1, 1]} intensity={1.5} />
         <spotLight  intensity={18} castShadow />
-            <spotLight position={[5, 15, 5]} angle={0.2} penumbra={1} intensity={0.6} castShadow />
+            <spotLight position={[5, 15, 5]} angle={0.2} penumbra={1} intensity={0.6} castShadow /> */}
             {/* <OrbitControls/> */}
-
-
                     <motion.group
                         className="hidden sm:block"
                         animate={{
@@ -61,7 +58,6 @@ export const Experience = (props) => {
                         }}>
                         {/* <Card  /> */}
                     </motion.group>
-
                     <motion.group
                         animate={{
                             y: section === 0 ? (sm ? 3.4 : 3.4) : section === 7 ? (sm ? 4.8 : 4.8) : section === 8 ? (sm ? 8.8 : 8.8) : (sm ? -2 : -2),
@@ -73,11 +69,10 @@ export const Experience = (props) => {
                         }}>
                         {/* <Card scale={[1, 1, 1]} /> */}
                     </motion.group>
-
                     <motion.group></motion.group>
                     <motion.group position={[0, 0, 0]} scale={[3.5, 3.5, 3.5]} animate={{ x: -6.55, y: 1.68, z: -0.9 }}>
                         <motion.group animate={{ rotateX: 1.59, rotateZ: 3 }}>
-                            <IphoneForNotification section={section} />
+                            <IphoneForNotification section={section} setSetion={onSectionChange}/>
                         </motion.group >
                     </motion.group >
                     <motion.group scale={[3, 3, 3]}
@@ -106,7 +101,6 @@ export const Experience = (props) => {
                     >
                         <CardHolder section={section} setSetion={onSectionChange} />
                     </motion.group>
-
                     <motion.group scale={[ (sm ? 12 : 25),(sm ? 14 : 25),(sm ? 14 : 25), ]}  animate={{ z: section === 0 ? (sm ? -2 : -8) : -25 ,x: (sm ? 25 : 22), y: (sm ? 4 : 3) ,rotateY:-1.7 }} >
                         <Heading />
                     </motion.group>
@@ -124,9 +118,6 @@ export const Experience = (props) => {
                 castShadow>
                 <Iphone section={section} />
             </motion.group >
-
-
-
         </>
     )
 }

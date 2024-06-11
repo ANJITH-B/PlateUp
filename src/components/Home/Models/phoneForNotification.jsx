@@ -11,7 +11,7 @@ import { useGLTF } from '@react-three/drei'
 import * as THREE from 'three';
 
 export function IphoneForNotification(props) {
-  const { section } = props;
+  const { section , setSetion } = props;
   const { nodes, materials } = useGLTF('models/iphone_14_pro_max_gold.glb');
   const groupRef = useRef();
 
@@ -73,7 +73,7 @@ export function IphoneForNotification(props) {
        video.src = '/videos/6.mp4';
      playVideo();
      } else if (section === 7) {
-       video.src = '/videos/6.mp4';
+        video.src = "videos/7.mp4";
      playVideo();
    }
     
@@ -100,6 +100,7 @@ export function IphoneForNotification(props) {
         <group  >
 
           <mesh
+            onClick={() => setSetion(7)}
             castShadow
             receiveShadow
             geometry={nodes.LLCOsMNMwTSiaFM_0.geometry}

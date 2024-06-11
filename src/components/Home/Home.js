@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import FoodSteam from "./foodbowlAndSteam/steam";
 import { Environment, CameraShake, PerspectiveCamera, Scroll, ScrollControls, Text, } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
@@ -14,8 +14,10 @@ import Header from "../header";
 import * as THREE from 'three'
 
 const Home = (props) => {
+  const audio = new Audio('./bg.mp3')
 
   const { section, setSection } = props;
+  const ref = useRef()
 
   function Rig() {
     const [vec] = useState(() => new THREE.Vector3())
@@ -34,9 +36,9 @@ const Home = (props) => {
               <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />) : (<Header />)}
             </div>
           </div>
-          <Canvas shadows page={5} className="w-[100vw] h-[100vh] -z-5 relative">
+          <Canvas shadows page={9} className="w-[100vw] h-[100vh] -z-5 relative">
           <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'night'} /> // apartment, city, dawn, forest, lobby, night, park, studio, sunset, warehouse            <PerspectiveCamera makeDefault position={[1, 4, 8]} />
-            <ScrollControls pages={9} damping={0.4} className=''>
+            <ScrollControls pages={10} damping={0.4} className=''>
               <ScrollManager section={section} onSectionChange={setSection} />
               <Scroll html>
                 <Interface />

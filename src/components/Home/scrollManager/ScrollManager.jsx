@@ -32,15 +32,14 @@ export const ScrollManager = (props) => {
 
         if (data.scroll.current > lastScroll.current) {
            
-            if (section === 7 && curSection === 8) {
+            if (section === 8 && curSection === 9) {
+                onSectionChange(9);
+            } else if (section === 7 && curSection === 8) {
                 onSectionChange(8);
             } else if (section === 6 && curSection === 7) {
                 onSectionChange(7);
             } else if (section === 5 && curSection === 6) {
                 onSectionChange(6);
-                // setTimeout(function() {
-                //     onSectionChange(7);
-                // }, 10000);
             } else if (section === 4 && curSection === 5) {
                 onSectionChange(5);
             } else if (section === 3 && curSection === 4) {
@@ -71,14 +70,14 @@ export const ScrollManager = (props) => {
                 onSectionChange(4);
             } else if (curSection === 6 && section === 7) {
                 onSectionChange(4);
-                // setTimeout(function() {
-                //     onSectionChange(5);
-                // }, 10000);
             } else if (curSection === 7 && section === 8) {
-                onSectionChange(7);
-            }
+                onSectionChange(4);
+            } else if (curSection === 8 && section === 9) {
+                onSectionChange(8);
+            } 
+            
         }
-        lastScroll.current = data.scroll.current;
+        lastScroll.current = data.scroll.current;   
 
     });
 
