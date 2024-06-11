@@ -32,14 +32,13 @@ const Home = (props) => {
         <div className="h-screen">
           <div className="relative w-full flex items-center justify-center">
             <div className="fixed inset-x-0 w-[95%] mx-auto z-50 rounded-3xl top-2">
-              <button ref={ref} onClick={()=>audio.play()}>click</button>
               {section >= 1 && section <= 4 ? (
               <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />) : (<Header />)}
             </div>
           </div>
-          <Canvas shadows page={5} className="w-[100vw] h-[100vh] -z-5 relative">
+          <Canvas shadows page={9} className="w-[100vw] h-[100vh] -z-5 relative">
           <Environment preset={section === 0 ? 'night' : section === 1 ? 'night' : 'night'} /> // apartment, city, dawn, forest, lobby, night, park, studio, sunset, warehouse            <PerspectiveCamera makeDefault position={[1, 4, 8]} />
-            <ScrollControls pages={9} damping={0.4} className=''>
+            <ScrollControls pages={10} damping={0.4} className=''>
               <ScrollManager section={section} onSectionChange={setSection} />
               <Scroll html>
                 <Interface />
