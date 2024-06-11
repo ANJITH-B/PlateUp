@@ -14,11 +14,7 @@ import Header from "../header";
 import * as THREE from 'three'
 
 const Home = (props) => {
-  const audio = new Audio('./bg.mp3')
-
   const { section, setSection } = props;
-  const ref = useRef()
-
   function Rig() {
     const [vec] = useState(() => new THREE.Vector3())
     const { camera, mouse } = useThree()
