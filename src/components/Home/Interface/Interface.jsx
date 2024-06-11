@@ -236,9 +236,9 @@ const Contact = () => {
   return (
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
-        <motion.div className=" p-4 md:w-1/2 "></motion.div>
-        <motion.div className="md:mt-0   " >
-          <div className='border border-gray-500 w-[50vh] px-8 py-6 rounded-3xl backdrop-opacity-20 backdrop-invert bg-black/10 '>
+        <motion.div className=" p-10 md:p-4 md:w-1/2"></motion.div>
+        <motion.div className="md:mt-0 " >
+          <div className='border border-gray-500 md:w-[50vh] px-8 py-6 rounded-3xl backdrop-opacity-20 backdrop-invert bg-black/10 m-5 mt:10 md:m-0 mb-0'>
             <svg width="56" height="52" viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_13350_1024)">
                 <path d="M24.9453 1.56282C25.7684 1.01353 26.7263 0.700385 27.7149 0.657443C28.7035 0.614502 29.6849 0.843405 30.5525 1.31926L30.9503 1.56282L52.5999 15.995C53.2782 16.4469 53.8456 17.0463 54.2598 17.7482C54.6741 18.4502 54.9244 19.2366 54.9922 20.0488L55.0111 20.4981V46.1122C55.0116 47.4777 54.4958 48.7929 53.5674 49.7941C52.6389 50.7954 51.3663 51.4087 50.0047 51.5111L49.5987 51.5246H6.2996C4.93412 51.525 3.61893 51.0093 2.61769 50.0809C1.61645 49.1524 1.00315 47.8798 0.900738 46.5181L0.887207 46.1122L0.887207 20.4981C0.887221 19.6832 1.07121 18.8789 1.42546 18.1451C1.77971 17.4113 2.29506 16.767 2.93309 16.2602L3.29843 15.995L24.9453 1.56282ZM27.9492 6.06593L8.47267 19.0503L27.9492 32.0346L47.4257 19.0503L27.9492 6.06593Z" fill="white" />
@@ -246,13 +246,13 @@ const Contact = () => {
               <defs><clipPath id="clip0_13350_1024"><rect width="54.8369" height="51.3367" fill="white" transform="translate(0.530273 0.52832)" /></clipPath></defs>
             </svg>
 
-            <motion.h2 className=" text-xl font-primary font-semibold text-white-600 mt-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
+            <motion.h2 className="text-md md:text-xl font-primary font-semibold text-white-600 mt-4" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0 }}>
             Subscribe to our newsletter for exclusive offers on groceries, dining, travel, and more
             </motion.h2>
             <div className='flex mt-5'>
             <motion.Input className='rounded-md p-1 h-10 mr-2 w-full bg-transparent border backdrop-blur-sm'></motion.Input>
             <motion.button className='bg-orange-600 text-white py-2 px-4 rounded-lg font-bold text-sm ' >Subscribe</motion.button>
-          </div>
+           </div>
           </div>
         </motion.div>
       </motion.div>
