@@ -286,10 +286,10 @@ const Footer = () => {
               23rd, The Ruby, 29, Senapati Bapat Marg, Mumbai
             </motion.h2>
             <div className='flex gap-6 mt-4'>
-              <Image alt="plateUp" src="/image/email.png" href="/" height={500} width={20} />
-              <Image alt="plateUp" src="/image/linkedin.png" href="/" height={500} width={20} />
-              <Image alt="plateUp" src="/image/youtube.png" href="/" height={500} width={20} />
-              <Image alt="plateUp" src="/image/Vector.png" href="/" height={500} width={20} />
+              <Image alt="plateUp" src="/image/email.png" href="/" height={20} width={20} />
+              <Image alt="plateUp" src="/image/linkedin.png" href="/" height={20} width={20} />
+              <Image alt="plateUp" src="/image/youtube.png" href="/" height={20} width={20} />
+              <Image alt="plateUp" src="/image/Vector.png" href="/" height={20} width={20} />
             </div>
             <div className='flex gap-4 mt-4'>
               <motion.button className='bg-orange-600 px-3 py-1 text-sm rounded-xl'>Gurgaon</motion.button >
