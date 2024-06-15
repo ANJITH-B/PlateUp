@@ -286,14 +286,14 @@ const Footer = () => {
               23rd, The Ruby, 29, Senapati Bapat Marg, Mumbai
             </motion.h2>
             <div className='flex gap-6 mt-4'>
-              <Image alt="plateUp" src="/image/email.png" href="/" height={20} width={20} />
-              <Image alt="plateUp" src="/image/linkedin.png" href="/" height={20} width={20} />
-              <Image alt="plateUp" src="/image/youtube.png" href="/" height={20} width={20} />
-              <Image alt="plateUp" src="/image/Vector.png" href="/" height={20} width={20} />
+              <Image alt="plateUp" src="/image/email.png" href="hello@plateup.in" height={20} width={20} />
+              <Image alt="plateUp" src="/image/linkedin.png" href="https://in.linkedin.com/company/plateupindia" height={20} width={20} />
+              <Image alt="plateUp" src="/image/youtube.png" href="https://youtube.com/@plateupindia?si=-MGnjoGVugHF7WiU" height={20} width={20} />
+              <Image alt="plateUp" src="/image/Vector.png" href="https://x.com/PlateupIndia" height={20} width={20} />
             </div>
             <div className='flex gap-4 mt-4'>
               <motion.button className='bg-orange-600 px-3 py-1 text-sm rounded-xl'>Gurgaon</motion.button >
-              <motion.button className='bg-orange-600 px-3 py-1 text-sm rounded-xl'>Mumbai</motion.button >
+              <motion.button onClick='map-https://maps.app.goo.gl/xSChMt2uNdz997TC6' className='bg-orange-600 px-3 py-1 text-sm rounded-xl'>Mumbai</motion.button >
               <motion.button className='bg-orange-600 px-3 py-1 text-sm rounded-xl'>Banglore</motion.button >
             </div>
           </motion.div>
