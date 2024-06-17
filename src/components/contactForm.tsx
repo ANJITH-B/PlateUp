@@ -31,7 +31,7 @@ export function EmployeeForm() {
         formData.append("Contact", mobile);
         formData.append("Location", location);
         await fetch(
-            "https://script.google.com/macros/s/AKfycbwaNUjmeP0GPpVkCIwbGN2w2P8Far0DEvVtGUlf8GezZ3uOvK3o-aP5SNbuLIqZtW_lvw/exec",
+            "https://script.google.com/macros/s/AKfycbwsJ-_rFgqew_tlcNY6cjt1OohGqb3BODVjOih-z0c-36ewcIX3YChmHsX3SHY9JqPA/exec",
             {
                 method: "POST",
                 body: formData,
@@ -121,7 +121,7 @@ export function CorporateForm() {
         formData.append("Location", location);
         formData.append("Message", message);
         await fetch(
-            "https://script.google.com/macros/s/AKfycbwBfgjSKcj4S3713-DnJu8DGlyzdVrmMQxnJcecAvL1fU7otJWf5HXfkrWdla3NhNpXUg/exec",
+            "https://script.google.com/macros/s/AKfycbz120KLMOFY80V7xRy7mn7nNxlRGl0_EKUjXAUGTR9XzzJJSsAw9Sln0h0i3ScklQVJ/exec",
             {
                 method: "POST",
                 body: formData,
@@ -212,7 +212,7 @@ export function MerchantForm() {
         formData.append("Location", location);
         formData.append("Message", message);
         await fetch(
-            "https://script.google.com/macros/s/AKfycbyT1Zn9TPmNzXuWTtg2Ovr9Tds5xNd8MMPE5fWi50kplIOzu8EGdi6XV62N6-sDRiJUVQ/exec",
+            "https://script.google.com/macros/s/AKfycbwjORwbgkgfSOXPihm3_Gct5WLXbYvKv-RViRruzIVBPbaRTzJBSyxzMk7WhKWYTiaD/exec",
             {
                 method: "POST",
                 body: formData,

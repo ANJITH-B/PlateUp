@@ -11,7 +11,7 @@ import {EmployeeForm, CorporateForm , MerchantForm} from '@/components/contactFo
 import { Tabs } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/moving-border";
 import '../fonts.css';
-import bg1 from './contact-img.png';
+import bg1 from './contact-img.jpeg';
 import logo from './Plateup Logo-11.png'
 
 function ContactUs() {
