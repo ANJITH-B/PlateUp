@@ -145,3 +145,27 @@ body {
     transform: rotate(360deg);
   }
 } 
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 206px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.track > h1 {
+  margin: 0px 0;
+  font-size: 8rem;
+  /* font-family: Antonio; */
+  -webkit-text-fill-color: #676767;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #717171;
+  text-transform: uppercase;
+}
