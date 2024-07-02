@@ -63,36 +63,28 @@ const loading = () => {
    <div className="marquee">
     <motion.div className="track" variants={normal} animate="animate" >
       <h1>
-        Let's Work Together. Let's Work Together. Let's Work Together. Let's
-        Work Together. Let's Work Together. Let's Work Together. Let's Work
-        Together
+      Transform the way you eat by reimagining, reinventing, and redefining your culinary experience.
       </h1>
     </motion.div>
   </div>
    <div className="marquee">
     <motion.div className="track" variants={slow} animate="animate">
       <h1>
-        Let's Work Together. Let's Work Together. Let's Work Together. Let's
-        Work Together. Let's Work Together. Let's Work Together. Let's Work
-        Together
+      Transform the way you eat by reimagining, reinventing, and redefining your culinary experience.
       </h1>
     </motion.div>
   </div>
    <div className="marquee">
     <motion.div className="track" variants={normal} animate="animate">
       <h1>
-        Let's Work Together. Let's Work Together. Let's Work Together. Let's
-        Work Together. Let's Work Together. Let's Work Together. Let's Work
-        Together
+      Transform the way you eat by reimagining, reinventing, and redefining your culinary experience.
       </h1>
     </motion.div>
   </div>
    <div className="marquee">
     <motion.div className="track" variants={slow} animate="animate">
       <h1>
-        Let's Work Together. Let's Work Together. Let's Work Together. Let's
-        Work Together. Let's Work Together. Let's Work Together. Let's Work
-        Together
+      Transform the way you eat by reimagining, reinventing, and redefining your culinary experience.
       </h1>
     </motion.div>
   </div>
