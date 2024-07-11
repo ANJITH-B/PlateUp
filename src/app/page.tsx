@@ -4,7 +4,6 @@ import HomePage from '@/components/Home/Home';
 import { NextUIProvider } from '@nextui-org/react';
 
 
-
 export default function Home() {
   const [section, setSection] = React.useState(0)
 
@@ -17,4 +16,4 @@ export default function Home() {
       </main>
     </NextUIProvider>
   );
-}
+}   

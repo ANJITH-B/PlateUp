@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion-3d'
-    import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';   
 import { Iphone } from "../Models/phone"
 import { IphoneForNotification } from "../Models/phoneForNotification"
 import { Card } from "../Models/Card";
