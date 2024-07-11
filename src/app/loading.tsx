@@ -69,7 +69,7 @@ const loading = () => {
   }, [texts.length]);
 
   React.useEffect(() => {
-    const animation = animate(count, 100, { duration: 0.5 });
+    const animation = animate(count, 100, { duration: 3 });
   }, []);
 
   return (
@@ -88,7 +88,7 @@ const loading = () => {
                   className="bg-white h-14 md:h-20"
                   style={{ width: "1rem" }}
                   animate={{ width: sm ? "10rem" : "20rem" }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 3 }}
                 ></motion.div>
               </motion.div>
               <div className="flex flex-row">
