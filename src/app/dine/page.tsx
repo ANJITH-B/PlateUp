@@ -31,6 +31,8 @@ import TimeFrame from "./Components/TimeFrame";
 import RestaurantCard from "./Components/RestaurantCard";
 import FAndQWhy from "./Components/F&QWhy";
 import FAndQHow from "./Components/F&QHow";
+import ModalTimeFrame from "./Components/ModalTimeFrame";
+import FAndQWhat from "./Components/F&QWhat";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -91,45 +93,36 @@ const Page: React.FC = () => {
       {/* 02 BOOK YOUR SLOTS */}
 
       <SectionHeading heading='Book Your Slots!' mealExpressIcon={false} />
-      {/* <div className="h-full w-full pt-[3vh] flex flex-row">
-        <div className="flex flex-col gap-5 w-2/5">
+      <div className="pt-[3vh]"> <ModalTimeFrame /> </div>
+      <div className="h-full w-full pt-[3vh] flex flex-col md:flex-row">
+        <div className="hidden md:block w-2/5">
+        <div className="flex flex-col gap-5 w-full">
           <p className="text-xl font-light"> Select your time frame</p>
           <FrameCalendar />
           <TimeFrame />
         </div>
-        <div className="w-3/5 h-full ">
+        </div>
+        <div className="w-full md:w-3/5 h-full ">
           <p className="text-xl font-light pb-[3vh]"> 
-            Select your time frame Available at this time frame
+            Available at this time frame
           </p>
           <RestaurantCard/>
         </div>
-      </div> */}
+      </div>
 
       {/* F&Q */}
-      {/* <div className="flex flex-col pt-[10vh]">
-        <div className="flex flex-row justify-between">
-          <div className="text-4xl">
-            <WordPopping phrase="Frequency asked questions !" />
-          </div>
-        </div>
-        <div className="w-full pt-5">
-          <motion.hr
-            initial={{ width: 5 }}
-            whileInView={{ width: 1150 }}
-            exit={{ width: 0 }}
-            transition={{ duration: 1 }}
-            className="bg-gray-200"
-          />
-        </div>
-      </div>
-      <div className="h-screen w-full pt-[10vh]">
+      <SectionHeading heading="Frequency asked questions !" mealExpressIcon={false}/>
+      <div className="h-screen w-full pt-[4vh] md:pt-[10vh]">
         <div className="flex flex-row gap-3">
-          <div className="flex flex-col w-2/6 gap-3">            
+          <div className="hidden md:block w-2/6">
+          <div className="flex flex-col w-full gap-3">            
             <FAndQWhy/>
             <FAndQHow/>
-          </div>   
+          </div> 
+          </div>
+          <FAndQWhat/>  
         </div>
-      </div> */}
+      </div>
     </main>
   );
 };

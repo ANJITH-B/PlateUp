@@ -30,7 +30,7 @@ const FAndQWhat = () => {
   };
 
   return (
-    <div className="w-4/6 bg-[#4C5A5D] rounded-3xl p-5">
+    <div className="md:w-4/6 bg-[#4C5A5D] rounded-3xl p-5">
             {FQA.map((item, index) => (
               <div key={index}>
                 <motion.div className="flex flex-row justify-between py-3 items-center">

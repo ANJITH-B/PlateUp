@@ -2,19 +2,17 @@ import React from "react";
 import hotel1 from "../assets/images/hotel1.png";
 import Image from "next/image";
 
-
 const paths = [
-    {
-      d: "M9.39935 6.46985L9.50555 6.82754H9.87867H14.5416L10.6826 9.82602L10.4096 10.0381L10.5116 10.3684L11.989 15.1533L8.31075 12.2353L8 11.9888L7.68925 12.2353L4.00985 15.1542L5.48482 10.3681L5.58652 10.0381L5.31392 9.82613L1.45757 6.82754H6.12133H6.49445L6.60065 6.46985L8 1.75671L9.39935 6.46985Z",
-      fill: "white",
-      stroke: "white"
-    }
-  ];
+  {
+    d: "M9.39935 6.46985L9.50555 6.82754H9.87867H14.5416L10.6826 9.82602L10.4096 10.0381L10.5116 10.3684L11.989 15.1533L8.31075 12.2353L8 11.9888L7.68925 12.2353L4.00985 15.1542L5.48482 10.3681L5.58652 10.0381L5.31392 9.82613L1.45757 6.82754H6.12133H6.49445L6.60065 6.46985L8 1.75671L9.39935 6.46985Z",
+    fill: "white",
+    stroke: "white",
+  },
+];
 
-  
 const RestaurantCard: React.FC = () => {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
       {[...Array(6)].map((_, index) => (
         <div key={index} className="flex flex-col w-full">
           <div className="flex items-end pb-3">
@@ -29,7 +27,13 @@ const RestaurantCard: React.FC = () => {
                 </div>
               </div>
             </div>
-            <Image src={hotel1} alt="" width={200} height={200}  className="w-full" />
+            <Image
+              src={hotel1}
+              alt=""
+              width={200}
+              height={200}
+              className="w-full"
+            />
           </div>
           <div className="flex justify-between">
             <div className="flex flex-row gap-1">
@@ -40,17 +44,19 @@ const RestaurantCard: React.FC = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {Array(5).fill(null).map((_, index) => (
-        <path
-          key={index}
-          d={paths[0].d}
-          fill={paths[0].fill}
-          stroke={paths[0].stroke}
-          transform={`translate(${index * 20}, 0)`}
-        />
-      ))}
+                {Array(5)
+                  .fill(null)
+                  .map((_, index) => (
+                    <path
+                      key={index}
+                      d={paths[0].d}
+                      fill={paths[0].fill}
+                      stroke={paths[0].stroke}
+                      transform={`translate(${index * 20}, 0)`}
+                    />
+                  ))}
               </svg>
-              <p className="font-thin text-gray-300 text-[14px] px-1">
+              <p className="hidden md:block font-thin text-gray-300 text-[11px] md:text-[14px] px-1">
                 21 reviews
               </p>
             </div>
