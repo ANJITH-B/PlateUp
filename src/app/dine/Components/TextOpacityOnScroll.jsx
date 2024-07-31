@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
 
-
 export default function TextOpacityOnScroll({contain , phrase}) {
 
   let refs = useRef([]);
@@ -57,4 +56,5 @@ export default function TextOpacityOnScroll({contain , phrase}) {
     </main>
   )
 }
+
 //mb-screen h-screen
