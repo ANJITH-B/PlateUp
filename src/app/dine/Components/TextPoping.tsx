@@ -7,13 +7,14 @@ interface AnimatedTextProps {
 }
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({ text, delay }) => {
-  const letters = text.split("");
-
+  const modifiedText = text.split(" ").join("  ");
+  const letters = modifiedText.split(/(?!^)/);
+  console.log(letters);
   return (
     <div style={{ display: "flex", overflow: "hidden" }}>
       {letters.map((letter, index) => (
         <motion.span
-          className="text-3xl md:text-6xl font-semibold flex justify-center  text-center leading-tight text-[#FBFEE1]"
+          className="text-3xl md:text-6xl font-semibold flex justify-center  mr-[3px] h-16 text-center leading-tight text-[#FBFEE1]"
           key={`${letter}-${index}`}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
