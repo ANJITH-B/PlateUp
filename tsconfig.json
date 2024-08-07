@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/contact/words.jsx", "src/app/sticky/page.jsx", "src/app/dine/Components/TextOpacityOnScroll.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/contact/words.jsx", "src/app/sticky/page.jsx", "src/app/dine/Components/TextOpacityOnScroll.jsx", "src/app/dine/Components/MovingTextPathSM.jsx"],
   "exclude": ["node_modules"]
 }
