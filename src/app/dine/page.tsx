@@ -24,6 +24,9 @@ import FAndQHow from "./Components/F&QHow";
 import ModalTimeFrame from "./Components/ModalTimeFrame";
 import FAndQWhat from "./Components/F&QWhat";
 import TiltCard from "./Components/3dEffectPhone";
+import Image from 'next/image'
+import PhoneSM from './assets/images/phoneSM.png'
+import MovingTextPathSM from "./Components/MovingTextPathSM";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -36,12 +39,24 @@ const Page: React.FC = () => {
   return (
     <main className="px-5 md:px-20 lg:px-40 xl:px-40">
       <motion.div 
-      initial={{ rotate:0 ,opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ rotate: -30, opacity:1, scale:1}} transition={{delay:2}} 
-      className="flex items-center justify-center absolute w-900px h-full  ml-[30vh] pt-[21vh] ">
+        initial={{ rotate:0 ,opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ rotate: -30, opacity:1, scale:1}} transition={{delay:2}} 
+        className="md:block hidden items-center justify-center absolute w-full md:w-900px h-full ml-[30vh] z-10">
         <TiltCard/>
       </motion.div> 
-      <div className="h-full w-full flex flex-col items-center pt-[16vh] ">
-        <MovingText />
+      <motion.div 
+        initial={{opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ opacity:1, scale:1}} transition={{delay:2}} 
+        className="block md:hidden items-center justify-center absolute w-full h-full pt-[20vh]">
+        <Image alt="error @ Image phone sm screen" src={PhoneSM} width={400} height={400}/>
+      </motion.div> 
+      <div className="hidden md:block">
+        <div className="h-full w-full flex flex-col items-center pt-[16vh] ">
+          <MovingText />
+        </div>
+      </div>
+      <div className="block md:hidden">
+        <div className=" h-full w-full flex flex-col items-center pt-[16vh] ">
+          <MovingTextPathSM />
+        </div>
       </div>
       <div className="h-full w-full ">
         <SubContent/>

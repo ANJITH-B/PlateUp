@@ -13,7 +13,7 @@ import S2 from '../assets/images/snacks2.png'
 import D1 from '../assets/images/dinne.png'
 
 
-const MovingText = () => {
+const MovingTextPathSM = () => {
   const paths = useRef([]);
   const container = useRef();
   const { scrollYProgress } = useScroll({
@@ -34,8 +34,10 @@ const MovingText = () => {
 
   return (
     <div className="md:h-full w-full flex flex-col items-center "> 
-      <AnimatedText text="Introducing Dine VISTA" delay={0} />
-      <AnimatedText text="Discover the Joy of Dining Out" delay={1.5} />  
+      <AnimatedText text="Introducing" delay={0} />
+      <AnimatedText text="Dine VISTA" delay={0} />
+      <AnimatedText text="Discover the Joy" delay={1.5} />  
+      <AnimatedText text="of Dining Out" delay={1.5} />  
       <motion.div className="bg-[#507BA6] h-60 md:h-96 w-full rounded-3xl mt-[20vh] md:mt-[15vh] pt-8"
           initial={{ scale: 0.1, y: 100, opacity: 0 }}
           animate={{ scale: 1, y: 0, opacity: 1 }}
@@ -70,7 +72,7 @@ const MovingText = () => {
 };
 
 
-export default MovingText;
+export default MovingTextPathSM;
 
 
 

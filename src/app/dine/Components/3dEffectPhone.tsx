@@ -56,19 +56,13 @@ const TiltCard = () => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{  transformStyle: "preserve-3d", transform, }}
-      className="relative h-[550px] w-[650px] rounded-xl bg-gradient-to-br "
+      className="relative md:h-[550px] w-[2000px] md:w-[650px] rounded-xl bg-gradient-to-br "
     >
       <div
         style={{ transform: "translateZ(15px)", transformStyle: "preserve-3d",}}
         className="absolute inset-4 grid place-content-center rounded-xl  "
       >
-        <Image  style={{ transform: "translateZ(15px)", transformStyle: "preserve-3d",}} src={F1} width={800} height={700} alt="Image vannilla" className=" w-[700px]"/>
-        {/* <p
-          style={{ transform: "translateZ(50px)",}}
-          className="text-center text-2xl font-bold"
-        >
-          HOVER ME
-        </p> */}
+        <Image  style={{ transform: "translateZ(15px)", transformStyle: "preserve-3d",}} src={F1} width={800} height={700} alt="Image vannilla" className="w-1200px md:w-[700px]"/>
       </div>
     </motion.div>
   );
