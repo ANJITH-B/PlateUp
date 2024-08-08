@@ -16,7 +16,7 @@ const GetCard: React.FC = () => {
   
   return (
     <motion.div
-      className="bg-[#D9D9D9] text-black w-full rounded-3xl flex flex-col items-center justify-center "
+      className="bg-[#D9D9D9] text-black w-full h-96 md:h-full rounded-3xl flex flex-col items-center justify-center "
       initial={{ scale: 0.1, y: 100, x: -100, opacity: 0 }}
       exit={{ scale: 0, opacity: 0  ,transition:{ ease: [0.65, 0, 0.35, 1], delay: 0 ,duration: 0}}}  
       whileInView={{ scale: 1, opacity: 1 ,x: 0,y :0  , transition: {ease: [0.65, 0, 0.35, 1], delay: 0.1 ,duration: 1.2}}}

@@ -26,7 +26,7 @@ import FAndQWhat from "./Components/F&QWhat";
 import TiltCard from "./Components/3dEffectPhone";
 import Image from 'next/image'
 import PhoneSM from './assets/images/phoneSM.png'
-import MovingTextPathSM from "./Components/MovingTextPathSM";
+
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -40,31 +40,30 @@ const Page: React.FC = () => {
     <main className="px-5 md:px-20 lg:px-40 xl:px-40">
       <motion.div 
         initial={{ rotate:0 ,opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ rotate: -30, opacity:1, scale:1}} transition={{delay:2}} 
-        className="md:block hidden items-center justify-center absolute w-full md:w-900px h-full ml-[30vh] z-10">
+        className="md:block hidden items-center justify-center absolute w-full md:w-900px h-full ml-[30vh] z-10 overflow-hidden">
         <TiltCard/>
       </motion.div> 
       <motion.div 
         initial={{opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ opacity:1, scale:1}} transition={{delay:2}} 
-        className="block md:hidden items-center justify-center absolute w-full h-full pt-[20vh]">
+        className="block md:hidden items-center justify-center absolute z-10 w-full h-full pt-[30vh]">
         <Image alt="error @ Image phone sm screen" src={PhoneSM} width={400} height={400}/>
       </motion.div> 
-      <div className="hidden md:block">
+      <div className="">
         <div className="h-full w-full flex flex-col items-center pt-[16vh] ">
           <MovingText />
         </div>
       </div>
-      <div className="block md:hidden">
-        <div className=" h-full w-full flex flex-col items-center pt-[16vh] ">
-          <MovingTextPathSM />
-        </div>
-      </div>
+      
       <div className="h-full w-full ">
         <SubContent/>
+        
         <div ref={contain} className="flex flex-col md:flex-row w-full pt-[10vh] rounded-3xl gap-2 md:gap-0" >
           <ShortBrief/>
-          <div className="flex flex-row w-1/2 gap-2 md:gap-3">
+          <div className="md:hidden block"><GetCard/></div>
+          <div className="flex flex-row md:w-1/2 gap-2 md:gap-3">
+            <div className="w-[75vw] h-full block md:hidden"></div>
             <RestaurantThemesCardOne />
-            <GetCard/>
+            <div className="h-full w-full hidden md:block"><GetCard/></div>
           </div>
         </div>
         <div className="flex flex-row w-full pt-[1vh] rounded-3xl">
