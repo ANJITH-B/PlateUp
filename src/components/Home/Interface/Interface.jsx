@@ -15,6 +15,7 @@ export const Section = (props) => {
         y: 0,
         transition: { duration: 1, delay: 0.6 },
       }}
+      exit={{ opacity: 0, transition: { delay: 0, duration: 0.3 } }}
     >
       {children}
     </motion.section>
@@ -22,38 +23,8 @@ export const Section = (props) => {
 };
 
 export const Interface = () => {
-  // const [pathLength, setPathLength] = useState(0);
-  // const [drawLength, setDrawLength] = useState(0);
-
-  // useEffect(() => {
-  //     const path = document.querySelector('path');
-  //     const pathLength = path.getTotalLength();
-  //     setPathLength(pathLength);
-  //     path.style.strokeDasharray = `${pathLength} ${pathLength}`;
-  //     path.style.strokeDashoffset = pathLength;
-
-  //     const onScroll = () => {
-  //         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  //         const scrollPercentage = scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-  //         const drawLength = pathLength * scrollPercentage;
-  //         setDrawLength(drawLength);
-  //         path.style.strokeDashoffset = pathLength - drawLength;
-  //     };
-
-  //     window.addEventListener('scroll', onScroll);
-
-  //     return () => {
-  //         window.removeEventListener('scroll', onScroll);
-  //     };
-  // }, [pathLength]);
-
   return (
     <div className="flex flex-col w-screen">
-      {/* <div className="absoul">
-            <svg width="1810" height="2619" viewBox="0 0 1810 2619" fill="none" preserveAspectRatio='xMidYMax meet'>
-                <path d="M2.38118 4.67663L529.718 262.123C719.648 354.847 862.535 522.291 924.232 724.441L956.688 830.784C998.869 968.989 1005.21 1115.65 975.106 1256.98L884.175 1683.91C849.188 1848.17 905.9 2018.5 1032.37 2129.01L1121.2 2206.63C1231.3 2302.83 1353 2384.88 1483.47 2450.87L1807 2614.5" stroke="#FFC224" strokeWidth="10" />
-            </svg>
-        </div> */}
       <Home />
       <Food />
       <DineIn />
@@ -79,21 +50,6 @@ const Home = () => {
     <Section className="z--10" style={{ zIndex: -200 }}>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
         <motion.div className=" p-4 md:w-1/2 h-full flex items-center flex-col  md:pl-20 sm:m-10">
-          {/* <motion.h1
-            className='text-4xl md:text-7xl font-bold italic md:mt-20 pt-[20vh] md:pt-[10vh]  content-start'
-            initial={{ opacity: 0, y: -20, }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >  
-            <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
-              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }}>Satisfy your </motion.span>
-            <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
-              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }} style={{ WebkitTextStroke: '3px rgb(234 179 8)' }}
-              className='text-black stroke-gray-500  stroke-2'>craving </motion.span> <span style={{ WebkitTextStroke: '3px rgb(234 179 8)' }}
-                className='text-black stroke-gray-500  stroke-2'> without</span>  breaking <motion.span initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
-                  animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} transition={{ duration: 3 }}>the</motion.span>   <span className="text-yellow-500 italic">bank </span>
-          </motion.h1> */}
-
           <motion.h2
             className="text-md md:text-xl italic font-semibold text-white-600 mt-4 md:pl-20 hidden sm:block"
             initial={{ opacity: 0, y: 0 }}
@@ -127,15 +83,6 @@ const Food = () => {
             standard rate. Enhance your office dining experience with a wide
             range of cuisines delivered directly to your table.
           </motion.h2>
-          {/* <div className="sec">
-        <h2>Light</h2>
-      </div>
-      <div
-        className="light"
-        style={{ '--x': `${position.x}px`, '--y': `${position.y}px` }}
-        onMouseMove={handleMouseMove}
-      ></div> */}
-          {/* <MovingBorder>hel</MovingBorder> */}
           <motion.div
             className="border-button  mt-12 w-40 h-10  font-bold text-xs md:text-sm"
             initial={{ opacity: 0, y: 0 }}
@@ -169,14 +116,16 @@ const DineIn = () => {
             redeeming your favorites at DINEVISTA. Whether it's celebrating your
             corporate lunch or enjoying a family dinner, we've got you covered.
           </motion.h2>
-          <motion.div
-            className="border-button  mt-12 w-40 h-10  font-bold text-xs md:text-sm"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            Explore more
-          </motion.div>
+          <Link href="/dine" target="_blank">
+            <motion.div
+              className="border-button mt-12 w-40 h-10 font-bold text-xs md:text-sm"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              Explore more
+            </motion.div>
+          </Link>
         </motion.div>
       </motion.div>
     </Section>
@@ -187,9 +136,9 @@ const Grocery = () => {
   return (
     <Section>
       <motion.div className=" max-w-screen-2xl flex flex-col  md:flex-row w-full h-full items-center ">
-        <motion.div className="p-5 md:pl-20 pr-3 md:w-1/2 ">
+        <motion.div className="p-5 md:pl-20 xl:px-40 md:pr-3 md:w-3/5 ">
           <motion.h2
-            className="  md:text-2xl font-tertiary  semifont-bold text-white-600 mt-20 md:mt-4"
+            className=" md:text-2xl    font-tertiary semifont-bold text-white-600 mt-20 md:mt-4"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0 }}
@@ -202,15 +151,15 @@ const Grocery = () => {
             shopping whenever you need.
           </motion.h2>
           <motion.div
-            className="border-button mt-12 w-40 h-10  font-bold text-xs md:text-sm"
+            className="border-button  mt-12 w-40 h-10  font-bold text-xs md:text-sm"
             initial={{ opacity: 0, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.01, delay: 0 }}
+            transition={{ duration: 0.3, delay: 0 }}
           >
             Explore more
           </motion.div>
         </motion.div>
-        <motion.div className=" px-10 md:w-1/2 md:mt-0"></motion.div>
+        <motion.div className=" px-10 md:w-2/5 md:mt-0"></motion.div>
       </motion.div>
     </Section>
   );
@@ -250,12 +199,12 @@ const Travel = () => {
 };
 
 const Contact = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const handleSubmit = async () => {
     const formData = new FormData();
     try {
       formData.append("Email", email);
-      setEmail('')
+      setEmail("");
       await fetch(
         "https://script.google.com/macros/s/AKfycbxtyPo9qGmBiias5FJqnzb9OQbPXmlhWYoCqQPlTjQRwl2cSGbzAqfHraaPbt3Xuegu/exec",
         {
@@ -308,8 +257,15 @@ const Contact = () => {
               dining, travel, and more
             </motion.h2>
             <div className="flex mt-5">
-              <motion.Input onChange={(e)=>setEmail(e.target.value)} value={email} className="rounded-md p-1 h-10 mr-2 w-full bg-transparent border backdrop-blur-sm"></motion.Input>
-              <motion.button onClick={handleSubmit} className="bg-orange-600 text-white py-2 px-4 rounded-lg font-bold text-sm ">
+              <motion.Input
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                className="rounded-md p-1 h-10 mr-2 w-full bg-transparent border backdrop-blur-sm"
+              ></motion.Input>
+              <motion.button
+                onClick={handleSubmit}
+                className="bg-orange-600 text-white py-2 px-4 rounded-lg font-bold text-sm "
+              >
                 Subscribe
               </motion.button>
             </div>
@@ -321,12 +277,12 @@ const Contact = () => {
 };
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const handleSubmit = async () => {
     const formData = new FormData();
     try {
       formData.append("Email", email);
-      setEmail('')
+      setEmail("");
       await fetch(
         "https://script.google.com/macros/s/AKfycbxtyPo9qGmBiias5FJqnzb9OQbPXmlhWYoCqQPlTjQRwl2cSGbzAqfHraaPbt3Xuegu/exec",
         {
@@ -360,8 +316,15 @@ const Footer = () => {
             >
               Get latest trends, updates and offers.
             </motion.h2>
-            <motion.Input onChange={(e)=>setEmail(e.target.value)} value={email} className="border rounded-lg h-9 mr-2"></motion.Input>
-            <motion.button className="bg-orange-600 text-white py-2 px-5 rounded-lg font-bold text-sm mt-12" onClick={handleSubmit}>
+            <motion.Input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              className="border rounded-lg h-9 mr-2"
+            ></motion.Input>
+            <motion.button
+              className="bg-orange-600 text-white py-2 px-5 rounded-lg font-bold text-sm mt-12"
+              onClick={handleSubmit}
+            >
               SignUp
             </motion.button>
             <div className="flex gap-2 mt-5">

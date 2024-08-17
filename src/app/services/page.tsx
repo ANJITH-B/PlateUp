@@ -21,7 +21,7 @@ const content = [
     title: "Dine Vista",
     description:
       "Indulge in fine dining at our top-notch restaurants, offering a diverse array of delectable dishes. Redeem your meals effortlessly using the Plateup card or app at Dine vista for a seamless dining experience. Treat your palate to exquisite flavors with utmost convenience.",
-    link: "/dineIn",
+    link: "/dine",
   },
   {
     title: "Work Ride",
