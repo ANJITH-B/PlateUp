@@ -7,7 +7,7 @@ interface ModalPaymentProps {
   index: number;
 }
 
-const ModalPament: React.FC<ModalPaymentProps> = ({ item, index }) => {
+const ModalPayment: React.FC<ModalPaymentProps> = ({ item, index }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -60,4 +60,4 @@ const ModalPament: React.FC<ModalPaymentProps> = ({ item, index }) => {
   );
 };
 
-export default ModalCart;
+export default ModalPayment;

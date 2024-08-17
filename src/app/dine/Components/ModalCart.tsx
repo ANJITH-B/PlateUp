@@ -21,8 +21,11 @@ const onChange: CheckboxProps['onChange'] = (e) => {
     console.log(`checked = ${e.target.checked}`);
   };
 
-  
-  const items: MenuProps['items'] = [
+  interface MenuItem {
+    key: string;
+    label: string;
+  }
+  const items: MenuItem[] = [
     {
       label: 'Book by Seats',
       key: '1',
@@ -45,7 +48,7 @@ const paths = [
   ];
 
   interface ModalCartProps {
-    item: string;
+    item: string[];
     index: number
     
   }
