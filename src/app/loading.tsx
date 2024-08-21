@@ -23,7 +23,7 @@ const AnimatedText: React.FC<Props> = ({ text }) => {
     >
       {letters?.map((letter, index) => (
         <motion.span
-          className="text-4xl md:text-6xl font-bold "
+          className="text-4xl md:text-6xl font-bold"
           key={`${letter}-${index}`}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -92,7 +92,7 @@ const loading = () => {
                 ></motion.div>
               </motion.div>
               <div className="flex flex-row">
-                <motion.h1 className=" text-black dark:text-white font-bold text-4xl md:text-6xl ">
+                <motion.h1 className=" text-white font-bold text-4xl md:text-6xl ">
                   {number}
                 </motion.h1>
                 <h1 className="text-4xl md:text-6xl font-bold">%</h1>

@@ -16,6 +16,7 @@ import hotel7 from "../assets/images/Oudhe Premium Dining.png";
 import hotel8 from "../assets/images/Miro Deli.png";
 import Image from "next/image";
 import Restaurant from "../RestaurantArray";
+import ModalPayment from "./ModalPayment";
 
 const onChange: CheckboxProps['onChange'] = (e) => {
     console.log(`checked = ${e.target.checked}`);
@@ -126,7 +127,7 @@ const ModalCart: React.FC<ModalCartProps> = ({item, index}) => {
         onCancel={handleCancel}
         footer={(_, { OkBtn, CancelBtn }) => (
           <>
-            <Button onClick={handleCancel} className="bg-gray-900 py-3 text-white w-full">ADD YOUR PATEUP CARD</Button>
+            {/* <Button onClick={handleCancel} className="bg-gray-900 py-3 text-white w-full">ADD YOUR PATEUP CARD</Button> */}
             
           </>
         )}
@@ -241,7 +242,8 @@ const ModalCart: React.FC<ModalCartProps> = ({item, index}) => {
                 )}
                 </div>
         </div>
-        <div className="h-10 w-full"></div>
+        <div className="h-10 w-full"> </div>
+        <ModalPayment/>
         </div>
       </Modal>
     </>
