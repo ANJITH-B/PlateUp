@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal } from "antd";
 import Image from "next/image";
-import cardBg from "../assets/images/Cardbg.png";
+import cardBg from "../assets/images/cardBg.png";
 import MealExpress from "../assets/images/MealExpress.png";
 
 const ModalPayment: React.FC = () => {
