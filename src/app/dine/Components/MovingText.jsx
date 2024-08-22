@@ -46,7 +46,7 @@ const MovingText = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         className=" md:hidden text-[38px] leading-tight text-[#FBFEE1] font-semibold flex justify-center"
       >
-        <p className="text-center">
+        <p className="text-center font-serif font-bold">
           Introducing
           <br /> Dine VISTA
           <br /> Discover the Joy
