@@ -103,8 +103,8 @@ export const Tablet = ({
         className="min-h-[50vh] flex justify-start items-center w-full">
         <p className="text-start text-md font-primary font-medium container mx-auto px-2 w-[90%] text-white">
         Welcome to Plateup, a pioneering platform committed to alleviating the everyday hurdles encountered by employees. Our mission is to provide seamless solutions for corporate meal plans, grocery purchases, dining out, and commuting challenges.
-        At PlateUp, we understand the difficulties faced by employees in managing their daily expenses. Our comprehensive service is designed to address these needs efficiently, empowering employees to redeem their allowances effortlessly. This grants them the flexibility to purchase meals, commute, or buy groceries without unnecessary complications.
-        With PlateUp, employees enjoy a hassle-free experience, enabling them to focus on what truly matters. Join us as we revolutionize the way employees manage their daily expenses, one meal at a time.
+        At Plateup, we understand the difficulties faced by employees in managing their daily expenses. Our comprehensive service is designed to address these needs efficiently, empowering employees to redeem their allowances effortlessly. This grants them the flexibility to purchase meals, commute, or buy groceries without unnecessary complications.
+        With Plateup, employees enjoy a hassle-free experience, enabling them to focus on what truly matters. Join us as we revolutionize the way employees manage their daily expenses, one meal at a time.
         </p>
         </motion.div>
       </motion.div>

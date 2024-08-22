@@ -51,7 +51,7 @@ const ModalPayment: React.FC = () => {
     <>
       <a onClick={showModal}>
         <button className="w-full px-3 py-3 rounded-lg bg-black hover:bg-gray-900 text-white">
-          Pay using PlateUp Card
+          Pay using Plateup Card
         </button>
       </a>
       <Modal
@@ -72,7 +72,7 @@ const ModalPayment: React.FC = () => {
               <div className="absolute flex flex-col gap-2 z-10 p-4 w-full">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-col gap-3">
-                    <p className="text-xs text-gray-300">PlateUp Card</p>
+                    <p className="text-xs text-gray-300">Plateup Card</p>
                     <svg
                       width="36"
                       height="29"
@@ -157,7 +157,7 @@ const ModalPayment: React.FC = () => {
           onClick={handleError}
           className="mb-0 w-full px-3 py-3 rounded-lg bg-black hover:bg-gray-900 text-white"
         >
-          Add your PlateUp Card
+          Add your Plateup Card
         </button>
       </Modal>
     </>

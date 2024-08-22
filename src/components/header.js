@@ -61,7 +61,7 @@ export default function Header() {
           />
           <NavbarBrand onClick={handleClick}>
             <Image
-              alt="plateUp"
+              alt="plateup"
               src="/image/logo.png"
               href="/"
               height={50}

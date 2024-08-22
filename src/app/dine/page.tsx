@@ -122,7 +122,7 @@ const Page: React.FC = () => {
 
       {/* F&Q */}
 
-      <SectionHeading heading="Frequency asked questions !" mealExpressIcon={false}/>
+      <SectionHeading heading="Frequently asked questions !" mealExpressIcon={false}/>
       <div className="h-full md:h-screen w-full py-[4vh] md:pt-[10vh]">
         <div className="flex flex-row gap-3">
           <div className="hidden md:block w-2/6">

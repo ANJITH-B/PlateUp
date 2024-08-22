@@ -4,13 +4,13 @@ const Restaurant: [string, string ,string, string][] = [
     [
       "Poult",
       "$ 1,500 for 2 | Continental, North Indian, Asian, Fast Food, Pizza",
-      "Lower Parent | Mumbai",
+      "Lower Parel | Mumbai",
       "21 reviews"
     ],
     [
       "Cafe Free India",
       "$ 1,500 for 2 | Continental, North Indian, Asian, Fast Food, Pizza",
-      "Lower Parent | Mumbai",
+      "Lower Parel | Mumbai",
       "32 reviews"
     ],
     [
