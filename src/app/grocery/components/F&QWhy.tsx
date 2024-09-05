@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from 'framer-motion'
-import WordPopping from '../Components/WordPopping'
+import WordPopping from './WordPopping'
 
 
 const FAndQWhy: React.FC = () => {

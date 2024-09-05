@@ -12,8 +12,7 @@ import Image from "next/image";
 import ModalCart from "./ModalCart";
 import Restaurant from "../RestaurantArray";
 import { Roboto } from 'next/font/google';
-import {animate, motion} from 'framer-motion'
-import { opacity } from "./WordPopping/animation";
+import { motion} from 'framer-motion'
 
 const roboto = Roboto({
   weight: '400',
