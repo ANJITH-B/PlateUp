@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import WordPopping from "./WordPopping";
-import ShortBrief from "./ShortBrief";
 
 const FQA: [string, string][] = [
   [
