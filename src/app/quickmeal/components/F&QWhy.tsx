@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from 'framer-motion'
-import WordPopping from '../Components/WordPopping'
+import WordPopping from './WordPopping'
 
 
 const FAndQWhy: React.FC = () => {
@@ -13,8 +13,7 @@ const FAndQWhy: React.FC = () => {
     <motion.div className="w-full h-full bg-[#507BA6] rounded-3xl flex flex-col justify-between p-5"
       initial={{ scale: 0.9, y: 20, x: 20, opacity: 0 }}
       exit={{ scale: 0, opacity: 0  ,transition:{ ease: [0.65, 0, 0.35, 1], delay: 0 ,duration: 0}}}  
-      whileInView={{ scale: 1, opacity: 1 ,x: 0,y :0  ,
-      transition: {ease: [0.65, 0, 0.35, 1], delay: 0.1 ,duration: 1.2}}}>
+      whileInView={{ scale: 1, opacity: 1 ,x: 0,y :0 ,transition: {ease: [0.65, 0, 0.35, 1], delay: 0.1 ,duration: 1.2}}}>
         <div className="flex flex-row justify-between w-full">
           <p className="text-md font-xl flex items-start flex-col leading-8">
             Why ? <br /><span className="text-sm font-normal"><WordPopping phrase='By using the Plateup card' /></span>

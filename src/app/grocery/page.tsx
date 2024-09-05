@@ -6,6 +6,9 @@ import Phone from "./assets/phone.png";
 import Chili from "./assets/chili.png";
 import Cauliflower from "./assets/cauliflower.png";
 import WordPopping from "./components/WordPopping";
+import SectionHeading from '../dine/Components/SectionHeading'
+import GroceryCard from './components/GroceryCard'
+
 
 function page() {
   return (
@@ -101,7 +104,52 @@ function page() {
         </div>
         <div className="absolute w-full z-0 items-center pr-60 flex justify-end">
           <Image src={Cauliflower} alt="cauliflower"  width={200} height={200} />
+        </div>
       </div>
+      <div className="flex flex-row pt- gap-2">
+        <div className="w-1/3 h-1/3 rounded-3xl bg-[#CDE0B5] p-5 pt-">
+            <p className="font-black text-[100px] p-0 text-black text-left">4</p>
+            <p className=" text-xl text-black pt-2 font-bold">Effortless Redemption</p> 
+            <p className=" text-md text-black pt-2">
+                Effortless Redemption  Streamline your daily essentials shopping with 
+                Pantry Plus whether it's a quick trip to the store or a few taps on the 
+                Plateup app. Add your essentials, and effortlessly redeem your rewards
+                with the Pantry Plus.
+            </p> 
+        </div>
+        <div className="w-1/3 h-1/3 z-10 rounded-3xl bg-gradient-to-tr to-[#77A964] from-[#CDE0B5] p-5 pt-3 m-2">
+            <p className="font-black text-[100px] p-0 text-white text-left">2</p>
+            <p className=" text-xl font-bold text-white pt-2">Effortless Redemption</p> 
+            <p className=" text-md text-[#FBFEE1] pt-2">
+                Effortless Redemption  Streamline your daily essentials shopping with 
+                Pantry Plus whether it's a quick trip to the store or a few taps on the 
+                Plateup app. Add your essentials, and effortlessly redeem your rewards
+                with the Pantry Plus.
+            </p> 
+        </div>
+        <div className="w-1/3 p-5"> </div>
+        <div className="absolute w-full z-0 items-center pr-60 flex justify-end">
+          <Image src={Cauliflower} alt="cauliflower"  width={200} height={200} />
+        </div>
+      </div>
+
+      {/* 02 PlateUp Fresh! */}
+
+      <SectionHeading heading='Plateup Fresh !' mealExpressIcon={false} />
+      {/* <div className="pt-[3vh]"> <ModalTimeFrame /> </div> */}
+      <div className="h-full w-full pt-[3vh] flex flex-col md:flex-row">
+        <div className="hidden md:block w-2/5">
+        <div className="flex flex-col gap-5 w-full">
+          <p className="text-xl font-light flex items-start"> <WordPopping phrase='Near SuperMarkets'/></p>
+          {/* <FrameCalendar />
+          <TimeFrame /> */}
+          <div className="bg-white rounded-lg w-80 h-24">hello</div>
+        </div>
+        </div>
+        <div className="w-full md:w-3/5 h-full ">
+          <p className="text-xl font-light pb-[3vh] flex items-start"><WordPopping phrase='Popular this week' /></p>
+          <GroceryCard/>
+        </div>
       </div>
       
     </main>

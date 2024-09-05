@@ -12,6 +12,7 @@ import S1 from "../assets/images/snacks1.png";
 import S2 from "../assets/images/snacks2.png";
 import D1 from "../assets/images/dinne.png";
 import { useMediaQuery } from "react-responsive";
+import { opacity } from "./WordPopping/animation";
 
 const MovingText = () => {
   const paths = useRef([]);
@@ -55,9 +56,11 @@ const MovingText = () => {
       </motion.div>
       <motion.div
         className="bg-[#507BA6] relative overflow-hidden h-60 md:h-96 w-full rounded-3xl mt-[20vh] md:mt-[15vh] pt-8"
-        initial={{ scale: 0.1, y: 100, opacity: 0 }}
-        animate={{ scale: 1, y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 1.5, ease: [0.65, 0, 0.35, 1] }}
+        initial={{ scale: 0.5, y: 500, opacity: 0 }}
+        whileInView={{scale: 1 , opacity:1 ,transition: {delay:0.2, duration:0.5, ease: [0.65, 0, 0.35, 1]} }}
+        exit={{scale: 0.9, opacity:0 }}
+        animate={{  y: 0, opacity: 1 }}
+        transition={{ delay: 0, duration: 1.5, ease: [0.65, 0, 0.35, 1] }}
       >
         <div className="pt-20 md:pt-0">
           <svg
@@ -76,9 +79,10 @@ const MovingText = () => {
               }
             />
             <motion.text
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1 }}
+              initial={{ scale: 0.5, y: 500, opacity: 0 }}
+              whileInView={{scale: 1,transition:{delay:0.2,duration:0.5, ease: [0.65, 0, 0.35, 1]} }}
+              animate={{  y: 0, opacity: 1 }}
+              transition={{ delay: 0, duration: 1.5, ease: [0.65, 0, 0.35, 1] }}
               className="text-[24px] md:text-[65px] space-x-5 font-bold"
               style={{ fill: "white" }}
             >
@@ -199,8 +203,11 @@ const MotionImageWrapper = ({ image, rotation }) => {
       initial={{ scale: 0, opacity: 0.4 }}
       viewport={{ once: false }}
       exit={{ scale: 0, opacity: 0 }}
-      transition={{ delay: 2 }}
-      whileInView={{ scale: 1, opacity: 1 }}
+      // initial={{ scale: 0.5, y: 500, opacity: 0 }}
+        whileInView={{scale: 1,transition:{delay:0.2,duration:0.5, ease: [0.65, 0, 0.35, 1]} }}
+        animate={{  y: 0, opacity: 1 }}
+        transition={{ delay: 0, duration: 1.5, ease: [0.65, 0, 0.35, 1] }}
+      // whileInView={{ scale: 1, opacity: 1 }}
       style={{ rotate: rotation }}
     >
       <Image src={image.src} width={230} height={230} alt={image.alt} />

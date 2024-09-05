@@ -4,6 +4,21 @@ import Image from 'next/image'
 import WordPopping from './WordPopping'
 import MealExpress from '../assets/images/MealExpress.png'
 
+const container = {
+  initial: { opacity: 0, scale:0.9 },
+  
+  visible: {
+    scale: 1 ,
+    opacity: 1 ,
+    x: 0 , 
+    y :0 ,
+    transition: { ease: [0.65, 0, 0.35, 1] ,
+      delay: 0.1 ,
+      duration: 1.2 ,
+    },
+  }
+};
+
 interface SectionHeadingProps {
     heading: string ;  
     mealExpressIcon: boolean ;     
@@ -11,7 +26,7 @@ interface SectionHeadingProps {
 
 const SectionHeading:React.FC<SectionHeadingProps> = ({heading , mealExpressIcon}) => {
   return (
-    <div className="flex flex-col pt-[10vh]">
+    <motion.div variants={container} initial="initial" whileInView="visible" className="flex flex-col pt-[10vh]">
         <div className="flex flex-row justify-between">
           <div className="text-4xl">
             <WordPopping phrase={heading} />
@@ -36,7 +51,7 @@ const SectionHeading:React.FC<SectionHeadingProps> = ({heading , mealExpressIcon
             className="bg-gray-200"
           />
         </div>
-    </div>
+    </motion.div>
   )
 }
 

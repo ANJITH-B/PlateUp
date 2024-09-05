@@ -15,6 +15,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)'],
+      },
       animation: {
         aurora: "aurora 60s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",

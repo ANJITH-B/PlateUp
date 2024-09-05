@@ -127,11 +127,11 @@ const Page: React.FC = () => {
         <div className="flex flex-row gap-3">
           <div className="hidden md:block w-2/6">
           <div className="flex flex-col w-full gap-3">            
-            <FAndQWhy/>
-            <FAndQHow/>
+            <div className="w-full h-[300px] flex items-start justify-end"><FAndQWhy/></div> 
+            <div className="w-full h-[300px]"><FAndQHow/></div>    
           </div> 
           </div>
-          <FAndQWhat/>  
+          <div className="md:w-4/6 flex flex-row items-end justify-start"><FAndQWhat/></div>
         </div>
       </div>
     </main>
