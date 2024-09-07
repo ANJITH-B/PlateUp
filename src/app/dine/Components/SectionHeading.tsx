@@ -28,7 +28,7 @@ const SectionHeading:React.FC<SectionHeadingProps> = ({heading , mealExpressIcon
   return (
     <motion.div variants={container} initial="initial" whileInView="visible" className="flex flex-col pt-[10vh]">
         <div className="flex flex-row justify-between">
-          <div className="text-4xl">
+          <div className="text-2xl md:text-4xl">
             <WordPopping phrase={heading} />
           </div>
           {mealExpressIcon && (
@@ -38,7 +38,7 @@ const SectionHeading:React.FC<SectionHeadingProps> = ({heading , mealExpressIcon
             exit={{ scale: 0, opacity: 0, transition: { delay: 0 } }}
             whileInView={{ scale: 1, opacity: 1, transition: { delay: 1 } }}
           >
-            <Image src={MealExpress} width={80} height={70} alt="food one" />
+            <Image src={MealExpress} width={80} height={70} alt="food one" className='w-14 md:w-28' />
           </motion.div>
         )}
         </div>

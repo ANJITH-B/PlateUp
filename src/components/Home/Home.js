@@ -18,8 +18,9 @@ const Home = (props) => {
   function Rig() {
     const [vec] = useState(() => new THREE.Vector3())
     const { camera, mouse } = useThree()
-    useFrame(() => camera.position.lerp(vec.set(mouse.x * 0.4, mouse.y * 0.4, 60), 0.05))
-    return null; // Returning null since the function doesn't return anything meaningful
+    useFrame(() => 
+      camera.position.lerp(vec.set(mouse.x * 0.4, mouse.y * 0.4, 60), 0.05))
+      return null; 
   }
 
   return (
@@ -42,13 +43,11 @@ const Home = (props) => {
               <Experience section={section} onSectionChange={setSection}  />
             </ScrollControls>
             <Rig />
-            {/* <CameraShake maxYaw={0.01} maxPitch={0.01} maxRoll={0.01} yawFrequency={0.5} pitchFrequency={0.5} rollFrequency={0.4} /> */}
           </Canvas>
           <motion.div initial={{ opacity: 0, y: 0 }} animate={{x: 1, opacity: section === 0 ? 1 : 0, y: 0 }} transition={{ duration: 3 ,delay:4}}>
             {section === 0 && <FoodSteam section={section} />}
           </motion.div>
           <SectionNav onSectionChange={setSection} section={section} />
-          {/* <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" /> */}
         </div>
       </MotionConfig>
       <Leva hidden />
@@ -61,3 +60,5 @@ export default Home
 
 
 
+{/* <CameraShake maxYaw={0.01} maxPitch={0.01} maxRoll={0.01} yawFrequency={0.5} pitchFrequency={0.5} rollFrequency={0.4} /> */}
+{/* <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" /> */}

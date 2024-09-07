@@ -76,20 +76,20 @@ const MealCard: React.FC = () => {
   }
 
   return (
-    <div className="h-[80vh] flex flex-col justify-between">
+    <div className="h-full flex flex-col justify-between">
       <motion.div variants={container} initial="hidden" whileInView="visible"
-       viewport={{once:false}} exit="hidden" key={currentPage} className="grid grid-cols-2 md:grid-cols-3 gap-4">
+       viewport={{once:false}} exit="hidden" key={currentPage} className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
         {currentItems.map((item, index) => (
-          <motion.div variants={card} key={index} className="flex flex-col w-full bg-[#CDE0B5] rounded-lg p-1.5">
-            <div className="flex items-end pb-3">
-              <div className="flex flex-row absolute m-2 gap-1">
-                <p className="text-4xl">10%</p>
-                <p className="text-4xl font-extralight">I</p>
-                <div className="flex flex-col">
-                  <div className="leading-4 font-bold pt-1">
+          <motion.div variants={card} key={index} className="flex flex-col w-full bg-[#F1CF88] rounded-lg p-1.5">
+            <div className="flex items-end pb-2 md:pb-3">
+              <div className="flex flex-row absolute m-1 md:m-2 gap-1">
+                <p className="text-3xl md:text-4xl">10%</p>
+                <p className="text-3xl md:text-4xl font-extralight">I</p>
+                <div className="flex flex-col ">
+                  <div className="leading-3 md:leading-4 font-bold text-sm md:text-medium pt-1">
                     Discount
                     <br />
-                    <span className="text-xs font-light uppercase">with app</span>
+                    <span className="text-[10px] font-light uppercase">with app</span>
                   </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const MealCard: React.FC = () => {
                 <p className="hidden md:block font-thin text-gray-900 text-[11px] md:text-[13px] px-1">
                   {item[3]}
                 </p></div>
-                <p className="p-1.5 pt-1 text-xl font-md text-gray-900 leading-6">
+                <p className="p-1.5 py-1 text-xl font-md text-gray-900 leading-6">
                 {item[0]}
                 <br />
               </p>
@@ -121,7 +121,7 @@ const MealCard: React.FC = () => {
               <ModalCart item={item} index={index} />
             </div>
             <div className={roboto.className}>
-                <p className="text-xs font-light text-gray-800 leading-5 px-1.5 py-2 pt-0.5">{item[2]}</p>
+                <p className="text-xs font-light text-gray-800  md:leading-5 px-1.5 py-2 pt-0.5">{item[2]}</p>
             </div>
           </motion.div>
         ))}

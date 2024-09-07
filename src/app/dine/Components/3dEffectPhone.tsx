@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue, useSpring,} from "framer-motion";
 import Image from "next/image";
-import F1 from '../assets/images/PhoneExample.png'
-// import { FiMousePointer } from "react-icons/fi";
+import F1 from '../assets/images/PhoneLg.png'
+
 
 const Phone = () => {
   return (
@@ -58,10 +58,7 @@ const TiltCard = () => {
       style={{  transformStyle: "preserve-3d", transform, }}
       className="relative md:h-[550px] w-[2000px] md:w-[650px] rounded-xl bg-gradient-to-br "
     >
-      <div
-        style={{ transform: "translateZ(15px)", transformStyle: "preserve-3d",}}
-        className="absolute inset-4 grid place-content-center rounded-xl  "
-      >
+      <div style={{ transform: "translateZ(15px)", transformStyle: "preserve-3d",}} className="absolute inset-4 grid place-content-center rounded-xl " >
         <Image  style={{ transform: "translateZ(15px)", transformStyle: "preserve-3d",}} src={F1} width={800} height={700} alt="Image vannilla" className="w-1200px md:w-[700px]"/>
       </div>
     </motion.div>

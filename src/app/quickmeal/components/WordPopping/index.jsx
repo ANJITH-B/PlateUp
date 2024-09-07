@@ -1,10 +1,9 @@
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
-// import Rounded from '../../common/RoundedButton';
 
 export default function Index({phrase}) {
-  // const phrase = "We're committed to making Dining out a Delightful,Experience for you ";
+  
   const description = useRef(null);
   const isInView = useInView(description);
   return (

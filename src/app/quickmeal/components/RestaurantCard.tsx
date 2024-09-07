@@ -1,0 +1,28 @@
+import React from "react";
+import { motion, useTransform, useViewportScroll } from 'framer-motion'
+import Image from 'next/image'
+import RestaurantLogo from '../assets/images/restaurantLogo.png'
+import { container } from '../animation'
+ 
+
+const RestaurantCard: React.FC = () => {
+
+  return (
+    <motion.div  variants={container} initial='initial' whileInView="visible" className="flex flex-row items-center px-2 md:px-5 gap-4 bg-[#F1CF88] rounded-2xl w-80 h-24 ">
+      <Image src={RestaurantLogo} alt='...' className="w-16 h-16"/>
+      <div className="flex flex-col gap-1">
+        <p className="text-black text-md font-medium">Ariya Nivas - Thampanoor</p>
+        <svg width="92" height="17" viewBox="0 0 92 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.39935 6.46985L9.50555 6.82754H9.87867H14.5416L10.6826 9.82602L10.4096 10.0381L10.5116 10.3684L11.989 15.1533L8.31075 12.2353L8 11.9888L7.68925 12.2353L4.00985 15.1542L5.48482 10.3681L5.58652 10.0381L5.31392 9.82613L1.45757 6.82754H6.12133H6.49445L6.60065 6.46985L8 1.75671L9.39935 6.46985Z" fill="#212121" stroke="#212121"/>
+          <path d="M28.3993 6.46985L28.5055 6.82754H28.8787H33.5416L29.6826 9.82602L29.4096 10.0381L29.5116 10.3684L30.989 15.1533L27.3107 12.2353L27 11.9888L26.6893 12.2353L23.0098 15.1542L24.4848 10.3681L24.5865 10.0381L24.3139 9.82613L20.4576 6.82754H25.1213H25.4945L25.6007 6.46985L27 1.75671L28.3993 6.46985Z" fill="#212121" stroke="#212121"/>
+          <path d="M47.3993 6.46985L47.5055 6.82754H47.8787H52.5416L48.6826 9.82602L48.4096 10.0381L48.5116 10.3684L49.989 15.1533L46.3107 12.2353L46 11.9888L45.6893 12.2353L42.0098 15.1542L43.4848 10.3681L43.5865 10.0381L43.3139 9.82613L39.4576 6.82754H44.1213H44.4945L44.6007 6.46985L46 1.75671L47.3993 6.46985Z" fill="#212121" stroke="#212121"/>
+          <path d="M66.3993 6.46985L66.5055 6.82754H66.8787H71.5416L67.6826 9.82602L67.4096 10.0381L67.5116 10.3684L68.989 15.1533L65.3107 12.2353L65 11.9888L64.6893 12.2353L61.0098 15.1542L62.4848 10.3681L62.5865 10.0381L62.3139 9.82613L58.4576 6.82754H63.1213H63.4945L63.6007 6.46985L65 1.75671L66.3993 6.46985Z" fill="#212121" stroke="#212121"/>
+          <path d="M85.3993 6.46985L85.5055 6.82754H85.8787H90.5416L86.6826 9.82602L86.4096 10.0381L86.5116 10.3684L87.989 15.1533L84.3107 12.2353L84 11.9888L83.6893 12.2353L80.0098 15.1542L81.4848 10.3681L81.5865 10.0381L81.3139 9.82613L77.4576 6.82754H82.1213H82.4945L82.6007 6.46985L84 1.75671L85.3993 6.46985Z" stroke="#212121"/>
+        </svg>
+        <p className='text-black'>15% OFF UPTO ₹45</p>
+      </div>
+    </motion.div>
+  );
+};
+
+export default RestaurantCard;
