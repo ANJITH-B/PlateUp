@@ -48,7 +48,7 @@ const SectionHeading:React.FC<SectionHeadingProps> = ({heading , mealExpressIcon
             whileInView={{ width: '100%' }}
             exit={{ width: 0 }}
             transition={{ duration: 1 }}
-            className="bg-gray-200"
+            className="bg-gray-600 opacity-40"
           />
         </div>
     </motion.div>

@@ -1,60 +1,60 @@
 
 
-const Restaurant: [string, string ,string, string][] = [
+const Restaurant: [string, number, number ,string, string][] = [
     [
-      "Poult",
-      "$ 1,500 for 2 | Continental, North Indian, Asian, Fast Food, Pizza",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
+      "Chicken Kabsa Biryani",
+      745 , 4.7 ,
+      "Experience the exotic allure of Middle Eastern cuisine with our Chicken Kabsa Biryani",
       "21 reviews"
     ],
     [
-      "Cafe Free India",
-      "$ 1,500 for 2 | Continental, North Indian, Asian, Fast Food, Pizza",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
+      "    Malai Tikka Kebab (6 Pieces)",
+      657, 4.4 ,
+      "Juicy and succulent chicken leg meat marinated in house made creamy marinade, charred in the tandoor",
       "32 reviews"
     ],
     [
-      "Pleo",
-      "$ 1,500 for 2 | Asian, Continental, Italian ,European",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
-      "12 reviews"
+      "Chicken Tandoori Mumtaz",
+      495, 4.7 ,
+      "Juicy chicken chucks marinated in yogurt-based, seasoned marinade and grilled to perfection.",
+      "73 reviews"
     ],
     [
-      "Maharaja Bhog",
-      "$ 1,200 for 2 | Gujarati, North Indian, Rajasthani",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
+      "Ghee Podi Dosa",
+      219, 4.7,
+      "A Classic Bangalore podi dosa made from fermented rice and lentil batter filled with our Signature podi, served with flavourful sambar & coconut chani",
       "3 reviews"
     ],
-    [
-      "O Pedro",
-      "$1,200 for 2 | Goan, Comtinental, Desserts, Beverages",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
+    [ 
+      "Special Thali (limited)",
+      240, 3.6,
+      "(3 special Chapatis + Dai Fry + Pulaa/Rice + Paneer Vegetable + Special Vegetable + Papad + Chaas Glass + Sweet Dish",
       '32 reviews'
     ],
     [
-      "Angrezi Dhaba",
-      "1,000 for 2 | North Indian, Chinese",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
-      "9 reviews"
+      "Veg fired Rice + Paneer chilly",
+      240, 3.4,
+      "A delectable combination of flavaful Veg Fried Rice paired with tantalizing Paneer in a mouthwatering medley of flavors",
+      "89 reviews"
     ],
     [
-      "Butterfly High",
-      "1,500 for 2 | North Indian, Chinese",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
-      '24 reviews'
-    ],
-    [
-      "Oudhe Premium",
-      "1,500 for 2 | North Indian, Chinese",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
-      '34 reviews'
-    ],
-    [
-      "Miro Deli",
-      "1,500 for 2 | North Indian, Chinese",
-      "Nutritious biryani, cooked with select spices and packed with vegetables served with gravy and raita",
-      '41 reviews'
-    ],
+      "Chicken Shawarma Plate",
+      525, 4.6,
+      "Tender marinated chicken, thinly sliced and served with hummus, garlic sauce, and pita bread for an authentic Middle Eastern flavor experience",
+      "48 reviews"
+  ],
+  [
+      "Paneer Butter Masala",
+      385, 4.5,
+      "A rich and creamy tomato-based curry featuring soft cubes of paneer cooked in a blend of aromatic Indian spices",
+      "56 reviews"
+  ],
+  [
+      "Masala Dosa",
+      250, 4.8,
+      "Crispy rice and lentil crepe filled with a spiced potato filling, served with chutney and sambar for a traditional South Indian taste",
+      "25 reviews"
+  ]  
 ];
 
 export default Restaurant

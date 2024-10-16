@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import MovingText from "./Components/MovingText";
 import WordPopping from "./Components/WordPopping";
 import TextOpacityOnScroll from "./Components/TextOpacityOnScroll";
-import { Outfit } from "@next/font/google";
+// import { Outfit } from "@next/font/google";
 import FrameCalendar from "./Components/Calendar";
 import SubContent from "./Components/SubContent";
 import ShortBrief from "./Components/ShortBrief";
@@ -28,10 +28,10 @@ import Image from 'next/image'
 import PhoneSM from './assets/images/phoneSM.png'
 
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-});
+// const outfit = Outfit({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "700"],
+// });
 
 const Page: React.FC = () => {
   const contain = useRef<HTMLDivElement>(null);

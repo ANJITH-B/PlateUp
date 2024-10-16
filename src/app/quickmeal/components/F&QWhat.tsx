@@ -2,24 +2,50 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import WordPopping from "./WordPopping";
 
+
 const FQA: [string, string][] = [
   [
-    "Where can I redeem my allowance for dining in restaurants?",
-    "You can redeem your allowance at restaurants partnered with Plateup",
+    "Where can I spend my Plateup coins?",
+    "You can redeem them at a variety of convenient locations such as Plateup partner corporates or vibrant Plateup food hubs.",
   ],
   [
-    "How do I locate restaurants?",
-    "You can find these restaurants on the Plateup webpage or the Plateup app.",
+    "What options do I have if I miss out on my corporate food?",
+    "No worries! You can always enjoy a delicious meal at any Plateup food hub near you.",
   ],
   [
-    "Is there any specific food I can order and redeem my allowance?",
-    "We offer you complete access to use your coins for a dining experience at the restaurant, eliminating any concerns about payment",
+    "Who determines the amount of my allowance?",
+    "Your allowance is set by your corporate, ensuring it meets your needs and preferences.",
   ],
   [
-    "After the redemption of my allowance, do I still need to pay for my meal?",
-    `No, you don't need to pay. It is already redeemed via your Plateup allowance card or the app.`,
+    "How long do I have to use my allowance?",
+    "Your allowance is valid for 30 days, giving you plenty of time to savor your favorite meals.",
+  ],
+  [
+    "Am I allowed to utilize my allowance on corporate off-days?",
+    "Absolutely! You have the flexibility to use your allowance whenever it suits you, including corporate off-days.",
+  ],
+  [
+    "Can I treat my family to lunch with my allowance?",
+    "Yes, indeed! Your Plateup coins can be used to indulge in a delightful family lunch experience.",
+  ],
+  [
+    "Are there specific eateries I must visit to redeem my coins?",
+    "You have the freedom to choose from a diverse range of food at Plateup hubs, ensuring a satisfying culinary experience.",
+  ],
+  [
+    "What happens if I don't utilize my allowance within the specified timeframe?",
+    "Unfortunately, your allowance will expire after 30 days, so be sure to enjoy it while it lasts!",
+  ],
+  [
+    "Can I save up my allowance for a special occasion?",
+    "While your allowance is valid for 30 days, you're welcome to save it for a special dining experience or treat yourself to multiple meals throughout the month.",
+  ],
+  [
+    "Is there a limit to how much I can spend in one go?",
+    "There's no limit to your enjoyment! Feel free to indulge and spend your allowance as you please, whether it's on a hearty meal for one or a feast for the whole family.",
   ],
 ];
+
 
 const FAndQWhat = () => {
   const [selectedQuestionIndex, setSelectedQuestionIndex] = useState<number | null>(null);

@@ -67,7 +67,7 @@ function Page() {
           <RestaurantCard/>
         </div>
         </motion.div>
-        <div className=" w-full md:w-3/5 h-full ">
+        <div className=" w-full md:w-3/5 h-full md:h-[93vh] ">
           <p className="text-xl font-light pb-[3vh] flex items-start"><WordPopping phrase='Popular this week' /></p>
           <MealCard/>
         </div>

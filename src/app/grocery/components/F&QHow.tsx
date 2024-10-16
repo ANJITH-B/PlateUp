@@ -9,7 +9,7 @@ const FAndQHow: React.FC = () => {
   };
 
   return (
-    <motion.div className="w-full h-[300px] bg-[#4C5A5D] rounded-3xl p-5 flex flex-col justify-between"
+    <motion.div className="w-full h-[300px] bg-[#77A964] text-white bg-opacity-35 rounded-3xl p-5 flex flex-col justify-between"
       initial={{ scale: 0.9, y: -20, x: 20, opacity: 0 }}
       exit={{ scale: 0, opacity: 0  ,transition:{ ease: [0.65, 0, 0.35, 1], delay: 0 ,duration: 0}}}  
       whileInView={{ scale: 1, opacity: 1 ,x: 0,y :0  , transition: {ease: [0.65, 0, 0.35, 1], delay: 0.1 ,duration: 1.2}}}>

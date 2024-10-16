@@ -18,6 +18,12 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-inter)'],
         mono: ['var(--font-roboto-mono)'],
+        questrial: ['var(--font-questrial)'],
+        outfit: ['var(--font-outfit)'],
+        ruthie: ['var(--font-ruthie)'],
+      },
+      lineHeight: {
+        '12': '5rem',
       },
       animation: {
         aurora: "aurora 60s linear infinite",

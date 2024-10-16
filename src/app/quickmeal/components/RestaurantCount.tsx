@@ -12,12 +12,18 @@ const RestaurantCount: React.FC = () => {
 
 
   return ( 
-    <motion.div variants={container} initial="initial" whileInView="visible" className="bg-[#F1CF88] w-[60vw] md:w-80 md:h-40  rounded-3xl relative">
+    <motion.div variants={container} initial="initial" whileInView="visible" className="bg-[#F1CF88] w-[60vw] md:w-80 md:h-60 flex flex-col items-start  rounded-3xl relative">
         <motion.div style={{ scale: top ,}} initial={{x:-40}} className="w-full h-full flex items-center justify-start absolute">
             <Image src={MirrorThree} alt='...'  className='w-[100px] '/>
         </motion.div> 
-        <p className="pt-3 my-auto text-sm md:text-lg font-light text-[#FBFEE1] p-5 md:leading-7">
-            <WordPopping phrase="Our platform brings a world of flavors right to your workplace, ensuring that every meal is a delicious adventure for your taste buds" />
+        <p className="pt-3 my-auto text-lg md:text-xl font-bold text-black pl-5 md:leading-5">
+            <WordPopping phrase="300+" />
+        </p>
+        <p className="pt-3 my-auto text-sm md:text-lg font-bold text-black pl-5 md:leading-5">
+            <WordPopping phrase="Restaurants" />
+        </p>
+        <p className="pt-3 my-auto text-sm md:text-lg font-light text-black p-5 md:leading-5">
+            <WordPopping phrase="availability both online and in-store, serving Mumbai, Pune, Bangalore, Gurgaon, " />
         </p>
     </motion.div>     
   );

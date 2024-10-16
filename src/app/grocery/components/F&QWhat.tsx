@@ -4,22 +4,27 @@ import WordPopping from "./WordPopping";
 
 const FQA: [string, string][] = [
   [
-    "Where can I redeem my allowance for dining in restaurants?",
-    "You can redeem your allowance at restaurants partnered with Plateup",
+    "Where can I find Pantry Plus stores?",
+    "You can easily search for Pantry Plus stores on the Plateup app, or alternatively, you can place orders directly through the Plateup app.",
   ],
   [
-    "How do I locate restaurants?",
-    "You can find these restaurants on the Plateup webpage or the Plateup app.",
+    "How do I redeem my allowance?",
+    "You can redeem your allowance either at the stores or through the Plateup app.",
   ],
   [
-    "Is there any specific food I can order and redeem my allowance?",
-    "We offer you complete access to use your coins for a dining experience at the restaurant, eliminating any concerns about payment",
+    "Do I need to pay for my groceries after redeeming through the app?",
+    "No, there is no need to pay after redeeming your allowance for your purchases.",
   ],
   [
-    "After the redemption of my allowance, do I still need to pay for my meal?",
-    `No, you don't need to pay. It is already redeemed via your Plateup allowance card or the app.`,
+    "Is there a limit to how much grocery I can buy?",
+    "The limit depends on the allowance set by your company or HR.",
+  ],
+  [
+    "Can I still buy groceries after using up my allowance?",
+    "No, you'll need to wait until your allowance is refilled by your company's HR or admin.",
   ],
 ];
+
 
 const FAndQWhat = () => {
   const [selectedQuestionIndex, setSelectedQuestionIndex] = useState<number | null>(null);
@@ -34,7 +39,7 @@ const FAndQWhat = () => {
       exit={{ scale: 0, opacity: 0  ,transition:{ ease: [0.65, 0, 0.35, 1], delay: 0 ,duration: 0}}}  
       whileInView={{ scale: 1, opacity: 1 ,x: 0,y :0  , transition: {ease: [0.65, 0, 0.35, 1], delay: 0.1 ,duration: 1.2}}}
       // viewport={{ amount: 0 }}
-       className="h-full w-full bg-[#4C5A5D] rounded-3xl p-5">
+       className="h-full w-full bg-[#3F4F3E] rounded-3xl p-5">
       {FQA.map((item, index) => (
         <div key={index}>
           <motion.div className="flex flex-row justify-between py-3 items-center">

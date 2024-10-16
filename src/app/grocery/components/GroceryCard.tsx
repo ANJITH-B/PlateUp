@@ -1,25 +1,23 @@
 import React, { useState } from "react";
-import hotel0 from '../../dine/assets/images/Poult.png'
-import hotel1 from "../../dine/assets/images/Cafe Free India.png";
-import hotel2 from "../../dine/assets/images/Pleo.png";
-import hotel3 from "../../dine/assets/images/Maharaja Bhog.png";
-import hotel4 from "../../dine/assets/images/O Pedro.png";
-import hotel5 from "../../dine/assets/images/Angrezi Dhaba.png";
-import hotel6 from "../../dine/assets/images/Butterfly High.png";
-import hotel7 from "../../dine/assets/images/Oudhe Premium Dining.png";
-import hotel8 from "../../dine/assets/images/Miro Deli.png";
+import hotel2 from '../assets/cart/Cuts & Exotics.png'
+import hotel5 from "../assets/cart/Surf.png";
+import hotel4 from "../assets/cart/friuts.png";
+import hotel3 from "../assets/cart/good day.png";
+import hotel0 from "../assets/cart/herts and Seasoning.png";
+import hotel1 from "../assets/cart/vegtable.png";
+//  Fresh Friuts , Fresh Vegtables , Herts and Seasoning , Tea Time Snacks ,Cuts & Exotics , Detergents & fabric Care ,
 import Image from "next/image";
-import ModalCart from "./ModalCart";
 import Restaurant from "../RestaurantArray";
 import { Roboto } from 'next/font/google';
 import { motion} from 'framer-motion'
+import ModalPayment from "./ModalPayment";
 
 const roboto = Roboto({
   weight: '400',
   subsets: ['latin'],
 });
 
-const imageArray = [hotel0, hotel1, hotel2, hotel3, hotel4, hotel5, hotel6, hotel7, hotel8];
+const imageArray = [hotel4, hotel1, hotel0,  hotel3,  hotel2, hotel5 ];
 const paths = [
   {
     d: "M9.39935 6.46985L9.50555 6.82754H9.87867H14.5416L10.6826 9.82602L10.4096 10.0381L10.5116 10.3684L11.989 15.1533L8.31075 12.2353L8 11.9888L7.68925 12.2353L4.00985 15.1542L5.48482 10.3681L5.58652 10.0381L5.31392 9.82613L1.45757 6.82754H6.12133H6.49445L6.60065 6.46985L8 1.75671L9.39935 6.46985Z",
@@ -29,7 +27,7 @@ const paths = [
 ];
 
 const container = {
-  hidden: { opacity: 1, scale: .9 },
+  hidden: { opacity: 0, scale: .9 },
   
   visible: {
     opacity: 1,
@@ -52,7 +50,7 @@ const card = {
   },
 }
 
-const RestaurantCard: React.FC = () => {
+const GroceryCard: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const itemsPerRow = 2;
@@ -76,20 +74,20 @@ const RestaurantCard: React.FC = () => {
   }
 
   return (
-    <div className="h-[80vh] flex flex-col justify-between">
+    <div className="h-full flex flex-col justify-between">
       <motion.div variants={container} initial="hidden" whileInView="visible"
-       viewport={{once:false}} exit="hidden" key={currentPage} className="grid grid-cols-2 md:grid-cols-3 gap-4">
+       viewport={{once:false}} exit="hidden" key={currentPage} className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
         {currentItems.map((item, index) => (
           <motion.div variants={card} key={index} className="flex flex-col w-full bg-[#CDE0B5] rounded-lg p-1.5">
-            <div className="flex items-end pb-3">
-              <div className="flex flex-row absolute m-2 gap-1">
-                <p className="text-4xl">10%</p>
-                <p className="text-4xl font-extralight">I</p>
-                <div className="flex flex-col">
-                  <div className="leading-4 font-bold pt-1">
+            <div className="flex items-end pb-2 md:pb-3">
+              <div className="flex flex-row absolute m-1 md:m-2 gap-1">
+                <p className="text-3xl md:text-4xl">10%</p>
+                <p className="text-3xl md:text-4xl font-extralight">I</p>
+                <div className="flex flex-col ">
+                  <div className="leading-3 md:leading-4 font-bold text-sm md:text-medium pt-1">
                     Discount
                     <br />
-                    <span className="text-xs font-light uppercase">with app</span>
+                    <span className="text-[10px] font-light uppercase">with app</span>
                   </div>
                 </div>
               </div>
@@ -113,15 +111,15 @@ const RestaurantCard: React.FC = () => {
                 <p className="hidden md:block font-thin text-gray-900 text-[11px] md:text-[13px] px-1">
                   {item[3]}
                 </p></div>
-                <p className="p-1.5 pt-1 text-xl font-md text-gray-900 leading-6">
+                <p className="p-1.5 py-1 text-xl font-md text-gray-900 leading-6">
                 {item[0]}
                 <br />
               </p>
               </div>
-              <ModalCart item={item} index={index} />
+              <ModalPayment/>
             </div>
             <div className={roboto.className}>
-                <p className="text-xs font-light text-gray-800 leading-5 px-1.5 py-2 pt-0.5">{item[2]}</p>
+                <p className="text-xs font-light text-gray-800  md:leading-5 px-1.5 py-2 pt-0.5">{item[2]}</p>
             </div>
           </motion.div>
         ))}
@@ -170,7 +168,15 @@ const RestaurantCard: React.FC = () => {
   );
 };
 
-export default RestaurantCard;
+export default GroceryCard;
+
+
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import  '../fonts.css';
+import  '../fonts.css';   
 import {AuroraBackground} from '@/components/ui/aurora-background';
 import { HoverEffect } from "@/components/ui/services-card";
 
@@ -9,7 +9,7 @@ const content = [
     title: "Quick Meals",
     description:
       "Elevate your corporate dining with PlateUp, where a world of cuisines awaits at your table. Redeem your allowance hassle-free and indulge in a diverse array of culinary delights. Savor worry-free meals, enjoying a variety of flavors without any hassle. PlateUp transforms your dining experience, making every meal a delightful journey.",
-    link: "/food",
+    link: "/quickmeal",
   },
   {
     title: "Pantry Plus",

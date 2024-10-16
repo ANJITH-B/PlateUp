@@ -50,9 +50,24 @@ const ModalPayment: React.FC = () => {
   return (
     <>
       <a onClick={showModal}>
-        <button className="w-full px-3 py-3 rounded-lg bg-black hover:bg-gray-900 text-white">
-          Pay using Plateup Card
-        </button>
+      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_443_269)">
+        <rect x="7" y="5" width="31" height="31" rx="15.5" fill="#111111" shape-rendering="crispEdges"/>
+        <path d="M26.3052 25.5701C26.6993 25.5701 27.0772 25.7288 27.3559 26.0111C27.6345 26.2935 27.7911 26.6765 27.7911 27.0758C27.7911 27.4752 27.6345 27.8582 27.3559 28.1405C27.0772 28.4229 26.6993 28.5816 26.3052 28.5816C25.9111 28.5816 25.5332 28.4229 25.2545 28.1405C24.9758 27.8582 24.8193 27.4752 24.8193 27.0758C24.8193 26.2402 25.4805 25.5701 26.3052 25.5701ZM14.418 13.5244H16.8474L17.5458 15.0301H28.534C28.7311 15.0301 28.9201 15.1094 29.0594 15.2506C29.1987 15.3918 29.277 15.5833 29.277 15.783C29.277 15.911 29.2398 16.039 29.1878 16.1594L26.5281 21.0304C26.2755 21.4896 25.7851 21.8058 25.2279 21.8058H19.6929L19.0243 23.033L19.002 23.1233C19.002 23.1733 19.0215 23.2211 19.0564 23.2564C19.0912 23.2917 19.1385 23.3116 19.1877 23.3116H27.7911V24.8173H18.8757C18.4816 24.8173 18.1036 24.6586 17.825 24.3763C17.5463 24.0939 17.3898 23.7109 17.3898 23.3116C17.3898 23.0481 17.4566 22.7996 17.5681 22.5888L18.5785 20.7443L15.9039 15.0301H14.418V13.5244ZM18.8757 25.5701C19.2698 25.5701 19.6477 25.7288 19.9264 26.0111C20.205 26.2935 20.3616 26.6765 20.3616 27.0758C20.3616 27.4752 20.205 27.8582 19.9264 28.1405C19.6477 28.4229 19.2698 28.5816 18.8757 28.5816C18.4816 28.5816 18.1036 28.4229 17.825 28.1405C17.5463 27.8582 17.3898 27.4752 17.3898 27.0758C17.3898 26.2402 18.051 25.5701 18.8757 25.5701ZM25.5622 20.3001L27.6276 16.5358H18.2367L19.9901 20.3001H25.5622Z" fill="#D9D9D9"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_443_269" x="0.8" y="0.8" width="43.4" height="43.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="2"/>
+        <feGaussianBlur stdDeviation="3.1"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_443_269"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_443_269" result="shape"/>
+        </filter>
+        </defs>
+      </svg>
       </a>
       <Modal
         title="PAYMENT"
