@@ -10,11 +10,11 @@ import { container } from '../animation'
 
 const GrocerySection: React.FC = () => {
     const { scrollYProgress } = useViewportScroll()
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
     const scaleDown = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
     const card = useTransform(scrollYProgress,[ 0, 1],[0,-200]);
     const chilli = useTransform(scrollYProgress,[ 0, 1],[0,400]);
-    const phone = useTransform(scrollYProgress,[ 0, 1],[20,80]);
+    const phone = useTransform(scrollYProgress,[ 0, 1],[120,140]);
     const grocery = useTransform(scrollYProgress,[ 0, 1],[30,80]);
 
   return (

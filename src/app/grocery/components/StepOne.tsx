@@ -17,7 +17,7 @@ const StepOne: React.FC = () => {
     const color = useTransform(scrollYProgress, [0, 1], ['#ff612c', '#ceff2c']);
 
   return (
-    <motion.div variants={container} whileInView="visible" initial="initial" className="w-1/2 md:w-1/3 h-full flex flex-col items-start md:p-0 p-3">
+    <motion.div variants={container} whileInView="visible" initial="initial" className="w-1/2 md:w-1/3 h-[300px] flex flex-col items-start md:p-0 p-3">
           <motion.svg style={{ rotate:rotateSvg }} className='w-10 hidden md:block'  width="32" height="32" viewBox="0 0 32 32"  fill="none" xmlns="http://www.w3.org/2000/motion.svg">
               <motion.line x1="15.5" x2="15.5" y2="32" stroke="#FBFEE1" stroke-width="5" variants={linePath} initial='initial' whileInView='view'/>
               <motion.line y1="15.5" x2="32" y2="15.5"  stroke="#FBFEE1" stroke-width="5" variants={linePath} initial='initial' whileInView='view'/>
@@ -27,7 +27,7 @@ const StepOne: React.FC = () => {
           <motion.p style={{ color }} className="font-black font-outfit  text-6xl md:text-[100px] p-0 text-[#ff612c] text-right"> 1 </motion.p>
           <motion.hr initial={{ width: '5%' }}
             whileInView={{ width: '95%' , transition:{delay:0.3, duration:1 ,ease: [0.65, 0, 0.35, 1]}}} className=" " />
-          <motion.p className="text-[14px] md:text-md text-[#FBFEE1] pt-3 md:pt-10">
+          <motion.p className="text-[14px] md:text-[16.5px] text-[#FBFEE1] pt-3 md:pt-10">
             Effortless Redemption Streamline your daily essentials shopping with
             Pantry Plus whether it's a quick trip to the store or a few taps on
             the Plateup app. Add your essentials, and effortlessly redeem your

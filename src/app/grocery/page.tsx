@@ -38,7 +38,7 @@ function page() {
           <WordPopping phrase="Fresh Finds, Big Savings" />
           <motion.p
             variants={container}
-            className="text-[14px] md:text-lg font-normal text-[#FBFEE1]"
+            className="text-[14px] md:text-[16.5px] font-normal text-[#FBFEE1]"
           >
             Get the freshest farm produce delivered straight to your door! Enjoy
             30% off on crisp vegetables, quality staples, bread, milk, veggies,
@@ -57,22 +57,22 @@ function page() {
       </div>
       <div className="flex flex-row pt-10">
         <div className="hidden md:block w-1/3 p-5"> </div>
-        <div className="w-1/2 md:w-1/3 h-1/3 rounded-3xl bg-[#77A964] p-2 md:p-5 pt-3 m-2">
+        <div className="w-1/2 md:w-1/3 h-[400px] rounded-3xl bg-[#77A964] p-2 md:p-5 pt-3 m-2">
           <p className="font-black text-[100px] p-0 text-black text-left">3</p>
           <p className="text-lg md:text-xl text-black md:pt-2 font-bold">
             Weekend Savings
           </p>
-          <p className="text-[14px] md:text-md text-black pt-2 leading-1">
+          <p className="text-[14px] md:text-[16.5px] text-black pt-2 leading-1">
             Unlock exclusive discounts of 15% to 30% on all purchases every
             Friday through Sunday. Also, take part in monthly contests for a
             chance to win exciting prizes. Experience the benefits of smart
             shopping with Pantry Plus.
           </p>
         </div>
-        <div className="w-1/2 md:w-1/3 h-1/3 z-10 rounded-3xl bg-[rgba(118,151,105,0.5)] backdrop-blur-sm backdrop-opacity-1 p-2 md:p-5 pt-3 m-2">
+        <div className="w-1/2 md:w-1/3 h-[400px] z-10 rounded-3xl bg-[rgba(118,151,105,0.5)] backdrop-blur-sm backdrop-opacity-1 p-2 md:p-5 pt-3 m-2">
           <p className="font-black text-[100px] p-0 text-white text-left">2</p>
           <p className=" text-xl font-bold text-white md:pt-2">Variety Hub</p>
-          <p className=" text-[14px] md:text-md text-[#FBFEE1] pt-2 ">
+          <p className=" text-[14px] md:text-[16.5px] text-[#FBFEE1] pt-2 ">
             Discover a diverse assortment of fresh vegetables, dairy products,
             and more to fulfill your requirements. Explore our extensive range
             of selections and conveniently locate all your essentials in one
@@ -107,7 +107,7 @@ function page() {
       </div>
 
       <div className="flex flex-row pt- gap-2">
-        <div className="w-1/2 md:w-1/3 h-1/3 rounded-3xl bg-[#CDE0B5] p-2 md:p-5">
+        <div className="w-1/2 md:w-1/3 h-[400px] rounded-3xl bg-[#CDE0B5] p-2 md:p-5">
           <p className="font-black text-[100px] p-0 text-black text-left">4</p>
           <p className=" text-xl text-black md:pt-2 font-bold">
             Coverage Areas
