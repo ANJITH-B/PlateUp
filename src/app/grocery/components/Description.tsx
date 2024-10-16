@@ -14,9 +14,9 @@ const Description: React.FC = () => {
   return (
     <motion.div variants={container} whileInView='visible' initial='initial' className='flex'>
         <div className="text-[25px] font-semibold w-1/2 text-[#FBFEE1]">
-          <div className="flex flex-col gap-4 w-full items-start">
-            <WordPopping phrase="Experience the freedom of GROCERY shopping without the hassle of payment" />
-            <div className="text-xl font-medium">
+          <div className="flex flex-col gap-5 md:gap-4 w-full items-start">
+            <div className="text-xl md:text-3xl"><WordPopping phrase="Experience the freedom of GROCERY shopping without the hassle of payment" /></div>
+            <div className="text-medium font-medium">
               <WordPopping phrase="Get Download the app" />
             </div>
             <div className="flex flex-row">
@@ -24,7 +24,7 @@ const Description: React.FC = () => {
             </div>
           </div>
         </div>
-        <motion.p variants={container} whileInView='visible' initial='initial' className={`${outfit.className} w-1/2 text-xl text-[#FBFEE1]`}>
+        <motion.p variants={container} whileInView='visible' initial='initial' className={`${outfit.className} w-1/2 pl-4 md:pl-0 text-lg md:text-xl text-[#FBFEE1]`}>
           No more waiting for your salary to be credited! With Pantry Plus, you
           can easily redeem and get your essential daily needs right at your
           home. Enjoy convenience and peace of mind, knowing that your pantry is

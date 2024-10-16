@@ -20,16 +20,16 @@ const GrocerySection: React.FC = () => {
   return (
     <motion.div variants={container} whileInView='visible' initial='initial' className='w-full h-full overflow-hidden relative flex flex-row justify-center items-center rounded-3xl bg-[#212121]'>
       <motion.div style={{ y:grocery, scale:scaleDown }} className="absolute z-20">
-        <Image src={Grocery} alt="card" width={550} height={550} />
+        <Image src={Grocery} alt="text" width={550} height={550} />
       </motion.div>
-      <motion.div style={{ y:card ,scale }} className="absolute md:pr-[40vw] md:pb-56 z-20">
+      <motion.div style={{ y:card ,scale }} className="absolute pl-20 md:pl-0 pr-0 md:pr-[40vw] pb-60 md:pb-56 z-20">
         <Image src={CARD} alt="card" width={400} height={400} />
       </motion.div>
       <motion.div style={{ y:chilli , scale }} className="absolute md:pr-[vw] md:pb-14 z-20">
-        <Image src={Chili} alt="card" width={100} height={100} />
+        <Image src={Chili} alt="chili" width={100} height={100} />
       </motion.div>
-      <motion.div style={{ y:phone, scale }} className="absolute md:pl-80 md:pt-36 ">
-        <Image src={Phone} alt="card" width={400} height={400} />
+      <motion.div style={{ y:phone, scale }} className="absolute pl-0 pr-20 md:pl-80 pt-40 md:pt-36 ">
+        <Image src={Phone} alt="phone" width={400} height={400} />
       </motion.div>
     </motion.div>
   );
