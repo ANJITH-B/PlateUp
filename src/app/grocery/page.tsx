@@ -17,7 +17,7 @@ import FAndQHow from "./components/F&QHow";
 import FAndQWhat from "./components/F&QWhat";
 import ShopCard from "./components/RestaurantCard";
 import StepOne from "./components/StepOne";
-
+// xl:w-[1270px] 
 function page() {
   const { scrollYProgress } = useViewportScroll();
   const moveDown = useTransform(scrollYProgress, [0, 1], [40, 500]);
@@ -25,7 +25,8 @@ function page() {
   const moveDown3 = useTransform(scrollYProgress, [0, 1], [-200, 30]);
   const moveDown2 = useTransform(scrollYProgress, [0, 1], [0, 380]);
   return (
-    <main className="px-5 md:px-20 lg:px-40 xl:px-40 w-full bg-[#030303] relative overflow-hidden">
+    <main className="w-full flex flex-col items-center bg-[#030303]">
+      <div  className="px-5 md:px-16 lg:px-20 xl:px-[20px] w-full max-w-screen-xl relative overflow-hidden" >  
       <div className="  w-full mt-32 h-[42vh] ">
         <GrocerySection />
       </div>
@@ -174,6 +175,7 @@ function page() {
             <FAndQWhat />
           </div>
         </div>
+      </div>
       </div>
     </main>
   );

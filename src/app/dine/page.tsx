@@ -37,7 +37,7 @@ const Page: React.FC = () => {
   const contain = useRef<HTMLDivElement>(null);
 
   return (
-    <main className="px-5 md:px-20 lg:px-40 xl:px-40 ">
+    <main className="px-5 md:px-20 lg:px-40 xl:px-80 ">
       <motion.div 
         initial={{ rotate:0 ,opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ rotate: -30, opacity:1, scale:1}} transition={{delay:2}} 
         className="md:block hidden items-center justify-center absolute w-full md:w-900px h-full ml-[30vh] z-10 overflow-hidden">
