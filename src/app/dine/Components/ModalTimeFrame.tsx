@@ -19,7 +19,7 @@ const ModalTimeFrame: React.FC = () => {
 
   return (
     <>
-      <Button className=' md:hidden text-white bg-[#2F383A] border border-[#384345] w-full py-5 text-lg' onClick={showModal}>
+      <Button className=' lg:hidden text-white bg-[#2F383A] border border-[#384345] w-full py-5 text-lg' onClick={showModal}>
         Select Time
       </Button>
       <Modal title="Basic Modal" width={375} centered open={isModalOpen} onOk={handleOk} onCancel={handleCancel}  okButtonProps={{ style: { backgroundColor: 'black' } }}>

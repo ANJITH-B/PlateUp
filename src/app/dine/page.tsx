@@ -105,14 +105,14 @@ const Page: React.FC = () => {
       <SectionHeading heading='Book Your Slots!' mealExpressIcon={false} />
       <div className="pt-[3vh]"> <ModalTimeFrame /> </div>
       <div className="h-full w-full pt-[3vh] flex flex-col md:flex-row">
-        <div className="hidden md:block w-2/5">
+        <div className="hidden lg:block w-2/5">
         <div className="flex flex-col gap-5 w-full">
           <p className="text-xl font-light"> Select your time frame</p>
           <FrameCalendar />
           <TimeFrame />
         </div>
         </div>
-        <div className="w-full md:w-3/5 h-full ">
+        <div className="w-full lg:w-3/5 h-full ">
           <p className="text-xl font-light pb-[3vh]"> 
             Available at this time frame
           </p>

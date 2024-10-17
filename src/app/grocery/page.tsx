@@ -18,6 +18,8 @@ import FAndQWhat from "./components/F&QWhat";
 import ShopCard from "./components/RestaurantCard";
 import StepOne from "./components/StepOne";
 // xl:w-[1270px] 
+
+
 function page() {
   const { scrollYProgress } = useViewportScroll();
   const moveDown = useTransform(scrollYProgress, [0, 1], [40, 500]);
@@ -30,17 +32,14 @@ function page() {
       <div className="  w-full mt-32 h-[42vh] ">
         <GrocerySection />
       </div>
-      <div className="flex w-full pt-28 gap-5">
+      <div className="flex w-full pt-20 md:pt-28 gap-5">
         <Description />
       </div>
 
       <div className="w-full h-full flex flex-col md:flex-row pt-28 ">
-        <div className="flex w-full md:w-2/3 flex-col items-start pb-10 md:pb-0 pr-0 md:pr-40 gap-5 text-3xl text-[#FBFEE1]">
-          <WordPopping phrase="Fresh Finds, Big Savings" />
-          <motion.p
-            variants={container}
-            className="text-[14px] md:text-[16.5px] font-normal text-[#FBFEE1]"
-          >
+        <div className="flex w-full  lg:w-2/3 flex-col items-start pb-10 md:pb-0 pr-0 md:pr-10 lg:pr-16 gap-5 text-3xl text-[#FBFEE1]">
+          <WordPopping leading="mb-0" phrase="Fresh Finds, Big Savings" />
+          <motion.p variants={container} className="text-lg md:text-2xl text-[#fbfee1d8] font-oufit "  >
             Get the freshest farm produce delivered straight to your door! Enjoy
             30% off on crisp vegetables, quality staples, bread, milk, veggies,
             and pulses. Your farm-fresh pickup is just a click away
@@ -140,14 +139,14 @@ function page() {
               className="text-xl font-light flex items-start"
             >
               {" "}
-              <WordPopping phrase="Near SuperMarkets" />
+              <WordPopping leading="mb-0" phrase="Near SuperMarkets" />
             </motion.p>
             <ShopCard />
           </div>
         </motion.div>
         <div className=" w-full md:w-3/5 h-full md:h-[85vh]">
           <p className="text-xl font-light pb-[3vh] flex items-start">
-            <WordPopping phrase="Popular this week" />
+            <WordPopping leading="mb-0" phrase="Popular this week" />
           </p>
           <GroceryCard />
         </div>

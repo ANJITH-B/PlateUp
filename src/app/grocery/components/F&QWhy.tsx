@@ -17,12 +17,12 @@ const FAndQWhy: React.FC = () => {
       transition: {ease: [0.65, 0, 0.35, 1], delay: 0.1 ,duration: 1.2}}}>
         <div className="flex flex-row justify-between w-full">
           <p className="text-md font-xl flex items-start flex-col leading-8">
-            Why ? <br /><span className="text-sm font-normal"><WordPopping phrase='By using the Plateup card' /></span>
+            Why ? <br /><span className="text-sm font-normal"><WordPopping leading="mb-0" phrase='By using the Plateup card' /></span>
           </p>
           <motion.button className="border px-4 rounded-xl pb-1 h-10 ">..</motion.button>
         </div>
         <div className="flex flex-row justify-between w-full gap-2 items-center">
-          <p><WordPopping phrase='To Enjoy convenience and peace of mind, knowing that your pantry is always stocked' /></p>      
+          <p><WordPopping leading="mb-0" phrase='To Enjoy convenience and peace of mind, knowing that your pantry is always stocked' /></p>      
             <motion.button onClick={handleAnswer} className="px-[15px] pb-1 text-2xl rounded-full h-11 text-white bg-black" 
             initial={{ rotateZ: 0, scale: 1 }}
             animate={{

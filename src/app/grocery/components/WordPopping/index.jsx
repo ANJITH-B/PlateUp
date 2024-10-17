@@ -3,17 +3,17 @@ import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
 // import Rounded from '../../common/RoundedButton';
 
-export default function Index({phrase}) {
+export default function Index({phrase , leading}) {
   // const phrase = "We're committed to making Dining out a Delightful,Experience for you ";
   const description = useRef(null);
   const isInView = useInView(description);
   return (
     <div ref={description} className="flex justify-center">
       <div className="max-w-screen-xl flex gap-12 relative">
-        <p className=" m-0">
+        <p className=" m-">
           {phrase.split(" ").map((word, index) => {
             return (
-              <span key={index} className="relative inline-flex  overflow-hidden mr-2">
+              <span key={index} className={`relative inline-flex overflow-hidden mr-2 ${leading}`}>
                 <motion.span variants={slideUp}  custom={index} animate={isInView ? "open" : "closed"} key={index} >
                   {word}
                 </motion.span>

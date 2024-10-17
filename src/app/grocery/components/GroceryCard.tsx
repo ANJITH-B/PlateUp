@@ -76,7 +76,7 @@ const GroceryCard: React.FC = () => {
   return (
     <div className="h-full flex flex-col justify-between">
       <motion.div variants={container} initial="hidden" whileInView="visible"
-       viewport={{once:false}} exit="hidden" key={currentPage} className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+       viewport={{once:false}} exit="hidden" key={currentPage} className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
         {currentItems.map((item, index) => (
           <motion.div variants={card} key={index} className="flex flex-col w-full bg-[#CDE0B5] rounded-lg p-1.5">
             <div className="flex items-end pb-2 md:pb-3">
