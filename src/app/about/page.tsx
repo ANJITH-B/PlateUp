@@ -20,10 +20,6 @@ export default function page() {
       <motion.div className="flex justify-center items-center mt-[35vh] max-w-5xl mb-[20vh] mx-auto text-center">
         <motion.h1 className="font-semibold text-white">
           <span className="text-6xl md:text-[8rem] text-wrap mt-1 leading-none font-secondary text-center font-light lg-text-5xl py-10 font-primary bg-clip-text text-transparent bg-gradient-to-b from-[#FFC700] to-[#FF5107] h-full align-middle">
-            <span className="text-white font-primary">About</span> Plateup
-            <span className="text-white font-teritary">about</span> Plateup
-            <span className="text-white font-sans">about</span> Plateup
-            <span className="text-white font-mono">about</span> Plateup
             <span className="text-white font-secondary">About</span> Plateup
           </span>
         </motion.h1>

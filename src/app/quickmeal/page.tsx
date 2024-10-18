@@ -18,13 +18,13 @@ import RestaurantCount from "./components/RestaurantCount";
 
 function Page() {
   return (
-    <main className="px-5 md:px-20 lg:px-40 xl:px-40 w-full bg-[#030303] relative overflow-hidden">
-      <div className="flex flex-col md:flex-row w-full h-full lg:h-screen items-center  ">
+    <main className="px-5 md:px-10 lg:px-10 xl:px-40 w-full bg-[#030303] relative overflow-hidden">
+      <div className="flex flex-col md:flex-row w-full h-full items-center  ">
         <div className="w-full md:w-4/6 h-full flex flex-col items-start justify-between gap-3 md:gap-5 pt-32 pb-10">
           <p className="font-extrabold text-3xl md:text-5xl text-[#FBFEE1] md:w-[50vw] md:leading-normal">
             <WordPopping phrase="Indulge in a World of Flavors Without Worrying about the Bill" />
           </p>
-          <p className="pt-3 my-auto md:text-lg font-light text-[#FBFEE1] md:w-[30vw] leading-relaxed">
+          <p className="pt-3 my-auto md:text-lg font-light text-[#FBFEE1] md:w-[50vw] xl:w-[30vw] leading-relaxed">
             <WordPopping phrase="Our platform brings a world of flavors right to your workplace, ensuring that every meal is a delicious adventure for your taste buds" />
           </p>
           <div className="flex flex-row items-end">
@@ -45,17 +45,17 @@ function Page() {
 
       {/* // 02 TEXT SECTION */}
 
-      <div className="h-full lg:h-screen w-full">
+      <div className="h-full w-full">
         <motion.div
           variants={container}
           initial="initial"
           whileInView="visible"
           className="h-1/2 w-full flex flex-row justify-between items-center gap-3 md:gap-5"
         >
-          <p className="pt-3 text-xl md:text-4xl text-[#FBFEE1] w-full h-[30vh] leading-6 md:leading-10">
+          <p className="pt-3 text-xl md:text-2xl lg:text-4xl text-[#FBFEE1] w-full h-[30vh] leading-6 md:leading-10">
             <WordPopping phrase="Introducing Plateup, where workplace dining is revolutionized with a diverse range of cuisines " />
           </p>
-          <p className="md:block hidden pt-3 text-2xl text-[#FBFEE1] w-full h-[30vh] leading-8 ">
+          <p className="md:block hidden pt-3 text-xl lg:text-2xl text-[#FBFEE1] w-full h-[30vh] leading-8 ">
             <WordPopping phrase="We eliminate the hassle of searching for meals on expensive delivery apps and the constraints of traditional cafeteria choices." />
           </p>
           <p className="pt-3 text-xs md:text-lg font-light text-[#FBFEE1] w-full h-[30vh] leading-4 md:leading-relaxed">
