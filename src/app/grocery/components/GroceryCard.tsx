@@ -108,10 +108,10 @@ const GroceryCard: React.FC = () => {
                       />
                     ))}
                 </svg>
-                <p className="hidden md:block font-thin text-gray-900 text-[11px] md:text-[13px] px-1">
+                <p className="hidden md:block font-thin text-gray-900  sm:text-[11px] md:text-[13px] px-1">
                   {item[3]}
                 </p></div>
-                <p className="p-1.5 py-1 text-xl font-md text-gray-900 leading-6">
+                <p className="p-1.5 py-1 text-medium sm:text-xl font-md text-gray-900 leading-6">
                 {item[0]}
                 <br />
               </p>

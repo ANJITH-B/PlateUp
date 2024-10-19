@@ -39,7 +39,7 @@ React.useEffect(()=>{
 },[blurOff])
   return (
     <motion.div variants={container} whileInView='visible' initial='initial' className={`font-outfit flex items-center justify-center relative overflow-hidden w-full h-80 ml-0 lg:ml-10 rounded-3xl  to-[#C5D34A] from-[#459D42] bg-gradient-to-tl`}>
-        <motion.p style={{scale:zoomOut}} initial={{x:0} } className='absolute z-10 font-outfit font-black text-8xl leading-12'> FARM<br/>ESSEN<br/>TIALS</motion.p>
+        <motion.p style={{scale:zoomOut}} initial={{x:0} } className='absolute z-10 font-outfit font-black text-8xl text-center leading-12'> FARM<br/>ESSEN<br/>TIALS</motion.p>
         {/* <motion.div style={{scale:zoomOut,y:MoveUplow}} className='absolute z-10'><Image src={FramEssetnialsText} alt="..." className='w-80'/></motion.div> */}
         <motion.div style={{scale:zoomIn, y:MoveDownsBrigel}} initial={{x:-60}} className='absolute z-20'><Image src={Brigel} alt="..." className='w-20'/></motion.div>
         <motion.div style={{scale:zoomOut,y:MoveDownschilli}}initial={{x:-100}} className='absolute z-20'><Image src={Chilli} alt="..." className='w-20'/></motion.div>

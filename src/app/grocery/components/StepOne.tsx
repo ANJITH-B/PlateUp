@@ -17,7 +17,7 @@ const StepOne: React.FC = () => {
     const color = useTransform(scrollYProgress, [0, 1], ['#ff612c', '#ceff2c']);
 
   return (
-    <motion.div variants={container} whileInView="visible" initial="initial" className="w-full h-[300px] flex flex-col items-start p-3">
+    <motion.div variants={container} whileInView="visible" initial="initial" className="w-full min-h-[300px] flex flex-col items-start p-3">
           <motion.svg style={{ rotate:rotateSvg }} className='w-10 hidden md:block'  width="32" height="32" viewBox="0 0 32 32"  fill="none" xmlns="http://www.w3.org/2000/motion.svg">
               <motion.line x1="15.5" x2="15.5" y2="32" stroke="#FBFEE1" stroke-width="5" variants={linePath} initial='initial' whileInView='view'/>
               <motion.line y1="15.5" x2="32" y2="15.5"  stroke="#FBFEE1" stroke-width="5" variants={linePath} initial='initial' whileInView='view'/>

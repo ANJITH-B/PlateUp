@@ -13,7 +13,7 @@ export default function Index({phrase , leading}) {
         <p className=" m-">
           {phrase.split(" ").map((word, index) => {
             return (
-              <span key={index} className={`relative inline-flex overflow-hidden mr-2 ${leading}`}>
+              <span key={index} className={`relative inline-flex overflow-hidden  ${leading}`}>
                 <motion.span variants={slideUp}  custom={index} animate={isInView ? "open" : "closed"} key={index} >
                   {word}
                 </motion.span>

@@ -43,8 +43,8 @@ const FAndQWhat = () => {
       {FQA.map((item, index) => (
         <div key={index}>
           <motion.div className="flex flex-row justify-between py-3 items-center">
-            <p className="text-xl font-light "><WordPopping leading="mb-0" phrase={item[0]}/></p>
-              <motion.button className="px-4 pb-1 text-2xl rounded-full h-11 bg-black text-white"
+            <p className="text-lg sm:text-xl font-light "><WordPopping leading="mr-[5px] mb-0" phrase={item[0]}/></p>
+              <motion.button className="px-[14px] pb-0 text-2xl rounded-full text-center  w-10 h-10 bg-black text-white"
               initial={{ rotate: 0 }}
               animate={{
                 rotate: selectedQuestionIndex === index ? 45 : 0,
@@ -52,11 +52,11 @@ const FAndQWhat = () => {
               }}
               onClick={() => handleClick(index)}    
               >  
-              <motion.span animate={{
+              <motion.a  animate={{
                 rotateZ: selectedQuestionIndex === index  ? 0 : 45,
                 scale: selectedQuestionIndex === index  ? [0.7, 1, 0.7] : [0.7, 1, 0.7],
                 }}>+
-              </motion.span> 
+              </motion.a> 
               </motion.button>
             
           </motion.div>
@@ -69,7 +69,7 @@ const FAndQWhat = () => {
             transition={{ duration: 0.5 }}
             className="overflow-hidden"
           >
-            <p className="text-lg font-light px-5"><WordPopping leading="mb-0" phrase={item[1]} /></p>
+            <p className="text-medium sm:text-lg font-light px-5"><WordPopping leading=" mr-1 mb-0" phrase={item[1]} /></p>
           </motion.div>
         </div>
       ))}

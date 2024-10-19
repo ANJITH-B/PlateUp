@@ -38,16 +38,16 @@ function page() {
   return (
     <main className="w-full flex flex-col items-center bg-[#030303]">
       <div className="px-5 md:px-10 lg:px-20 xl:px-[20px] w-full max-w-screen-xl relative overflow-hidden" >
-        <div className="  w-full mt-32 h-[42vh] ">
+        <div className=" w-full mt-[100px] sm:mt-32 min-h-[300px] h-[42vh] ">
           <GrocerySection />
         </div>
-        <div className="flex w-full pt-20 md:pt-28 gap-5">
+        <div className="flex w-full pt-16 sm:pt-16 md:pt-28 gap-5">
           <Description />
         </div>
-        <div className="w-full h-full flex flex-col md:flex-row pt-28 ">
-          <div className="flex w-full  lg:w-2/3 flex-col items-start pb-10 md:pb-0 pr-0 md:pr-10 lg:pr-16 gap-5 text-3xl text-[#FBFEE1]">
-            <WordPopping leading="mb-0" phrase="Fresh Finds, Big Savings" />
-            <motion.p variants={container} className="text-lg md:text-2xl text-[#fbfee1d8] font-oufit "  >
+        <div className="w-full h-full flex flex-col md:flex-row pt-16 sm:pt-28 ">
+          <div className="flex w-full  lg:w-2/3 flex-col items-start pb-10 md:pb-0 pr-0 md:pr-10 lg:pr-16 gap-5 text-[26px] sm:text-3xl text-[#FBFEE1]">
+            <WordPopping leading="mr-1 mb-0" phrase="Fresh Finds, Big Savings" />
+            <motion.p variants={container} className="text-medium sm:text-lg md:text-2xl text-[#fbfee1d8] font-oufit "  >
               Get the freshest farm produce delivered straight to your door! Enjoy
               30% off on crisp vegetables, quality staples, bread, milk, veggies,
               and pulses. Your farm-fresh pickup is just a click away
@@ -72,9 +72,9 @@ function page() {
          
         <div className="flex flex-row py-2 md:py-3 lg:py-5 gap-2 md:gap-3 lg:gap-4">
           <div className="hidden md:block w-1/3 p-5"> </div>
-          <div className="w-1/2 md:w-1/3 rounded-3xl bg-[#77A964]  p-2 pb-2 md:px-3 md:pb-4 lg:p-5">
+          <div className="w-1/2 md:w-1/3 rounded-3xl bg-[#77A964]  p-2 pb-4 sm:pb-2 md:px-3 md:pb-3 lg:p-5">
             <p className="font-black leading-none font-outfit text-[80px] lg:text-[100px] p-0 text-black text-left">3</p>
-            <p className="text-lg md:text-xl text-black md:pt-2 font-bold">
+            <p className="text-medium sm:text-xl md:text-xl text-black md:pt-2 font-bold">
               Weekend Savings
             </p>
             <p className="text-sm md:text-medium lg:text-lg leading-5 md:leading-5 text-black pt-1 md:pt-2">
@@ -84,9 +84,9 @@ function page() {
               shopping with Pantry Plus.
             </p>
           </div>
-          <div className="w-1/2 md:w-1/3 h-[345px] md:h-[330px] lg:h-[380px]  z-10 rounded-3xl bg-[rgba(118,151,105,0.5)] backdrop-blur-sm backdrop-opacity-1 p-2 pb-2 md:px-3 md:pb-4 lg:p-5">
+          <div className="w-1/2 md:w-1/3 min-h-[345px] md:h-[330px] lg:h-[380px]  z-10 rounded-3xl bg-[rgba(118,151,105,0.5)] backdrop-blur-sm backdrop-opacity-1 p-2 pb-2 md:px-3 md:pb-4 lg:p-5">
             <p className="font-black leading-none font-outfit text-[80px] lg:text-[100px] p-0 text-white text-left">2</p>
-            <p className=" text-xl font-bold text-white md:pt-2">Variety Hub</p>
+            <p className=" text-lg sm:text-xlfont-bold text-white md:pt-2">Variety Hub</p>
             <p className="text-sm md:text-medium lg:text-lg leading-5 md:leading-5 text-[#FBFEE1] pt-1 md:pt-2 ">
               Discover a diverse assortment of fresh vegetables, dairy products,
               and more to fulfill your requirements. Explore our extensive range
@@ -113,12 +113,12 @@ function page() {
         </div>
 
         <div className="flex flex-row pt- gap-2 md:gap-3 lg:gap-4 ">
-          <div className="w-1/2 md:w-1/3 h-[300px] md:h-[330px] lg:h-[380px] rounded-3xl bg-[#CDE0B5] p-2 pb-2 md:px-3 md:pb-4 lg:p-5">
+          <div className="w-1/2 md:w-1/3 min-h-[300px] md:h-[330px] lg:h-[380px] rounded-2xl bg-[#CDE0B5] p-2 pb-4 sm:pb-2 md:px-3 md:pb-4 lg:p-5">
             <p className="font-black leading-none font-outfit text-[80px] lg:text-[100px] p-0 text-black text-left">4</p>
-            <p className=" text-xl text-black pt-0 lg:pt-2 font-bold">
+            <p className="text-lg sm:text-xl text-black pt-0 lg:pt-2 font-bold">
               Coverage Areas
             </p>
-            <p className=" text-medium lg:text-lg leading-5 md:leading-6 text-black pt-1 md:pt-2">
+            <p className="text-sm md:text-medium lg:text-lg leading-5 md:leading-6 text-black pt-1 md:pt-2">
               Experience the convenience of real-time availability both online and
               in-store, serving Mumbai, Pune, Bangalore, Gurgaon, and beyond
               essentials in one place.
@@ -140,14 +140,14 @@ function page() {
             <div className="flex flex-col gap-5 w-full h-full">
               <motion.p variants={container} initial="initial" whileInView="visible" className="text-xl font-light flex items-start">
                 {" "}
-                <WordPopping leading="mb-0" phrase="Near SuperMarkets" />
+                <WordPopping leading="mr-1 mb-0" phrase="Near SuperMarkets" />
               </motion.p>
               <ShopCard />
             </div>
           </motion.div>
           <div className=" w-full lg:w-3/5 h-[910px] md:h-[700px] pb-10 md:pb-20 ">
             <p className="text-xl font-light pb-[3vh] flex items-start">
-              <WordPopping leading="mb-0" phrase="Popular this week" />
+              <WordPopping leading="mr-1 mb-0" phrase="Popular this week" />
             </p>
             <GroceryCard />
           </div>
