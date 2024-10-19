@@ -12,7 +12,7 @@ const RestaurantCount: React.FC = () => {
 
 
   return ( 
-    <motion.div variants={container} initial="initial" whileInView="visible" className="bg-[#F1CF88] w-[60vw] md:w-80 md:h-60 flex flex-col items-start  rounded-3xl relative">
+    <motion.div variants={container} initial="initial" whileInView="visible" className="bg-[#F1CF88] w-[60vw] md:w-80 flex flex-col items-start  rounded-3xl relative">
         <motion.div style={{ scale: top ,}} initial={{x:-40}} className="w-full h-full flex items-center justify-start absolute">
             <Image src={MirrorThree} alt='...'  className='w-[100px] '/>
         </motion.div> 

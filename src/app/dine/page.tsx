@@ -37,7 +37,8 @@ const Page: React.FC = () => {
   const contain = useRef<HTMLDivElement>(null);
 
   return (
-    <main className="px-5 md:px-20 lg:px-40 xl:px-80 ">
+    <main className="w-full flex flex-col items-center bg-[#030303]">
+      <div  className="px-5 md:px-16 lg:px-20 xl:px-[20px] w-full max-w-screen-xl relative overflow-hidden" > 
       <motion.div 
         initial={{ rotate:0 ,opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ rotate: -30, opacity:1, scale:1}} transition={{delay:2}} 
         className="md:block hidden items-center justify-center absolute w-full md:w-900px h-full ml-[30vh] z-10 overflow-hidden">
@@ -133,6 +134,7 @@ const Page: React.FC = () => {
           </div>
           <div className="md:w-4/6 flex flex-row items-end justify-start"><FAndQWhat/></div>
         </div>
+      </div>
       </div>
     </main>
   );

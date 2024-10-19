@@ -44,7 +44,7 @@ const DrawingSVG = () => {
         </motion.div>
         <motion.p initial={{ x:(sm? -15: 0)}} className="w-24 md:w-full"><WordPopping phrase="READY TO"/></motion.p>
         </motion.div>
-        <motion.div initial={{x:( sm? 6 :32)}} className="text-[#FBFEE1]"><AnimatedText text="GET REEDEM" delay={2.3}/></motion.div>
+        <motion.div initial={{x:( sm? 6 :32)}} className="text-[#FBFEE1]"><AnimatedText text="GET REDEEM" delay={2.3}/></motion.div>
     </div>
   );
 };
