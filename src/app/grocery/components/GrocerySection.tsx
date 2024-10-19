@@ -28,7 +28,7 @@ const GrocerySection: React.FC = () => {
       <motion.div style={{ y:chilli , scale }} className="absolute md:pr-[vw] md:pb-14 z-20">
         <Image src={Chili} alt="chili" width={100} height={100} />
       </motion.div>
-      <motion.div style={{ y:phone, scale }} className="absolute pl-0 pr-20 md:pl-80 pt-40 md:pt-36 ">
+      <motion.div style={{ y:phone, scale , rotate:15}} className="absolute pl-0 pr-20 md:pl-80 pt-20 md:pt-36 ">
         <Image src={Phone} alt="phone" width={400} height={400} />
       </motion.div>
     </motion.div>

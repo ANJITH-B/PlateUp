@@ -18,6 +18,7 @@ import FAndQWhat from "./components/F&QWhat";
 import ShopCard from "./components/RestaurantCard";
 import StepOne from "./components/StepOne";
 import { Outfit } from "next/font/google";
+import { useMediaQuery } from "react-responsive";
 
 const outfit = Outfit({
   weight: ['200', '300','400','600','900'],
@@ -25,12 +26,14 @@ const outfit = Outfit({
 });
 
 function page() {
-  
+  const sm = useMediaQuery({ maxWidth: 768 });
+  const md = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+
   const { scrollYProgress } = useViewportScroll();
   const moveDown = useTransform(scrollYProgress, [0, 1], [40, 500]);
   const moveDown1 = useTransform(scrollYProgress, [0, 1], [-200, 120]);
   const moveDown3 = useTransform(scrollYProgress, [0, 1], [-200, 30]);
-  const moveDown2 = useTransform(scrollYProgress, [0, 1], [0, 380]);
+  const moveDown2 = useTransform(scrollYProgress, [0, 1], [sm ? -250 : 0 , sm ? -90 : 380]);
 
   return (
     <main className="w-full flex flex-col items-center bg-[#030303]">
@@ -41,7 +44,6 @@ function page() {
         <div className="flex w-full pt-20 md:pt-28 gap-5">
           <Description />
         </div>
-
         <div className="w-full h-full flex flex-col md:flex-row pt-28 ">
           <div className="flex w-full  lg:w-2/3 flex-col items-start pb-10 md:pb-0 pr-0 md:pr-10 lg:pr-16 gap-5 text-3xl text-[#FBFEE1]">
             <WordPopping leading="mb-0" phrase="Fresh Finds, Big Savings" />
@@ -92,19 +94,21 @@ function page() {
               place.
             </p>
           </div>
-
-          <motion.div style={{ y: moveDown }}  className="absolute w-full z-0 items-center pr-60 flex justify-end" >
-            <Image src={Cauliflower} alt="cauliflower" width={200} height={200} />
-          </motion.div>
-          <motion.div style={{ y: moveDown3, rotateX: 180 }} className="absolute blur-sm w-full z-0 items-center pr-60 flex justify-end" >
-            <Image src={leaf} alt="cauliflower" width={100} height={100} />
-          </motion.div>
-          <motion.div style={{ y: moveDown1, x: 50 }} className="absolute w-full z-0 items-center pr-60 flex justify-end" >
-            <Image src={leaf} alt="cauliflower" width={150} height={150} />
-          </motion.div>
-          <motion.div style={{ y: moveDown2, rotate: 90 }} className="absolute w-full z-0 items-center pr-60 flex justify-end">
-            <Image src={leaf} alt="cauliflower" width={200} height={200} />
-          </motion.div>
+          <div className="absolute  w-full z-0 items-end pr-6 flex flex-col justify-end">
+            <motion.div style={{ y: moveDown, }}  className=" lg:pr-6" >
+              <Image src={Cauliflower} alt="cauliflower" width={200} height={200} />
+            </motion.div>
+            <motion.div style={{ y: moveDown3, rotateX: 180 }} className=" blur-sm lg:pr-0" >
+              <Image src={leaf} alt="cauliflower" width={100} height={100} />
+            </motion.div>
+            <motion.div style={{ y: moveDown1 }} className=" lg:pr-0" >
+              <Image src={leaf} alt="cauliflower" width={150} height={150} />
+            </motion.div>
+            <motion.div style={{ y: moveDown2, rotate: 90 }} className="hidden md:block lg:pr-60">
+              <Image src={leaf} alt="cauliflower" width={200} height={200} />
+            </motion.div>
+          </div>
+          
 
         </div>
 
