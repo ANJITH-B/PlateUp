@@ -9,7 +9,7 @@ const questrial = Questrial({
   subsets: ['latin']
 })
 const outfit = Outfit({
-  weight: ['200', '300'],
+  weight: ['200', '300','400','600'],
   subsets: ['latin'],
 });
 
