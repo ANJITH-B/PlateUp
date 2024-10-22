@@ -5,7 +5,7 @@ import { Alegreya , Redressed } from "next/font/google";
 
 // import Rounded from '../../common/RoundedButton';
 
-export default function Index({phrase , className}) {
+export default function Index({phrase , className }) {
   // const phrase = "We're committed to making Dining out a Delightful,Experience for you ";
   const description = useRef(null);
   const isInView = useInView(description);
@@ -15,7 +15,7 @@ export default function Index({phrase , className}) {
         <p >
           {phrase.split(" ").map((word, index) => {
             return (
-                <span key={index} className="relative inline-flex  overflow-hidden mr-2 ">
+                <span key={index} className="relative inline-flex  overflow-hidden  ">
                 <motion.span className={className} variants={slideUp}  custom={index} animate={isInView ? "open" : "closed"} key={index} >
                   {word}
                 </motion.span>

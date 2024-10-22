@@ -89,7 +89,7 @@ const Page: React.FC = () => {
         <div className="flex flex-row h-[60vh]">
           <div className="hidden md:block h-full w-[40vw] pr-16 ">
           <div className="h-full flex flex-row items-center w-full text-2xl  text-[#FBFEE1]">
-            <WordPopping phrase="We eliminate the hassle of searching for meals on expensive delivery apps and the constraints of traditional cafeteria choices." />
+            <WordPopping className="mr-2" phrase="We eliminate the hassle of searching for meals on expensive delivery apps and the constraints of traditional cafeteria choices." />
           </div>
           </div>
           <div className="flex flex-col w-full">

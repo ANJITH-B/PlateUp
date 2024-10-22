@@ -9,7 +9,7 @@ const OffersCardThree: React.FC = () => {
     <div className="flex flex-row h-[28vh]">
       <div className="md:w-[40vw]  text-right flex flex-col items-end justify-center">
         <div className="text-2xl ">
-          <WordPopping phrase="This Sunday" />
+          <WordPopping className='mr-1' phrase="This Sunday" />
         </div>
         <p className="text-sm md:ml-20 mr-3 md:mr-2">
           Treat yourself to seafood seasoned with authentic Maharashtrian

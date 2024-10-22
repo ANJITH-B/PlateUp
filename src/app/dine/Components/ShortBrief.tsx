@@ -13,7 +13,7 @@ const ShortBrief:React.FC = () => {
             transition={{ ease: [0.65, 0, 0.35, 1], duration: 0.5 }}
           >
             <div className="md:pr-32">
-              <WordPopping phrase="Dine Vista ensures to satisfy your hunger wherever you may find yourself." />
+              <WordPopping className='mr-1' phrase="Dine Vista ensures to satisfy your hunger wherever you may find yourself." />
             </div>
             <p className="text-lg pt-10">
               With an extensive selection of cuisines from all corners of India,

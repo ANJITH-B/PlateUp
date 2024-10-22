@@ -12,9 +12,9 @@ const SubContent:React.FC = () => {
   return (
     <div className="flex flex-row justify-between pt-[5vh] md:pt-[10vh]">
           <div className="h-full text-[20px] md:text-[42px] leading-tight flex flex-col items-start">
-            {pharses.map((pharse, index) => (
+            {/* {pharses.map((pharse, index) => (
               <ShortBrief key={index} phrase={pharse} />
-            ))}
+            ))} */}
           </div>
           <p className="text-[14px] md:text-[22px] w-[200px] md:w-[400px]">
             free from worries about payments or stress.

@@ -29,7 +29,7 @@ const SectionHeading:React.FC<SectionHeadingProps> = ({heading , mealExpressIcon
     <motion.div variants={container} initial="initial" whileInView="visible" className="flex flex-col pt-[10vh]">
         <div className="flex flex-row justify-between">
           <div className="text-2xl md:text-4xl">
-            <WordPopping phrase={heading} />
+            <WordPopping className="mr-2" phrase={heading} />
           </div>
           {mealExpressIcon && (
           <motion.div

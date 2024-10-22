@@ -10,12 +10,12 @@ const OffersCardTwo: React.FC = () => {
         <div className=" md:py-8 mr-2">
           <div className="text-white font-semibold leading-3 flex flex-col items-start justify-between">
             <div className="flex flex-row pb-2">
-              <WordPopping phrase="JOIN US" />
+              <WordPopping className='mr-1' phrase="JOIN US" />
               <br />
               <span className="text-black bg-red-">.......</span>
             </div>
-            <WordPopping phrase="      AT DINE" /> <br />
-            <WordPopping phrase="VISTA BKC" />
+            <WordPopping className='mr-1' phrase="      AT DINE" /> <br />
+            <WordPopping className='mr-1' phrase="VISTA BKC" />
           </div>
           <div className="flex flex-row items-center gap-3">
             <p className="pt-3 text-gray-300 leading-5 w-[30vw]">

@@ -19,7 +19,7 @@ const Redemption: React.FC = () => {
         className="absolute -10"
       />
       <div className="pt-12">
-        <AnimatedText class='font-sans' text="REDEMPTION" delay={0} />
+        <AnimatedText cssClass='font-sans' text="REDEMPTION" delay={0} />
       </div>
     </div>
   </motion.div>

@@ -15,11 +15,11 @@ const OffersCardOne:React.FC = () => {
         <div className=" p-8">
           <div className="text-black font-semibold leading-3 flex flex-col items-start justify-between">
             <div className="flex flex-row pb-2">
-              <WordPopping phrase="INDULGE" /> <br className=''/>
+              <WordPopping className='mr-1' phrase="INDULGE" /> <br className=''/>
                 <span className="text-[#D9D9D9] bg-red-">.......</span>
             </div>
-            <WordPopping phrase="YOUR" /> <br />
-            <WordPopping phrase="TASTE BUDS" />
+            <WordPopping className='mr-1' phrase="YOUR" /> <br />
+            <WordPopping className='mr-1' phrase="TASTE BUDS" />
           </div>
           <div className="flex flex-row items-center gap-3">
             <p className="pt-3 text-gray-600 leading-5">

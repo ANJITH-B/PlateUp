@@ -56,7 +56,7 @@ const MovingText = () => {
             <AnimatedText cssClass="font-aegreya_SC text-[#FBFEE1]" text="DINE" delay={0} />
             <AnimatedText cssClass="font-aegreya_SC italic  text-orange-400" text="VISTA" delay={0.3} />
           </div>
-          <p className='text-[#FBFEE1] pt-5'><WordPopping className={`${redressed.className} text-6xl`} phrase="Discover the Joy of Dining Out" delay={1.5} /></p>
+          <p className='text-[#FBFEE1] pt-5'><WordPopping className={`${redressed.className} text-6xl mr-2`} phrase="Discover the Joy of Dining Out" delay={1.5} /></p>
         </div>
       </div>
       <motion.div
