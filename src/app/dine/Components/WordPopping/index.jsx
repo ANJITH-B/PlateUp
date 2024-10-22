@@ -1,20 +1,22 @@
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
+import { Alegreya , Redressed } from "next/font/google";
+
 // import Rounded from '../../common/RoundedButton';
 
-export default function Index({phrase}) {
+export default function Index({phrase , className}) {
   // const phrase = "We're committed to making Dining out a Delightful,Experience for you ";
   const description = useRef(null);
   const isInView = useInView(description);
   return (
     <div ref={description} className="flex justify-center">
-      <div className="max-w-screen-xl flex gap-12 relative">
-        <p className=" m-0">
+      <div className="max-w-screen-xl flex gap-12 relative ">
+        <p >
           {phrase.split(" ").map((word, index) => {
             return (
-              <span key={index} className="relative inline-flex  overflow-hidden mr-2">
-                <motion.span variants={slideUp}  custom={index} animate={isInView ? "open" : "closed"} key={index} >
+                <span key={index} className="relative inline-flex  overflow-hidden mr-2 ">
+                <motion.span className={className} variants={slideUp}  custom={index} animate={isInView ? "open" : "closed"} key={index} >
                   {word}
                 </motion.span>
               </span>

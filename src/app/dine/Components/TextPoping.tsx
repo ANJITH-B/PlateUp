@@ -4,16 +4,17 @@ import { motion } from "framer-motion";
 interface AnimatedTextProps {
   text: string;
   delay: number;
+  cssClass: string;
 }
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text, delay }) => {
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text, delay , cssClass }) => {
   const modifiedText = text.split(" ").join("  ");
   const letters = modifiedText.split(/(?!^)/);
   return (
-    <div style={{ display: "flex", overflow: "hidden" }}>
+    <div style={{ display: "flex", overflow: "hidden" }} className={`${cssClass}`} >
       {letters.map((letter, index) => (
-        <motion.span
-          className="text-2xl md:text-7xl font-extrabold h-16 mr-[1px] md:mr-[3px] md:h-16 text-center  text-[#FBFEE1]"
+        <motion.p
+          className={` font-aegreya_SC text-2xl md:text-7xl h-16 mr-[1px] md:mr-[3px] md:h-16 text-center `} // text-[#FBFEE1]  font-extrabold
           key={`${letter}-${index}`}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +22,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, delay }) => {
           transition={{ duration: 0.5, delay: delay + index * 0.05 }}
         >
           {letter}
-        </motion.span>
+        </motion.p>
       ))}
     </div>
   );

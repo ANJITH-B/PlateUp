@@ -21,6 +21,8 @@ const config: Config = {
         questrial: ['var(--font-questrial)'],
         outfit: ['var(--font-outfit)'],
         ruthie: ['var(--font-ruthie)'],
+        aegreya_SC: ['var(--font-aegreya_SC)'],
+        Redressed: ['var(--font-redressed)'],
       },
       lineHeight: {
         '12': '5rem',

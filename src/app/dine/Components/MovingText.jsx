@@ -11,10 +11,22 @@ import B2 from "../assets/images/breakfast2.png";
 import S1 from "../assets/images/snacks1.png";
 import S2 from "../assets/images/snacks2.png";
 import D1 from "../assets/images/dinne.png";
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "react-responsive"; 
 import { opacity } from "./WordPopping/animation";
 import WordPopping from './WordPopping'
+import { Alegreya , Redressed } from "next/font/google";
 
+const redressed = Redressed({
+  weight: '400',
+  style: 'normal',
+  subsets: ['latin']
+})
+
+const aegreya = Alegreya({
+  weight: '800',
+  style: ['italic','normal'],
+  subsets: ['cyrillic-ext'],
+})
 
 const MovingText = () => {
   const paths = useRef([]);
@@ -39,9 +51,12 @@ const MovingText = () => {
   return (
     <div className="md:h-full w-full flex flex-col items-center overflow-hidden">
       <div className="hidden md:block">
-        <div className="flex items-center flex-col font-ruthie">
-          <AnimatedText text="Dine VISTA" delay={0} />
-          <p className="text-6xl font-bold text-[#FBFEE1] pt-5 font-ruthie"><WordPopping phrase="Discover the Joy of Dining Out" delay={1.5} /></p>
+        <div className="flex items-center flex-col "> 
+          <div className={` ${aegreya.className} font-extrabold flex flex-row gap-3`}>
+            <AnimatedText cssClass="font-aegreya_SC text-[#FBFEE1]" text="DINE" delay={0} />
+            <AnimatedText cssClass="font-aegreya_SC italic  text-orange-400" text="VISTA" delay={0.3} />
+          </div>
+          <p className='text-[#FBFEE1] pt-5'><WordPopping className={`${redressed.className} text-6xl`} phrase="Discover the Joy of Dining Out" delay={1.5} /></p>
         </div>
       </div>
       <motion.div
