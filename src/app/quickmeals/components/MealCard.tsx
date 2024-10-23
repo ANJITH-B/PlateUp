@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import meal1 from '../../quickmeal/assets/mealsImage/Chicken Kabas Briyani.png'
-import meal2 from '../../quickmeal/assets/mealsImage/Chicken Malai Tikka Kebab (6 Pieces).png'
-import meal3 from '../../quickmeal/assets/mealsImage/Chicken Tandoori Mumtaz.png'
-import meal4 from '../../quickmeal/assets/mealsImage/Ghee Podi Dosa.png'
-import meal5 from '../../quickmeal/assets/mealsImage/Special Thali (limited).png'
-import meal6 from '../../quickmeal/assets/mealsImage/Veg fired Rice + Paneer chilly.png'
-import meal7 from '../../quickmeal/assets/mealsImage/Chicken Shawarma Plate.png'
-import meal8 from '../../quickmeal/assets/mealsImage/Paneer Butter Masala.png'
-import meal9 from '../../quickmeal/assets/mealsImage/Masala Dosa.png'
+import meal1 from '../../quickmeals/assets/mealsImage/Chicken Kabas Briyani.png'
+import meal2 from '../../quickmeals/assets/mealsImage/Chicken Malai Tikka Kebab (6 Pieces).png'
+import meal3 from '../../quickmeals/assets/mealsImage/Chicken Tandoori Mumtaz.png'
+import meal4 from '../../quickmeals/assets/mealsImage/Ghee Podi Dosa.png'
+import meal5 from '../../quickmeals/assets/mealsImage/Special Thali (limited).png'
+import meal6 from '../../quickmeals/assets/mealsImage/Veg fired Rice + Paneer chilly.png'
+import meal7 from '../../quickmeals/assets/mealsImage/Chicken Shawarma Plate.png'
+import meal8 from '../../quickmeals/assets/mealsImage/Paneer Butter Masala.png'
+import meal9 from '../../quickmeals/assets/mealsImage/Masala Dosa.png'
 import Image from "next/image";
 import Restaurant from "../RestaurantArray";
 import { Roboto } from 'next/font/google';

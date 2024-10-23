@@ -4,7 +4,7 @@ import WordPopping from "./components/WordPopping";
 import { motion } from "framer-motion";
 import DrawingSVG from "./components/ReadyToRedeemSvg";
 import MealCard from "./components/MealCard";
-import SectionHeading from "../dine/Components/SectionHeading";
+import SectionHeading from "../dinevista/Components/SectionHeading";
 import FAndQHow from "./components/F&QHow";
 import FAndQWhy from "./components/F&QWhy";
 import FAndQWhat from "./components/F&QWhat";
@@ -45,12 +45,12 @@ function Page() {
 
       {/* // 02 TEXT SECTION */}
 
-      <div className="h-full w-full">
+      <div className="h-full w-full space-y-10">
         <motion.div
           variants={container}
           initial="initial"
           whileInView="visible"
-          className="h-1/2 w-full flex flex-row justify-between items-center gap-3 md:gap-5"
+          className="h-[300px] w-full flex flex-row justify-between items-center gap-3 md:gap-5"
         >
           <p className="pt-3 text-xl md:text-2xl lg:text-4xl text-[#FBFEE1] w-full h-[30vh] leading-6 md:leading-10">
             <WordPopping phrase="Introducing Plateup, where workplace dining is revolutionized with a diverse range of cuisines " />
@@ -69,7 +69,7 @@ function Page() {
 
       <SectionHeading heading="Plateup Fresh !" mealExpressIcon={true} />
       <div className="h-full w-full pt-[3vh] flex flex-col md:flex-row">
-        <motion.div className="hidden md:block w-2/5">
+        <motion.div className="hidden lg:block w-2/5">
           <div className="flex flex-col gap-5 w-full">
             <motion.p
               variants={container}
@@ -83,7 +83,7 @@ function Page() {
             <RestaurantCard />
           </div>
         </motion.div>
-        <div className=" w-full md:w-3/5 h-full md:h-[93vh] ">
+        <div className=" w-full lg:w-3/5 h-full  ">
           <p className="text-xl font-light pb-[3vh] flex items-start">
             <WordPopping phrase="Popular this week" />
           </p>

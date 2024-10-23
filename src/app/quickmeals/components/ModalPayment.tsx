@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Modal } from "antd";
 import Image from "next/image";
-import cardBg from "../../dine/assets/images/cardBg.png";
-import MealExpress from "../../dine/assets/images/MealExpress.png";
+import cardBg from "../../dinevista/assets/images/cardBg.png";
+import MealExpress from "../../dinevista/assets/images/MealExpress.png";
 
 const ModalPayment: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

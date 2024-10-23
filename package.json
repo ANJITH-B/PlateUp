@@ -42,7 +42,8 @@
     "sass": "^1.74.1",
     "simplex-noise": "^4.0.1",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three-globe": "^2.33.0"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.3",

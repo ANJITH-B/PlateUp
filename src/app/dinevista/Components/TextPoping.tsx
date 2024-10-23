@@ -14,7 +14,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, delay , cssClass }) =
     <div style={{ display: "flex", overflow: "hidden" }} className={`${cssClass}`} >
       {letters.map((letter, index) => (
         <motion.p
-          className={` font-aegreya_SC text-2xl md:text-7xl h-16 mr-[1px] md:mr-[3px] md:h-16 text-center `} // text-[#FBFEE1]  font-extrabold
+          className={` font-aegreya_SC text-4xl md:text-6xl lg:text-7xl h-14 mr-[1px] md:mr-[3px] md:h-16 text-center `} // text-[#FBFEE1]  font-extrabold
           key={`${letter}-${index}`}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

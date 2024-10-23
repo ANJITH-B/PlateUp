@@ -5,7 +5,7 @@ import React from "react";
 import Cauliflower from "./assets/cauliflower.png";
 import leaf from "./assets/leaf.png";
 import WordPopping from "./components/WordPopping";
-import SectionHeading from "../dine/Components/SectionHeading";
+import SectionHeading from "../dinevista/Components/SectionHeading";
 import GroceryCard from "./components/GroceryCard";
 import GrocerySection from "./components/GrocerySection";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
