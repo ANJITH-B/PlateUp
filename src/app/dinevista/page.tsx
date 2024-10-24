@@ -102,7 +102,7 @@ const Page: React.FC = () => {
           </div>
         </div>
       </div> */}
-      <div className="text-md md:text-[28px] leading-6 md:leading-9 w-full md:pr-80 pt-[10vh]">
+      <div className="text-md md:text-[28px] leading-6 md:leading-9 w-full md:pr-40 lg:pr-80 pt-[10vh]">
         <TextOpacityOnScroll
           contain={contain}
           phrase="Plateup redemption is versatile, and applicable in both corporate settings and various restaurants, alleviating any concerns about payments. Redeemable at all non-alcoholic restaurants, whether for orders at your workplace or dining out, it ensures seamless transactions and hassle-free experiences"

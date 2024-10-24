@@ -149,28 +149,28 @@ const MovingText = () => {
         </div>
 
         <motion.div className="flex flex-row w-full justify-between relative" animate={{ y: 0 }}>
-          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96"  animate={{  y: md ? 190 : 100 , x : md ? -26 : 0 , scale: md ? 1.6 : 1.05  }}>
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96"  animate={{  y: sm ? 130 : md ? 190 : 100 , x : sm ? 40 : md ? -26 : 0 , scale: sm ? 2 : md ? 1.6 : 1.05  }}>
             <MotionImageWrapper image={{ src: B2, alt: "food one" }}  rotation={rotation}/>
           </motion.div>
-          <motion.div className="w-8 md:w-10" animate={{ x: sm ? 0 : md ? -20 : -60, y: sm ? 0 : md ? 350 : 250 , scale: sm ? 1 : md ? 3 : 1 }}>
+          <motion.div className="w-8 md:w-10" animate={{ x: sm ? 60 : md ? -20 : -60, y: sm ? 260 : md ? 350 : 250 , scale: sm ? 5 : md ? 3 : 1 }}>
             <MotionImageWrapper image={{ src: C1, alt: "food one" }} rotation={rotation}/>{" "}
           </motion.div>
-          <motion.div className="w-14 md:w-40" animate={{ x: sm ? 0 : md ? -60 : -110 , y: sm ? 0 : md ? 300 : 180 , scale: sm ? 1 : md ? 3 : 1}}>
+          <motion.div className="w-14 md:w-40" animate={{ x: sm ? 50 : md ? -60 : -110 , y: sm ? 280 : md ? 300 : 180 , scale: sm ? 5 : md ? 3 : 1}}>
             <MotionImageWrapper image={{ src: C2, alt: "food one" }} rotation={rotation} />{" "}
           </motion.div>
-          <motion.div className="lg:w-52 md:w-96 sm:w-96 w-96 " animate={{ x: sm ? 0 : -180, y: sm ? 0 : 0 }} >
+          <motion.div className="lg:w-52 md:w-96 sm:w-96 w-96 " animate={{ x: sm ? 0 : md ? -80 : -180, y: sm ? 30 : md ? 60 : 0 , scale: sm ? 2 : md ? 2 : 1}} >
             <MotionImageWrapper image={{ src: B1, alt: "food one" }} rotation={nativerotation} />{" "}
           </motion.div>
-          <motion.div className="lg:w-64 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : -140, y: sm ? 0 : 40 }} >
+          <motion.div className="lg:w-64 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 30 : md ? -30 : -140, y: sm ? 120 : md ? 180 : 40 , scale: sm ? 2 : md ? 2 : 1}} >
             <MotionImageWrapper image={{ src: F1, alt: "food one" }} rotation={rotation} />{" "}
           </motion.div>
-          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : 30, y: sm ? 0 : -20 , scale: 1.15 }} >
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 40 : md ? 50 : 30, y: sm ? 25 : md ? 60 : -20 , scale: 1.15 , scale: sm ? 2 : md ? 2 : 1}} >
             <MotionImageWrapper image={{ src: D1, alt: "food one" }} rotation={nativerotation} />{" "}
           </motion.div>
-          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : md ? 0 : 30 , y: sm ? 0 : 160 , scale: 1.25 }} >
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? -15 : md ? 20 : 30 , y: sm ? 150 : md ? 240 : 160 , scale: 1.25 , scale: sm ? 2 : md ? 2 : 1}} >
             <MotionImageWrapper image={{ src: S1, alt: "food one" }} rotation={rotation} />{" "}
           </motion.div>
-          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : -30, y: sm ? 0 : 0 , scale: 1.15 }} >
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? -5 : md ? 10 : -30, y: sm ? 70 : md ? 80 : 0 , scale: sm ? 2 : md ? 2 : 1.15}} >
             <MotionImageWrapper image={{ src: S2, alt: "food one" }} rotation={nativerotation} />{" "}
           </motion.div>
         </motion.div>
