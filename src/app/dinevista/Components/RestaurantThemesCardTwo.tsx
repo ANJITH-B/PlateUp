@@ -19,7 +19,7 @@ const RestaurantThemesCardTwo: React.FC= () => {
 
   return (
     <motion.div
-      className="bg-gradient-radial to-[#EAB33E]  from-[#FFCC5F] w-80  overflow-hidden h-[45vh] rounded-3xl"
+      className="bg-gradient-radial to-[#EAB33E] from-[#FFCC5F] w-48 md:w-80  overflow-hidden h-[50vh] rounded-3xl"
       initial={{ scaleY: 0, height: -100, y: -50, opacity: 0.5 }}
       whileInView={{ scaleY: 1, height: 300, y: 0, opacity: 1 }}
       viewport={{ once: false }}

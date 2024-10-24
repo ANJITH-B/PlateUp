@@ -39,8 +39,9 @@ const MovingText = () => {
 
   const rotation = useTransform(scrollYProgress, [0, 1], [0, 360]);
   const nativerotation = useTransform(scrollYProgress, [0, 1], [0, -360]);
-  const sm = useMediaQuery({ maxWidth: 768 });
-
+  const sm = useMediaQuery({ maxWidth: 767 });
+  const md = useMediaQuery({ minWidth: 768 , maxWidth: 1024})
+  
   useEffect(() => {
     scrollYProgress.on("change", (e) => {
       paths.current.forEach((path, i) => {
@@ -54,18 +55,19 @@ const MovingText = () => {
       
         <div className="flex items-center flex-col "> 
           <div className={` ${aegreya.className} font-extrabold flex flex-row md:gap-2 lg:gap-3`}>
-            <AnimatedText cssClass="font-aegreya_SC text-[#FBFEE1]" text="DINE" delay={0} />
-            <AnimatedText cssClass="font-aegreya_SC italic  text-orange-400" text="VISTA" delay={0.3} />
+            <AnimatedText cssClass="font-aegreya_SC text-[#FBFEE1] text-4xl" text="DINE" delay={0} />
+            <AnimatedText cssClass="font-aegreya_SC italic text-orange-400 text-4xl" text="VISTA" delay={0.3} />
           </div>
           <div className="hidden md:block">
             <p className='text-[#FBFEE1] pt-5'><WordPopping className={`${redressed.className} hidden md:block md:text-5xl lg:text-7xl mr-2 `} phrase="Discover the Joy of Dining Out" delay={1.5} /></p>
           </div>
-          <div className="block md:hidden">
-            <p className='text-[#FBFEE1] pt-5'><WordPopping className={`${redressed.className} text-5xl md:text-5xl lg:text-7xl mr-2  `} phrase="Discover the Joy " delay={1.5} /></p>
-            <p className='text-[#FBFEE1] pt-5'><WordPopping className={`${redressed.className} text-5xl md:text-5xl lg:text-7xl mr-2 `} phrase="of Dining Out" delay={1.5} /></p>
+          <div className="md:hidden">
+            <p className='text-[#FBFEE1]'><WordPopping className={`${redressed.className} text-4xl md:text-5xl lg:text-7xl mr-2  `} phrase="Discover the Joy " delay={1.5} /></p>
+            <p className='text-[#FBFEE1]'><WordPopping className={`${redressed.className} text-4xl md:text-5xl lg:text-7xl mr-2 `} phrase="of Dining Out" delay={1.5} /></p>
           </div>
         </div>
-        <div className="flex felx-col w-full items-end justify-end gap-3 lg:gap-5">
+
+        <div className="flex flex-col lg:flex-row w-full items-end justify-end gap-3 lg:gap-5">
           <svg width="231" height="215" viewBox="0 0 251 195" fill="none" xmlns="http://www.w3.org/2000/svg">
             <motion.path d='M1 14.4725C41.1667 4.30583 127 -9.9275 149 14.4725C176.5 44.9725 121.5 166.473 91.5 147.473C61.5 128.473 137.5 -8.02734 214 51.9727C275.2 99.9727 222.833 179.639 189 213.473M189 213.473H204.5M189 213.473V196.473' fillOpacity="0.7"
               stroke="white"
@@ -96,30 +98,19 @@ const MovingText = () => {
             exit={{ scale: 0, opacity: 0, transition: { delay: 0 } }}
             whileInView={{ scale: 1, opacity: 1, transition: { delay: 3 } }}
           >
-            <Image src={MealExpress} width={80} height={70} alt="food one" className='w-14 md:w-28' />
+            <Image src={MealExpress} width={80} height={70} alt="meal express" className='w-14 md:w-28' />
           </motion.div>
         </div>
-      {/* <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        className=" md:hidden text-[38px] leading-tight text-[#FBFEE1] font-semibold flex justify-center"
-      >
-        <p className="text-center font-serif font-bold">
-          Introducing
-          <br /> Dine VISTA
-          <br /> Discover the Joy
-          <br /> of Dining Out
-        </p>
-      </motion.div> */}
+      
       <motion.div
-        className="bg-[#507BA6] relative overflow-hidden h-60 md:h-96 w-full rounded-3xl mt-[20vh] md:mt-[15px] pt-8"
+        className="bg-[#507BA6] relative overflow-hidde h-60 md:h-96 w-full rounded-3xl mt-10 md:mt-[15px] pt-8"
         initial={{ scale: 0.5, y: 500, opacity: 0 }}
         whileInView={{scale: 1 , opacity:1 ,transition: {delay:0.2, duration:0.5, ease: [0.65, 0, 0.35, 1]} }}
         exit={{scale: 0.9, opacity:0 }}
         animate={{  y: 0, opacity: 1 }}
         transition={{ delay: 0, duration: 1.5, ease: [0.65, 0, 0.35, 1] }}
       >
-        <div className="pt-20 md:pt-0">
+        <div className="pt-20 md:pt-28 lg:pt-10 xl:pt-0  absolute w-full">
           <svg className="w-full" viewBox={sm ? "0 0 433 88" : "0 0 1548 463"} xmlns="http://www.w3.org/2000/svg" >
             <path fill="none" id="curve" stroke="none"
               d={
@@ -133,7 +124,7 @@ const MovingText = () => {
               whileInView={{scale: 1,transition:{delay:0.2,duration:0.5, ease: [0.65, 0, 0.35, 1]} }}
               animate={{  y: 0, opacity: 1 }}
               transition={{ delay: 0, duration: 1.5, ease: [0.65, 0, 0.35, 1] }}
-              className="text-[24px] md:text-[65px] space-x-5 font-bold"
+              className="text-2xl md:text-8xl lg:text-7xl space-x-5 font-bold"
               style={{ fill: "white" }}
             >
               <textPath
@@ -141,13 +132,13 @@ const MovingText = () => {
                 startOffset="0%"
                 href="#curve"
               >
-                <tspan dx={sm ? "10" : "350"}>Breakfast </tspan>
+                <tspan dx={sm ? "10" : md ? "300" : "350"}>Breakfast </tspan>
                 <tspan dx={sm ? "15" : "50"}>*</tspan>
                 <tspan dx={sm ? "15" : "50"}>Lunch</tspan>
                 <tspan dx={sm ? "15" : "30"}>*</tspan>
               </textPath>
               <textPath ref={(ref) => (paths.current[2] = ref)} startOffset="40%" href="#curve" >
-                <tspan dx={sm ? "100" : "550"}>snacks</tspan> *
+                <tspan dx={sm ? "100" : md? '400' : "550"}>snacks</tspan> *
                 <tspan dx={sm ? "15" : "100"}> dinner</tspan>
               </textPath>
               <textPath ref={(ref) => (paths.current[3] = ref)} startOffset="80%" href="#curve" >
@@ -157,32 +148,32 @@ const MovingText = () => {
           </svg>
         </div>
 
-        <div className="flex flex-row absolute ">
-          <motion.div className="w-28 md:w-40 " initial={{ y: sm ? "-20vh" : "-28vh" }}>
-            <MotionImageWrapper image={{ src: B2, alt: "food one" }} rotation={rotation}/>{" "}
+        <motion.div className="flex flex-row w-full justify-between relative" animate={{ y: 0 }}>
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96"  animate={{  y: md ? 190 : 100 , x : md ? -26 : 0 , scale: md ? 1.6 : 1.05  }}>
+            <MotionImageWrapper image={{ src: B2, alt: "food one" }}  rotation={rotation}/>
           </motion.div>
-          <motion.div className="w-8 md:w-10" initial={{ x: sm ? "-10vh" : "-3vw", y: sm ? "-20vh" : "-9vh" }}>
+          <motion.div className="w-8 md:w-10" animate={{ x: sm ? 0 : md ? -20 : -60, y: sm ? 0 : md ? 350 : 250 , scale: sm ? 1 : md ? 3 : 1 }}>
             <MotionImageWrapper image={{ src: C1, alt: "food one" }} rotation={rotation}/>{" "}
           </motion.div>
-          <motion.div className="w-14 md:w-40" initial={{ x: sm ? "-30vw" : "7vw", y: sm ? "-20vh" : "-20vh" }}>
+          <motion.div className="w-14 md:w-40" animate={{ x: sm ? 0 : md ? -60 : -110 , y: sm ? 0 : md ? 300 : 180 , scale: sm ? 1 : md ? 3 : 1}}>
             <MotionImageWrapper image={{ src: C2, alt: "food one" }} rotation={rotation} />{" "}
           </motion.div>
-          <motion.div className="w-28 md:w-40 " initial={{ x: sm ? "-46vw" : "-14vw", y: sm ? "-5vh" : "-46vh" }} >
+          <motion.div className="lg:w-52 md:w-96 sm:w-96 w-96 " animate={{ x: sm ? 0 : -180, y: sm ? 0 : 0 }} >
             <MotionImageWrapper image={{ src: B1, alt: "food one" }} rotation={nativerotation} />{" "}
           </motion.div>
-          <motion.div className="w-36" initial={{ x: sm ? "-30vh" : "-14vw", y: sm ? "-8vh" : "-38vh" }} >
+          <motion.div className="lg:w-64 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : -140, y: sm ? 0 : 40 }} >
             <MotionImageWrapper image={{ src: F1, alt: "food one" }} rotation={rotation} />{" "}
           </motion.div>
-          <motion.div className="w-28 md:w-40" initial={{ x: sm ? "-70vw" : "-4vw", y: sm ? "-28vh" : "-48vh" }} >
-            <MotionImageWrapper image={{ src: S1, alt: "food one" }} rotation={nativerotation} />{" "}
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : 30, y: sm ? 0 : -20 , scale: 1.15 }} >
+            <MotionImageWrapper image={{ src: D1, alt: "food one" }} rotation={nativerotation} />{" "}
           </motion.div>
-          <motion.div className="w-24 md:w-40" initial={{ x: sm ? "-100vw" : "-4vw", y: sm ? "-28vh" : "-28vh" }} >
-            <MotionImageWrapper image={{ src: D1, alt: "food one" }} rotation={rotation} />{" "}
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : md ? 0 : 30 , y: sm ? 0 : 160 , scale: 1.25 }} >
+            <MotionImageWrapper image={{ src: S1, alt: "food one" }} rotation={rotation} />{" "}
           </motion.div>
-          <motion.div className="w-20 md:w-40" initial={{ x: sm ? "-120vw" : "-10vw", y: sm ? "-10vh" : "-44vh" }} >
+          <motion.div className="lg:w-48 md:w-96 sm:w-96 w-96" animate={{ x: sm ? 0 : -30, y: sm ? 0 : 0 , scale: 1.15 }} >
             <MotionImageWrapper image={{ src: S2, alt: "food one" }} rotation={nativerotation} />{" "}
           </motion.div>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );
@@ -192,7 +183,7 @@ export default MovingText;
 
 const MotionImageWrapper = ({ image, rotation }) => {
   return (
-    <motion.div
+    <motion.div className="w-full"
       initial={{ scale: 0, opacity: 0.4 }}
       viewport={{ once: false }}
       exit={{ scale: 0, opacity: 0 }}
@@ -203,7 +194,7 @@ const MotionImageWrapper = ({ image, rotation }) => {
       // whileInView={{ scale: 1, opacity: 1 }}
       style={{ rotate: rotation }}
     >
-      <Image src={image.src} width={230} height={230} alt={image.alt} />
+      <Image className="w-full" src={image.src} width={230} height={230} alt={image.alt} />
     </motion.div>
   );
 };

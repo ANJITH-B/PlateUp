@@ -16,13 +16,13 @@ const RestaurantCount: React.FC = () => {
         <motion.div style={{ scale: top ,}} initial={{x:-40}} className="w-full h-full flex items-center justify-start absolute">
             <Image src={MirrorThree} alt='...'  className='w-[100px] '/>
         </motion.div> 
-        <p className="pt-3 my-auto text-lg md:text-xl font-bold text-black pl-5 md:leading-5">
+        <p className="pt-3 text-lg md:text-xl font-bold text-black pl-5 md:leading-5">
             <WordPopping phrase="300+" />
         </p>
-        <p className="pt-3 my-auto text-sm md:text-lg font-bold text-black pl-5 md:leading-5">
+        <p className="md:pt-3 text-sm md:text-lg font-bold text-black pl-5 md:leading-5">
             <WordPopping phrase="Restaurants" />
         </p>
-        <p className="pt-3 my-auto text-sm md:text-lg font-light text-black p-5 md:leading-5">
+        <p className="p-3 text-sm md:text-lg font-light text-black pl-5 md:leading-5">
             <WordPopping phrase="availability both online and in-store, serving Mumbai, Pune, Bangalore, Gurgaon, " />
         </p>
     </motion.div>     

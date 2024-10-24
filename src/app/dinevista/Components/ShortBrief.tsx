@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 const ShortBrief:React.FC = () => {
   return (
     <motion.div
-            className="w-full md:w-1/2 rounded-3xl leading-9 mr-3 p-6 text-[26px] bg-gradient-radial from-[#6B7D7F] to-[#3B464A]"
+            className="w-full xl:w-1/2 rounded-3xl leading-9 mr-3 p-6 text-[26px] bg-gradient-radial from-[#6B7D7F] to-[#3B464A]"
             initial={{ scale: 0.1, y: 100, opacity: 0 }}
             whileInView={{ scale: 1, y: 0, opacity: 1 }}
             viewport={{ amount: 0.2 }}

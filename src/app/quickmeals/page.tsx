@@ -45,7 +45,7 @@ function Page() {
 
       {/* // 02 TEXT SECTION */}
 
-      <div className="h-full w-full space-y-10">
+      <div className="h-full w-full space-y-10 lg:pt-10">
         <motion.div
           variants={container}
           initial="initial"

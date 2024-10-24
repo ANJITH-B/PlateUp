@@ -4,7 +4,7 @@ import Image from "next/image";
 import F1 from "../assets/images/CardOneFood.png";
 
 
-const RestaurantThemesCardOne: React.FC= () => {
+const   RestaurantThemesCardOne: React.FC= () => {
   const height = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -16,7 +16,7 @@ const RestaurantThemesCardOne: React.FC= () => {
 
   return (
     <motion.div
-      className="bg-gradient-radial to-[#EAB33E]  from-[#FFCC5F] w-80  overflow-hidden h-[50vh] rounded-3xl"
+      className="bg-gradient-radial to-[#EAB33E]  from-[#FFCC5F] w-48 md:w-80  overflow-hidden h-[50vh] rounded-3xl"
       initial={{ scaleY: 0, height: 100, y: 350, opacity: 0.5 }}
       whileInView={{ scaleY: 1, height: 358, y: 0, opacity: 1 }}
       exit={{ transition: { delay: 0 } }}

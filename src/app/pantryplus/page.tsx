@@ -37,7 +37,7 @@ function page() {
 
   return (
     <main className="w-full flex flex-col items-center bg-[#030303]">
-      <div className="px-5 md:px-10 lg:px-20 xl:px-[20px] w-full max-w-screen-xl relative overflow-hidden" >
+      <div className="px-5 md:px-10 lg:px-10 xl:px-[20px] w-full max-w-screen-xl relative overflow-hidden" >
         <div className=" w-full mt-[100px] sm:mt-32 min-h-[300px] h-[42vh] ">
           <GrocerySection />
         </div>
@@ -61,12 +61,12 @@ function page() {
               HOW <span className="text-black">..</span> THIS<br></br> WORKS
             </p>
           </div>
-          <div className="md:block hidden w-1/3 h-[330px] md:h-[360px] lg:h-[380px]"><StepOne /></div>
+          <div className="md:block hidden w-1/3 min-h-[330px]"><StepOne /></div>
         </div>
           <div className="block md:hidden ">
             <div className="flex">
               <div className="w-1/2 md:w-2/3 h-1/2">  </div>
-              <div className="w-1/2 md:w-1/3 md:h-[330px] lg:h-[380px]"><StepOne /></div>
+              <div className="w-1/2 md:w-1/3 min-h-[330px]"><StepOne /></div>
             </div>
           </div>
          
@@ -84,7 +84,7 @@ function page() {
               shopping with Pantry Plus.
             </p>
           </div>
-          <div className="w-1/2 md:w-1/3 min-h-[345px] md:h-[330px] lg:h-[380px]  z-10 rounded-3xl bg-[rgba(118,151,105,0.5)] backdrop-blur-sm backdrop-opacity-1 p-2 pb-2 md:px-3 md:pb-4 lg:p-5">
+          <div className="w-1/2 md:w-1/3 min-h-[345px] z-10 rounded-3xl bg-[rgba(118,151,105,0.5)] backdrop-blur-sm backdrop-opacity-1 p-2 pb-2 md:px-3 md:pb-4 lg:p-5">
             <p className="font-black leading-none font-outfit text-[80px] lg:text-[100px] p-0 text-white text-left">2</p>
             <p className=" text-lg sm:text-xlfont-bold text-white md:pt-2">Variety Hub</p>
             <p className="text-sm md:text-medium lg:text-lg leading-5 md:leading-5 text-[#FBFEE1] pt-1 md:pt-2 ">

@@ -39,23 +39,50 @@ const Page: React.FC = () => {
   return (
     <main className="w-full flex flex-col items-center bg-[#030303]">
       <div  className="px-5 md:px-16 lg:px-20 xl:px-[20px] w-full max-w-screen-xl relative overflow-hidden" > 
-      <motion.div 
-        initial={{ rotate:0 ,opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ rotate: -30, opacity:1, scale:1}} transition={{delay:2}} 
-        className="md:block hidden items-center justify-center absolute w-full md:w-900px h-full ml-[30vh] z-10 overflow-hidden">
-        <TiltCard/>
-      </motion.div> 
+      <div className="h-full relative overflow-hidden">
+      <div className="md:block hidden">
+        <motion.div 
+          initial={{ rotate:0 ,opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ rotate: -30, opacity:1, scale:1}} transition={{delay:1}} 
+          className="flex items-center justify-center absolute w-full md:w-900px h-full pt-44 md:pr-28  z-10 overflow-hidden">
+          <TiltCard/>
+        </motion.div> 
+      </div>
       <motion.div 
         initial={{opacity:0, scale:0 }} viewport={{once:true}} whileInView={{ opacity:1, scale:1}} transition={{delay:2}} 
         className="block md:hidden items-center justify-center absolute z-10 w-full h-full pt-[30vh]">
         <Image alt="error @ Image phone sm screen" src={PhoneSM} width={400} height={400}/>
       </motion.div> 
-      <div className="">
         <div className="h-full w-full flex flex-col items-center pt-[16vh] ">
           <MovingText />
         </div>
       </div>
       
       <div className="h-full w-full ">
+        <SubContent/>
+        
+        <div ref={contain} className="flex flex-col xl:flex-row w-full pt-[10vh] rounded-3xl gap-2 xl:gap-0" >
+          <ShortBrief/>
+          <div className="md:hidden"><GetCard/></div>
+          <div className="flex flex-row w-full xl:w-1/2 gap-2 xl:gap-3 ">
+            <div className="w-1/2 md:hidden h-full block xl:hidden"></div>
+          <div className="hidden xl:hidden md:block w-2/3"><GetCard/></div>
+          <div className="flex flex-row w-1/2 sm:w-1/3">
+            <RestaurantThemesCardOne />
+          </div>
+            <div className="h-full w-full hidden xl:block"><GetCard/></div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-between gap-2 xl:gap-3 w-full pt-[1vh] rounded-3xl">
+          <Redemption/>
+          <div className="flex flex-row w-1/2 sm:w-1/3 xl:w-1/2">
+            <div className="flex flex-row w-full xl:w-1/3">
+            <RestaurantThemesCardTwo/>
+          </div>
+            <motion.div className="hidden xl:block w-2/3 rounded-3xl"></motion.div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="h-full w-full ">
         <SubContent/>
         
         <div ref={contain} className="flex flex-col md:flex-row w-full pt-[10vh] rounded-3xl gap-2 md:gap-0" >
@@ -74,7 +101,7 @@ const Page: React.FC = () => {
             <motion.div className="hidden md:block w-full rounded-3xl"></motion.div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="text-md md:text-[28px] leading-6 md:leading-9 w-full md:pr-80 pt-[10vh]">
         <TextOpacityOnScroll
           contain={contain}

@@ -52,7 +52,7 @@ const TiltCard = () => {
   return (
     <motion.div
       ref={ref}
-      initial={{ rotate: 30 }}
+      initial={{ rotate: 30 , }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{  transformStyle: "preserve-3d", transform, }}
